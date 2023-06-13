@@ -32,8 +32,12 @@ export default defineConfig({
 
 ```ts
 presetMoserLabs({
-  /* Use a preflight to set theme colors and font-family on body. Defaults to true. */
-  preflight: true,
+  /** Extend `presetWind` options */
+  extendWindOptions?: PresetWindOptions,
+  /** Extend `presetPrime` options */
+  extendPrimeOptions?: PresetPrimeOptions,
+  /** Extend `presetIcons` options */
+  extendIconsOptions?: PresetIconsOptions,
 });
 ```
 
@@ -44,14 +48,15 @@ This preset exports helpful types and the generated theme colors directly for ex
 ```ts
 # uno.config.ts
 
-import { defineConfig, presetUno } from 'unocss';
-import { presetPrime, primeThemeColors } from 'unocss-preset-prime';
+import { defineConfig } from 'unocss';
+import { presetMoserLabs, primeThemeColors } from '@moser-inc/unocss-preset-moser-labs';
 
 export default defineConfig({
-  presets: [presetUno(), presetPrime()],
+  presets: [presetMoserLabs()],
   theme: {
     colors: {
       success: primeThemeColors.green.base,
+      warning: primeThemeColors.orange.base,
       error: primeThemeColors.red.base,
     },
   },

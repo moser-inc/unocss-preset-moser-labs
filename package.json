@@ -51,6 +51,14 @@
     "semantic-release": "semantic-release",
     "prepack": "npm run build"
   },
+  "peerDependencies": {
+    "unocss": ">= 0.45.0 < 1"
+  },
+  "dependencies": {
+    "@iconify-json/prime": "^1.1.5",
+    "@iconify/utils": "^2.1.6",
+    "unocss-preset-prime": "^2.0.1"
+  },
   "devDependencies": {
     "@moser-inc/eslint-config": "^1.7.1",
     "@semantic-release/changelog": "^6.0.3",
