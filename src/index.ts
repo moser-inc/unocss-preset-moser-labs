@@ -25,8 +25,6 @@ export interface PresetMoserLabsOptions {
 
 export const moserLabsTheme = generateTheme();
 
-const moserLabsShortcuts = generateShortcuts();
-
 export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
   const { extendWindOptions, extendPrimeOptions, extendIconsOptions } =
     options ?? {};
@@ -54,7 +52,7 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
       }),
     ],
     theme: moserLabsTheme,
-    shortcuts: moserLabsShortcuts,
+    shortcuts: [[/^pi-(.*?)$/, ([, d]) => `i-prime-${d}`], generateShortcuts()],
   };
 }
 
