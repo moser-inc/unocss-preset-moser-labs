@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.0.2...v1.0.3) (2023-06-13)
+
+
+### Bug Fixes
+
+* add missing prime icon alias shortcut ([8bc6a0d](https://github.com/moser-inc/unocss-preset-moser-labs/commit/8bc6a0d5b65c5e413a46d78a8dd51968c098a294))
+
 ## [1.0.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.0.1...v1.0.2) (2023-06-13)
 
 
