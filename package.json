@@ -1,7 +1,7 @@
 {
   "name": "@moser-inc/unocss-preset-moser-labs",
   "version": "1.0.0",
-  "description": "Shared UnoCSS preset for the Moser Labs suite of applications",
+  "description": "Shared UnoCSS preset for the Moser Labs suite of applications.",
   "license": "UNLICENCED",
   "homepage": "https://github.com/moser-inc/unocss-preset-moser-labs#readme",
   "repository": {

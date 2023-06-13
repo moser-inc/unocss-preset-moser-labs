@@ -40,7 +40,9 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
         ...extendIconsOptions,
         collections: {
           prime: () =>
-            import('@iconify-json/prime/icons.json').then((i) => i.default),
+            import('@iconify-json/prime/icons.json', {
+              assert: { type: 'json' },
+            }).then((i) => i.default),
           ...extendIconsOptions?.collections,
         },
       }),
