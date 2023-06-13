@@ -2,6 +2,8 @@
 
 Shared UnoCSS preset for the Moser Labs suite of applications.
 
+<img src="preview.png" alt="Example of moser labs app classes in use" width="600" />
+
 ## Install
 
 ```bash
