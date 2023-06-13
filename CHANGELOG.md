@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.0.1...v1.0.2) (2023-06-13)
+
+
+### Bug Fixes
+
+* add missing extra properties to icons preset ([731427d](https://github.com/moser-inc/unocss-preset-moser-labs/commit/731427d7b7bf0b85aabfe63d9fa94aa810678701))
+
 ## [1.0.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.0.0...v1.0.1) (2023-06-13)
 
 
