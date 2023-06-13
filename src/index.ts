@@ -45,6 +45,12 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
             }).then((i) => i.default),
           ...extendIconsOptions?.collections,
         },
+        extraProperties: {
+          display: 'inline-block',
+          'vertical-align': 'middle',
+          scale: '1.75',
+          ...extendIconsOptions?.extraProperties,
+        },
       }),
     ],
     theme: moserLabsTheme,
