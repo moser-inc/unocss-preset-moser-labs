@@ -25,6 +25,17 @@ import { presetMoserLabs } from '@moser-inc/unocss-preset-moser-labs';
 
 export default defineConfig({
   presets: [presetMoserLabs()],
+
+  // Optionally include processing internal Prime components for utility
+  // classes and icons
+  content: {
+    pipeline: {
+      include: [
+        /(.*\/)primereact(.*)\.(c|m)?(js)(x?)$/, // PrimeReact Components
+        /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/, // Default
+      ],
+    },
+  },
 });
 ```
 
