@@ -39,8 +39,8 @@ export function generateTheme() {
 function generateThemeShortcuts<
   Themes extends Record<string, MoserLabsThemeValue>,
 >(themes: Themes, defaultTheme?: keyof Themes) {
-  return themeObjectToArray(themes).reduce((shortcutsResult, appConfig) => {
-    const { key, ...theme } = appConfig;
+  return themeObjectToArray(themes).reduce((shortcutsResult, themeItem) => {
+    const { key, ...theme } = themeItem;
     const themeKey = key as string;
 
     const isDefaultApp = defaultTheme === key;
