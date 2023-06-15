@@ -26,7 +26,8 @@ import { defineConfig } from 'unocss';
 import { presetMoserLabs } from '@moser-inc/unocss-preset-moser-labs';
 
 export default defineConfig({
-  presets: [presetMoserLabs()],
+  presets: [presetMoserLabs()], // No default
+  presets: [presetMoserLabs({ defaultApp: 'wellness' })], // With default
 
   // Optionally include processing internal Prime components for utility
   // classes and icons
@@ -45,6 +46,8 @@ export default defineConfig({
 
 ```ts
 presetMoserLabs({
+  /** Set the default theme when the application name is not included in the class (e.g. `bg-primary-gradient`). */
+  defaultApp?: string,
   /** Extend `presetWind` options */
   extendWindOptions?: PresetWindOptions,
   /** Extend `presetPrime` options */

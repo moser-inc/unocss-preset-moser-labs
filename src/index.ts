@@ -7,8 +7,13 @@ import {
   type Options as PresetPrimeOptions,
 } from 'unocss-preset-prime';
 import { generateTheme, generateShortcuts } from '@/utils/generators';
+import { type MoserLabsAppKey } from '@/utils/theme';
 
 export interface PresetMoserLabsOptions {
+  /**
+   * Set the default theme when the application name is not included in the class (e.g. `bg-primary-gradient`).
+   */
+  defaultApp?: MoserLabsAppKey;
   /**
    * Extend `presetWind` options
    */
@@ -26,8 +31,12 @@ export interface PresetMoserLabsOptions {
 export const moserLabsTheme = generateTheme();
 
 export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
-  const { extendWindOptions, extendPrimeOptions, extendIconsOptions } =
-    options ?? {};
+  const {
+    defaultApp,
+    extendWindOptions,
+    extendPrimeOptions,
+    extendIconsOptions,
+  } = options ?? {};
 
   return {
     name: 'moser-labs',
@@ -52,7 +61,10 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
       }),
     ],
     theme: moserLabsTheme,
-    shortcuts: [[/^pi-(.*?)$/, ([, d]) => `i-prime-${d}`], generateShortcuts()],
+    shortcuts: [
+      [/^pi-(.*?)$/, ([, d]) => `i-prime-${d}`],
+      generateShortcuts(defaultApp),
+    ],
   };
 }
 
