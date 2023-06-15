@@ -1,78 +1,79 @@
 import { type Theme } from '@unocss/preset-mini';
 import { type UserShortcuts } from 'unocss';
 import {
-  MOSER_LABS_APP_CONFIGS,
+  moserLabsAppsConfig as config,
+  type MoserLabsAppsConfig,
   type MoserLabsAppKey,
   type MoserLabsAppThemeKey,
-  type MoserLabsAppThemeValue,
 } from '@/utils/theme';
 
-const configs = MOSER_LABS_APP_CONFIGS;
+const keys = Object.keys(config) as MoserLabsAppKey[];
+
+const appThemes = keys.map((key) => ({ key, ...config[key] } as const));
 
 export function generateTheme() {
-  const colors = configs.reduce((result, { key: appKey, theme }) => {
-    return { ...result, [appKey]: theme };
-  }, {} as { [K in MoserLabsAppKey]: MoserLabsAppThemeValue });
+  const colors = appThemes.reduce((result, { key, ...theme }) => {
+    return { ...result, [key]: theme };
+  }, {} as { [K in MoserLabsAppKey]: MoserLabsAppsConfig[K] });
 
   return { colors } as const satisfies Theme;
 }
 
 export function generateShortcuts(defaultApp?: MoserLabsAppKey) {
-  const shortcuts = configs.reduce(
-    (shortcutsResult, { key: appKey, theme }) => {
-      const isDefaultApp = defaultApp === appKey;
+  const shortcuts = appThemes.reduce((shortcutsResult, appConfig) => {
+    const { key, ...theme } = appConfig;
 
-      const themeColorKeys = Object.keys(theme) as MoserLabsAppThemeKey[];
+    const isDefaultApp = defaultApp === key;
 
-      const colorShortcuts = themeColorKeys.reduce(
-        (colorShortcutsResult, themeColorKey) => {
-          const bgClass = `bg-${appKey}-${themeColorKey}` as const;
-          const textClass = `text-${appKey}-${themeColorKey}` as const;
+    const themeColorKeys = Object.keys(theme) as MoserLabsAppThemeKey[];
 
-          const defaultColorShortcuts = isDefaultApp
-            ? ({
-                [`bg-${themeColorKey}`]: bgClass,
-                [`text-${themeColorKey}`]: textClass,
-              } as const)
-            : undefined;
+    const colorShortcuts = themeColorKeys.reduce(
+      (colorShortcutsResult, themeColorKey) => {
+        const bgClass = `bg-${key}-${themeColorKey}` as const;
+        const textClass = `text-${key}-${themeColorKey}` as const;
 
-          return {
-            ...colorShortcutsResult,
-            [bgClass]: `bg-${appKey}-${themeColorKey}-dark light:bg-${appKey}-${themeColorKey}-light`,
-            [textClass]: `text-${appKey}-${themeColorKey}-dark light:text-${appKey}-${themeColorKey}-light`,
-            ...defaultColorShortcuts,
-          } as const;
-        },
-        {} as Record<string, string>,
-      );
+        const defaultColorShortcuts = isDefaultApp
+          ? ({
+              [`bg-${themeColorKey}`]: bgClass,
+              [`text-${themeColorKey}`]: textClass,
+            } as const)
+          : undefined;
 
-      const bgGradientClass = `bg-${appKey}-gradient` as const;
-      const textGradientClass = `text-${appKey}-gradient` as const;
+        return {
+          ...colorShortcutsResult,
+          [bgClass]: `bg-${key}-${themeColorKey}-dark light:bg-${key}-${themeColorKey}-light`,
+          [textClass]: `text-${key}-${themeColorKey}-dark light:text-${key}-${themeColorKey}-light`,
+          ...defaultColorShortcuts,
+        } as const;
+      },
+      {} as Record<string, string>,
+    );
 
-      const fromColor = 'primary' satisfies MoserLabsAppThemeKey;
-      const toColor = 'secondary' satisfies MoserLabsAppThemeKey;
+    const bgGradientClass = `bg-${key}-gradient` as const;
+    const textGradientClass = `text-${key}-gradient` as const;
 
-      const gradientShortcuts = {
-        [bgGradientClass]: `bg-gradient-base from-${appKey}-${fromColor}-dark light:from-${appKey}-${fromColor}-light to-${appKey}-${toColor}-dark light:to-${appKey}-${toColor}-light`,
-        [textGradientClass]: `text-gradient-base ${bgGradientClass}`,
-      } as const;
+    const fromColor = 'primary' satisfies MoserLabsAppThemeKey;
+    const toColor = 'secondary' satisfies MoserLabsAppThemeKey;
 
-      const defaultGradientShortcuts = isDefaultApp
-        ? ({
-            ['bg-primary-gradient']: bgGradientClass,
-            ['text-primary-gradient']: textGradientClass,
-          } as const)
-        : undefined;
+    const gradientShortcuts = {
+      [bgGradientClass]: `bg-gradient-base from-${key}-${fromColor}-dark light:from-${key}-${fromColor}-light to-${key}-${toColor}-dark light:to-${key}-${toColor}-light`,
+      [textGradientClass]: `text-gradient-base ${bgGradientClass}`,
+    } as const;
 
-      return {
-        ...shortcutsResult,
-        ...colorShortcuts,
-        ...gradientShortcuts,
-        ...defaultGradientShortcuts,
-      } as const;
-    },
-    {} as Record<string, string>,
-  );
+    const defaultGradientShortcuts = isDefaultApp
+      ? ({
+          ['bg-primary-gradient']: bgGradientClass,
+          ['text-primary-gradient']: textGradientClass,
+        } as const)
+      : undefined;
+
+    return {
+      ...shortcutsResult,
+      ...colorShortcuts,
+      ...gradientShortcuts,
+      ...defaultGradientShortcuts,
+    } as const;
+  }, {} as Record<string, string>);
 
   return {
     ['bg-gradient-base']: 'bg-gradient-linear bg-gradient-shape-[111deg]',
