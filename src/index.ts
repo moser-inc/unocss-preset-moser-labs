@@ -15,15 +15,21 @@ export interface PresetMoserLabsOptions {
    */
   defaultApp?: MoserLabsAppThemeKey;
   /**
-   * Extend `presetWind` options
+   * Extend `presetWind` options.
+   *
+   * https://unocss.dev/presets/wind
    */
   extendWindOptions?: PresetWindOptions;
   /**
-   * Extend `presetPrime` options
+   * Extend `presetPrime` options.
+   *
+   * https://github.com/danielwaltz/unocss-preset-prime
    */
   extendPrimeOptions?: PresetPrimeOptions;
   /**
-   * Extend `presetIcons` options
+   * Extend `presetIcons` options.
+   *
+   * https://unocss.dev/presets/icons
    */
   extendIconsOptions?: PresetIconsOptions;
 }

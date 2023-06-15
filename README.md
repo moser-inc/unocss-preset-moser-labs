@@ -46,14 +46,28 @@ export default defineConfig({
 
 ```ts
 presetMoserLabs({
-  /** Set the default theme when the application name is not included in the class (e.g. `bg-primary-gradient`). */
-  defaultApp?: string,
-  /** Extend `presetWind` options */
-  extendWindOptions?: PresetWindOptions,
-  /** Extend `presetPrime` options */
-  extendPrimeOptions?: PresetPrimeOptions,
-  /** Extend `presetIcons` options */
-  extendIconsOptions?: PresetIconsOptions,
+  /**
+   * Set the default theme when the application name is not included in the class (e.g. `bg-primary-gradient`).
+   */
+  defaultApp?: MoserLabsAppThemeKey;
+  /**
+   * Extend `presetWind` options.
+   *
+   * https://unocss.dev/presets/wind
+   */
+  extendWindOptions?: PresetWindOptions;
+  /**
+   * Extend `presetPrime` options.
+   *
+   * https://github.com/danielwaltz/unocss-preset-prime
+   */
+  extendPrimeOptions?: PresetPrimeOptions;
+  /**
+   * Extend `presetIcons` options.
+   *
+   * https://unocss.dev/presets/icons
+   */
+  extendIconsOptions?: PresetIconsOptions;
 });
 ```
 
