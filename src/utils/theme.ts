@@ -1,7 +1,7 @@
 import { primeThemeColors } from 'unocss-preset-prime';
 
-export const moserLabsAppsConfig = {
-  eats: {
+export const moserLabsThemes = {
+  lemonade: {
     primary: {
       dark: primeThemeColors.yellow[300],
       light: primeThemeColors.yellow[500],
@@ -13,7 +13,7 @@ export const moserLabsAppsConfig = {
       text: primeThemeColors.surface.ground,
     },
   },
-  engagements: {
+  aero: {
     primary: {
       dark: primeThemeColors.blue[200],
       light: primeThemeColors.blue[500],
@@ -25,7 +25,7 @@ export const moserLabsAppsConfig = {
       text: primeThemeColors.surface.ground,
     },
   },
-  idealab: {
+  peaches: {
     primary: {
       dark: primeThemeColors.orange[300],
       light: primeThemeColors.orange[500],
@@ -37,7 +37,7 @@ export const moserLabsAppsConfig = {
       text: primeThemeColors.surface.ground,
     },
   },
-  ['room-grabber']: {
+  sylvian: {
     primary: {
       dark: primeThemeColors.cyan[300],
       light: primeThemeColors.cyan[600],
@@ -49,7 +49,7 @@ export const moserLabsAppsConfig = {
       text: primeThemeColors.surface.ground,
     },
   },
-  spenio: {
+  tortuga: {
     primary: {
       dark: primeThemeColors.green[300],
       light: primeThemeColors.green[600],
@@ -61,7 +61,7 @@ export const moserLabsAppsConfig = {
       text: primeThemeColors.surface.ground,
     },
   },
-  tickets: {
+  sherbet: {
     primary: {
       dark: primeThemeColors.pink[200],
       light: primeThemeColors.pink[500],
@@ -73,7 +73,7 @@ export const moserLabsAppsConfig = {
       text: primeThemeColors.surface.ground,
     },
   },
-  ['time-tracking']: {
+  zomp: {
     primary: {
       dark: primeThemeColors.teal[300],
       light: primeThemeColors.teal[600],
@@ -85,7 +85,7 @@ export const moserLabsAppsConfig = {
       text: primeThemeColors.surface.ground,
     },
   },
-  training: {
+  eventide: {
     primary: {
       dark: primeThemeColors.purple[300],
       light: primeThemeColors.purple[600],
@@ -97,7 +97,7 @@ export const moserLabsAppsConfig = {
       text: primeThemeColors.surface.ground,
     },
   },
-  wellness: {
+  vista: {
     primary: {
       dark: primeThemeColors.indigo[300],
       light: primeThemeColors.indigo[500],
@@ -111,8 +111,23 @@ export const moserLabsAppsConfig = {
   },
 } as const;
 
-export type MoserLabsAppsConfig = typeof moserLabsAppsConfig;
-export type MoserLabsAppKey = keyof MoserLabsAppsConfig;
-export type MoserLabsAppTheme = MoserLabsAppsConfig[MoserLabsAppKey];
-export type MoserLabsAppThemeKey = keyof MoserLabsAppTheme;
-export type MoserLabsAppThemeValue = MoserLabsAppTheme[MoserLabsAppThemeKey];
+export type MoserLabsThemes = typeof moserLabsThemes;
+export type MoserLabsThemeKey = keyof MoserLabsThemes;
+export type MoserLabsThemeValue = MoserLabsThemes[MoserLabsThemeKey];
+export type MoserLabsThemeColor = keyof MoserLabsThemeValue;
+
+export const moserLabsAppThemes = {
+  eats: moserLabsThemes.lemonade,
+  engagements: moserLabsThemes.aero,
+  idealab: moserLabsThemes.peaches,
+  roomgrabber: moserLabsThemes.sylvian,
+  spenio: moserLabsThemes.tortuga,
+  tickets: moserLabsThemes.sherbet,
+  timetracking: moserLabsThemes.zomp,
+  training: moserLabsThemes.eventide,
+  wellness: moserLabsThemes.vista,
+} as const satisfies Record<string, MoserLabsThemeValue>;
+
+export type MoserLabsAppThemes = typeof moserLabsAppThemes;
+export type MoserLabsAppThemeKey = keyof MoserLabsAppThemes;
+export type MoserLabsAppThemeValue = MoserLabsAppThemes[MoserLabsAppThemeKey];

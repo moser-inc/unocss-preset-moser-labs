@@ -7,13 +7,13 @@ import {
   type Options as PresetPrimeOptions,
 } from 'unocss-preset-prime';
 import { generateTheme, generateShortcuts } from '@/utils/generators';
-import { type MoserLabsAppKey } from '@/utils/theme';
+import { type MoserLabsAppThemeKey } from '@/utils/theme';
 
 export interface PresetMoserLabsOptions {
   /**
    * Set the default theme when the application name is not included in the class (e.g. `bg-primary-gradient`).
    */
-  defaultApp?: MoserLabsAppKey;
+  defaultApp?: MoserLabsAppThemeKey;
   /**
    * Extend `presetWind` options
    */

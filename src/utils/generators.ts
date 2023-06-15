@@ -1,36 +1,56 @@
 import { type Theme } from '@unocss/preset-mini';
 import { type UserShortcuts } from 'unocss';
 import {
-  moserLabsAppsConfig as config,
-  type MoserLabsAppsConfig,
-  type MoserLabsAppKey,
+  moserLabsThemes as themesObj,
+  type MoserLabsThemeValue,
+  type MoserLabsThemeColor,
+  moserLabsAppThemes as appThemesObject,
   type MoserLabsAppThemeKey,
 } from '@/utils/theme';
 
-const keys = Object.keys(config) as MoserLabsAppKey[];
-
-const appThemes = keys.map((key) => ({ key, ...config[key] } as const));
-
-export function generateTheme() {
-  const colors = appThemes.reduce((result, { key, ...theme }) => {
-    return { ...result, [key]: theme };
-  }, {} as { [K in MoserLabsAppKey]: MoserLabsAppsConfig[K] });
-
-  return { colors } as const satisfies Theme;
+function themeObjectToArray<Themes extends Record<string, MoserLabsThemeValue>>(
+  themes: Themes,
+) {
+  const keys = Object.keys(themes) as (keyof Themes)[];
+  return keys.map((key) => ({ key, ...themes[key] } as const));
 }
 
-export function generateShortcuts(defaultApp?: MoserLabsAppKey) {
-  const shortcuts = appThemes.reduce((shortcutsResult, appConfig) => {
+function generateThemeColors<
+  Themes extends Record<string, MoserLabsThemeValue>,
+>(themes: Themes) {
+  return themeObjectToArray(themes).reduce(
+    (result, { key, ...theme }) => ({ ...result, [key]: theme }),
+    {} as { [K in keyof Themes]: Themes[K] },
+  );
+}
+
+export function generateTheme() {
+  const themeColors = generateThemeColors(themesObj);
+  const appThemeColors = generateThemeColors(appThemesObject);
+
+  return {
+    colors: {
+      ...themeColors,
+      ...appThemeColors,
+    },
+  } as const satisfies Theme;
+}
+
+function generateThemeShortcuts<
+  Themes extends Record<string, MoserLabsThemeValue>,
+>(themes: Themes, defaultTheme?: keyof Themes) {
+  return themeObjectToArray(themes).reduce((shortcutsResult, appConfig) => {
     const { key, ...theme } = appConfig;
+    const themeKey = key as string;
 
-    const isDefaultApp = defaultApp === key;
+    const isDefaultApp = defaultTheme === key;
 
-    const themeColorKeys = Object.keys(theme) as MoserLabsAppThemeKey[];
+    const themeColorKeys = Object.keys(theme) as MoserLabsThemeColor[];
 
     const colorShortcuts = themeColorKeys.reduce(
       (colorShortcutsResult, themeColorKey) => {
-        const bgClass = `bg-${key}-${themeColorKey}` as const;
-        const textClass = `text-${key}-${themeColorKey}` as const;
+        const bgClass = `bg-${themeKey}-${themeColorKey}` as const;
+        const textClass = `text-${themeKey}-${themeColorKey}` as const;
 
         const defaultColorShortcuts = isDefaultApp
           ? ({
@@ -41,22 +61,22 @@ export function generateShortcuts(defaultApp?: MoserLabsAppKey) {
 
         return {
           ...colorShortcutsResult,
-          [bgClass]: `bg-${key}-${themeColorKey}-dark light:bg-${key}-${themeColorKey}-light`,
-          [textClass]: `text-${key}-${themeColorKey}-dark light:text-${key}-${themeColorKey}-light`,
+          [bgClass]: `bg-${themeKey}-${themeColorKey}-dark light:bg-${themeKey}-${themeColorKey}-light`,
+          [textClass]: `text-${themeKey}-${themeColorKey}-dark light:text-${themeKey}-${themeColorKey}-light`,
           ...defaultColorShortcuts,
         } as const;
       },
       {} as Record<string, string>,
     );
 
-    const bgGradientClass = `bg-${key}-gradient` as const;
-    const textGradientClass = `text-${key}-gradient` as const;
+    const bgGradientClass = `bg-${themeKey}-gradient` as const;
+    const textGradientClass = `text-${themeKey}-gradient` as const;
 
-    const fromColor = 'primary' satisfies MoserLabsAppThemeKey;
-    const toColor = 'secondary' satisfies MoserLabsAppThemeKey;
+    const fromColor = 'primary' satisfies MoserLabsThemeColor;
+    const toColor = 'secondary' satisfies MoserLabsThemeColor;
 
     const gradientShortcuts = {
-      [bgGradientClass]: `bg-gradient-base from-${key}-${fromColor}-dark light:from-${key}-${fromColor}-light to-${key}-${toColor}-dark light:to-${key}-${toColor}-light`,
+      [bgGradientClass]: `bg-gradient-base from-${themeKey}-${fromColor}-dark light:from-${themeKey}-${fromColor}-light to-${themeKey}-${toColor}-dark light:to-${themeKey}-${toColor}-light`,
       [textGradientClass]: `text-gradient-base ${bgGradientClass}`,
     } as const;
 
@@ -74,10 +94,20 @@ export function generateShortcuts(defaultApp?: MoserLabsAppKey) {
       ...defaultGradientShortcuts,
     } as const;
   }, {} as Record<string, string>);
+}
 
-  return {
+export function generateShortcuts(defaultApp?: MoserLabsAppThemeKey) {
+  const baseShortcuts = {
     ['bg-gradient-base']: 'bg-gradient-linear bg-gradient-shape-[111deg]',
     ['text-gradient-base']: 'bg-clip-text text-transparent',
-    ...shortcuts,
+  } as const;
+
+  const themeShortcuts = generateThemeShortcuts(themesObj);
+  const appThemeShortcuts = generateThemeShortcuts(appThemesObject, defaultApp);
+
+  return {
+    ...baseShortcuts,
+    ...themeShortcuts,
+    ...appThemeShortcuts,
   } as const satisfies UserShortcuts;
 }
