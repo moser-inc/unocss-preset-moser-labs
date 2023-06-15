@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.1.0...v1.1.1) (2023-06-15)
+
+
+### Bug Fixes
+
+* fix multi word theme names ([5959a99](https://github.com/moser-inc/unocss-preset-moser-labs/commit/5959a999b04f3e704b2457f4db9f2352d1cba116))
+
 # [1.1.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.0.3...v1.1.0) (2023-06-15)
 
 
