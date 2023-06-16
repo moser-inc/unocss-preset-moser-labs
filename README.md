@@ -85,9 +85,9 @@ export default defineConfig({
   presets: [presetMoserLabs()],
   theme: {
     colors: {
-      success: primeThemeColors.green.base,
-      warning: primeThemeColors.orange.base,
-      error: primeThemeColors.red.base,
+      success: primeThemeColors.green[500],
+      warning: primeThemeColors.orange[500],
+      error: primeThemeColors.red[500],
     },
   },
 });

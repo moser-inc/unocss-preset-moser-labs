@@ -1,10 +1,10 @@
 import { presetWind, presetIcons, type Preset } from 'unocss';
 import { type IconsOptions as PresetIconsOptions } from 'unocss/preset-icons';
-import { type PresetWindOptions } from 'unocss/preset-wind';
+import { type PresetWindOptions, type Theme } from 'unocss/preset-wind';
 import {
   presetPrime,
   primeThemeColors,
-  type Options as PresetPrimeOptions,
+  type PresetPrimeOptions,
 } from 'unocss-preset-prime';
 import { generateTheme, generateShortcuts } from '@/utils/generators';
 import { type MoserLabsAppThemeKey } from '@/utils/theme';
@@ -36,7 +36,9 @@ export interface PresetMoserLabsOptions {
 
 export const moserLabsTheme = generateTheme();
 
-export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
+export function presetMoserLabs(
+  options?: PresetMoserLabsOptions,
+): Preset<Theme> {
   const {
     defaultApp,
     extendWindOptions,
