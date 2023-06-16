@@ -1,6 +1,5 @@
 import { type Theme } from '@unocss/preset-mini';
 import { type UserShortcuts } from 'unocss';
-import { kebabCase } from '@/utils/stringConverters';
 import {
   moserLabsThemes as themesObj,
   type MoserLabsThemeValue,
@@ -43,7 +42,7 @@ function generateThemeShortcuts<
   return themeObjectToArray(themes).reduce((shortcutsResult, themeItem) => {
     const { key, ...theme } = themeItem;
 
-    const themeKey = kebabCase(String(key));
+    const themeKey = String(key);
 
     const isDefaultApp = defaultTheme === key;
 

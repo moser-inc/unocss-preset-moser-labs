@@ -120,10 +120,10 @@ export const moserLabsAppThemes = {
   eats: moserLabsThemes.lemonade,
   engagements: moserLabsThemes.aero,
   idealab: moserLabsThemes.peaches,
-  roomGrabber: moserLabsThemes.sylvian,
+  roomgrabber: moserLabsThemes.sylvian,
   spenio: moserLabsThemes.tortuga,
   tickets: moserLabsThemes.sherbet,
-  timeTracking: moserLabsThemes.zomp,
+  timetracking: moserLabsThemes.zomp,
   training: moserLabsThemes.eventide,
   wellness: moserLabsThemes.vista,
 } as const satisfies Record<string, MoserLabsThemeValue>;
