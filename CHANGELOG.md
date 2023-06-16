@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.1.3...v1.2.0) (2023-06-16)
+
+
+### Features
+
+* update preset prime to latest version ([d8ccc98](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d8ccc98f75c07baaccc219643cedc8eb1d4e488e))
+
 ## [1.1.3](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.1.2...v1.1.3) (2023-06-16)
 
 
