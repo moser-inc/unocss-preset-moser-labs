@@ -75,11 +75,11 @@
     "@moser-inc/eslint-config": "^1.7.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "^20.3.1",
+    "@types/node": "^18.16.18",
     "prettier": "^2.8.8",
     "semantic-release": "^21.0.5",
     "standard-version": "^9.5.0",
-    "tsup": "^6.7.0",
+    "tsup": "^7.0.0",
     "typescript": "~5.0.4",
     "unocss": "^0.53.1"
   }
