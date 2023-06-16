@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.1.1...v1.1.2) (2023-06-16)
+
+
+### Bug Fixes
+
+* fix kebab case key name in shortcuts generator ([b7d2f1f](https://github.com/moser-inc/unocss-preset-moser-labs/commit/b7d2f1f4540ee9d06d49a2080498ee9fec802584))
+
 ## [1.1.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.1.0...v1.1.1) (2023-06-15)
 
 
