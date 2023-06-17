@@ -1,4 +1,5 @@
 import { primeThemeColors } from 'unocss-preset-prime';
+import { generateTheme } from '@/utils/generators';
 
 export const moserLabsThemes = {
   lemonade: {
@@ -131,3 +132,5 @@ export const moserLabsAppThemes = {
 export type MoserLabsAppThemes = typeof moserLabsAppThemes;
 export type MoserLabsAppThemeKey = keyof MoserLabsAppThemes;
 export type MoserLabsAppThemeValue = MoserLabsAppThemes[MoserLabsAppThemeKey];
+
+export const moserLabsTheme = generateTheme();

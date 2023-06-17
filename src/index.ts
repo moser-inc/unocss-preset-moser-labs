@@ -6,8 +6,9 @@ import {
   primeThemeColors,
   type PresetPrimeOptions,
 } from 'unocss-preset-prime';
-import { generateTheme, generateShortcuts } from '@/utils/generators';
-import { type MoserLabsAppThemeKey } from '@/utils/theme';
+import { moserLabsRules } from '@/utils/rules';
+import { moserLabsShortcuts } from '@/utils/shortcuts';
+import { moserLabsTheme, type MoserLabsAppThemeKey } from '@/utils/theme';
 
 export interface PresetMoserLabsOptions {
   /**
@@ -33,8 +34,6 @@ export interface PresetMoserLabsOptions {
    */
   extendIconsOptions?: PresetIconsOptions;
 }
-
-export const moserLabsTheme = generateTheme();
 
 export function presetMoserLabs(
   options?: PresetMoserLabsOptions,
@@ -69,10 +68,8 @@ export function presetMoserLabs(
       }),
     ],
     theme: moserLabsTheme,
-    shortcuts: [
-      [/^pi-(.*?)$/, ([, d]) => `i-prime-${d}`],
-      generateShortcuts(defaultApp),
-    ],
+    rules: moserLabsRules,
+    shortcuts: moserLabsShortcuts(defaultApp),
   };
 }
 
