@@ -46,7 +46,7 @@ export function presetMoserLabs(
   } = options ?? {};
 
   return {
-    name: 'moser-labs',
+    name: '@moser-inc/unocss-preset-moser-labs',
     presets: [
       presetWind({ dark: 'media', ...extendWindOptions }),
       presetPrime(extendPrimeOptions),
