@@ -71,20 +71,26 @@ function generateThemeShortcuts<
     );
 
     const bgGradientClass = `bg-${themeKey}-gradient` as const;
+    const bgGradientReverseClass = `${bgGradientClass}-reverse` as const;
     const textGradientClass = `text-${themeKey}-gradient` as const;
+    const textGradientReverseClass = `${textGradientClass}-reverse` as const;
 
     const fromColor = 'primary' satisfies MoserLabsThemeColor;
     const toColor = 'secondary' satisfies MoserLabsThemeColor;
 
     const gradientShortcuts = {
       [bgGradientClass]: `bg-gradient-base from-${themeKey}-${fromColor}-dark light:from-${themeKey}-${fromColor}-light to-${themeKey}-${toColor}-dark light:to-${themeKey}-${toColor}-light`,
+      [bgGradientReverseClass]: `bg-gradient-base from-${themeKey}-${toColor}-dark light:from-${themeKey}-${toColor}-light to-${themeKey}-${fromColor}-dark light:to-${themeKey}-${fromColor}-light`,
       [textGradientClass]: `text-gradient-base ${bgGradientClass}`,
+      [textGradientReverseClass]: `text-gradient-base ${bgGradientReverseClass}`,
     } as const;
 
     const defaultGradientShortcuts = isDefaultApp
       ? ({
           ['bg-primary-gradient']: bgGradientClass,
+          ['bg-primary-gradient-reverse']: bgGradientReverseClass,
           ['text-primary-gradient']: textGradientClass,
+          ['text-primary-gradient-reverse']: textGradientReverseClass,
         } as const)
       : undefined;
 
