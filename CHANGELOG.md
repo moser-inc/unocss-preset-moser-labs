@@ -1,3 +1,11 @@
+## [1.3.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.2.1...v1.3.0) (2023-06-17)
+
+
+### Features
+
+* add grid auto fit and auto fill rules and restructure files ([542980c](https://github.com/moser-inc/unocss-preset-moser-labs/commit/542980c50f442a98dd5a5bf1ffa87d17ad030f2e))
+* add shortcuts for reversed theme gradients ([d65268d](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d65268d085baa50a4b11a75dcefcdc47f33dbb43))
+
 ### [1.2.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.2.0...v1.2.1) (2023-06-17)
 
 # [1.2.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.1.3...v1.2.0) (2023-06-16)
