@@ -1,11 +1,12 @@
 module.exports = {
-  env: {
-    es2021: true,
-    node: true,
-  },
   extends: ['@moser-inc'],
   rules: {
-    '@typescript-eslint/consistent-type-imports': 'warn',
+    '@typescript-eslint/consistent-type-imports': [
+      'warn',
+      { fixStyle: 'inline-type-imports' },
+    ],
+    'import/consistent-type-specifier-style': ['warn', 'prefer-inline'],
+    'import/no-duplicates': ['warn', { 'prefer-inline': true }],
   },
   parserOptions: {
     ecmaVersion: 'latest',
