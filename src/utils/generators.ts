@@ -44,7 +44,7 @@ function generateThemeShortcuts<
 
     const themeKey = String(key);
 
-    const isDefaultApp = defaultTheme === key;
+    const isDefaultTheme = defaultTheme === key;
 
     const themeColorKeys = Object.keys(theme) as MoserLabsThemeColor[];
 
@@ -53,7 +53,7 @@ function generateThemeShortcuts<
         const bgClass = `bg-${themeKey}-${themeColorKey}` as const;
         const textClass = `text-${themeKey}-${themeColorKey}` as const;
 
-        const defaultColorShortcuts = isDefaultApp
+        const defaultColorShortcuts = isDefaultTheme
           ? ({
               [`bg-${themeColorKey}`]: bgClass,
               [`text-${themeColorKey}`]: textClass,
@@ -85,7 +85,7 @@ function generateThemeShortcuts<
       [textGradientReverseClass]: `text-gradient-base ${bgGradientReverseClass}`,
     } as const;
 
-    const defaultGradientShortcuts = isDefaultApp
+    const defaultGradientShortcuts = isDefaultTheme
       ? ({
           ['bg-primary-gradient']: bgGradientClass,
           ['bg-primary-gradient-reverse']: bgGradientReverseClass,
