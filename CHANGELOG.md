@@ -1,3 +1,10 @@
+### [1.3.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.3.0...v1.3.1) (2023-06-17)
+
+
+### Bug Fixes
+
+* fix auto grid rule fallback unit ([452687b](https://github.com/moser-inc/unocss-preset-moser-labs/commit/452687b41d9787275fa689d707df9caa0598dad3))
+
 ## [1.3.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.2.1...v1.3.0) (2023-06-17)
 
 
