@@ -12,8 +12,10 @@ const modes: Record<string, string> = {
 };
 
 function handleAutoGrid([, d, m, s]: string[], { theme }: RuleContext<Theme>) {
-  const isUnitNumber = /^\d+$/.test(s);
-  const v = theme.width?.[s] ?? isUnitNumber ? `${s}rem` : s;
+  const isNumber = /^\d+$/.test(s);
+  const fallbackValue = isNumber ? `${s}rem` : s;
+  const v = theme.width?.[s] ?? fallbackValue;
+
   if (!v) return;
 
   return {
