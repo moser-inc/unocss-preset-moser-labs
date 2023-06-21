@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.3.1...v1.4.0) (2023-06-21)
+
+
+### Features
+
+* improve dynamic auto grid rule and add autocomplete support ([42c7f33](https://github.com/moser-inc/unocss-preset-moser-labs/commit/42c7f3313a44bd55364ce11de421257f86584c34))
+
 ### [1.3.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.3.0...v1.3.1) (2023-06-17)
 
 
