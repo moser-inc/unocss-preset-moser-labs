@@ -41,12 +41,12 @@ export const moserLabsThemes = {
   sylvian: {
     primary: {
       dark: primeThemeColors.cyan[300],
-      light: primeThemeColors.cyan[600],
+      light: primeThemeColors.cyan[500],
       text: primeThemeColors.surface.ground,
     },
     secondary: {
       dark: primeThemeColors.green[300],
-      light: primeThemeColors.green[600],
+      light: primeThemeColors.green[500],
       text: primeThemeColors.surface.ground,
     },
   },
