@@ -1,3 +1,10 @@
+### [1.4.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.4.0...v1.4.1) (2023-06-28)
+
+
+### Bug Fixes
+
+* update sylvian light theme colors to be more accessible ([96eb1bf](https://github.com/moser-inc/unocss-preset-moser-labs/commit/96eb1bfa6f66c010cc6c2287f6ea2fcfcfe616d6))
+
 ## [1.4.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.3.1...v1.4.0) (2023-06-21)
 
 
