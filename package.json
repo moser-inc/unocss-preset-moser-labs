@@ -74,14 +74,14 @@
   },
   "dependencies": {
     "@iconify-json/prime": "^1.1.5",
-    "@iconify/utils": "^2.1.6",
+    "@iconify/utils": "^2.1.7",
     "unocss-preset-prime": "^3.0.1"
   },
   "devDependencies": {
     "@moser-inc/eslint-config": "^1.7.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "^18.16.18",
+    "@types/node": "^18.16.19",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@vitejs/plugin-react-swc": "^3.3.2",
@@ -89,11 +89,11 @@
     "primereact": "^9.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "semantic-release": "^21.0.5",
+    "semantic-release": "^21.0.7",
     "standard-version": "^9.5.0",
-    "tsup": "^7.0.0",
+    "tsup": "^7.1.0",
     "typescript": "~5.0.4",
-    "unocss": "^0.53.1",
+    "unocss": "^0.53.5",
     "vite": "^4.4.2"
   }
 }
