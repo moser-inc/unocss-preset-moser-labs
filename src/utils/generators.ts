@@ -94,11 +94,17 @@ function generateThemeShortcuts<
         } as const)
       : undefined;
 
+    const iconShortcuts = {
+      [`i-logo-${themeKey}`]: `i-logo-${themeKey}-dark light:i-logo-${themeKey}-light`,
+      [`i-logo-${themeKey}-large`]: `i-logo-${themeKey}-dark-large light:i-logo-${themeKey}-light-large`,
+    } as const;
+
     return {
       ...shortcutsResult,
       ...colorShortcuts,
       ...gradientShortcuts,
       ...defaultGradientShortcuts,
+      ...iconShortcuts,
     } as const;
   }, {} as Record<string, string>);
 }
