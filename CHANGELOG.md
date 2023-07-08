@@ -1,3 +1,18 @@
+## [1.5.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.4.1...v1.5.0) (2023-07-08)
+
+
+### Features
+
+* add labs app icons and logos to icons preset ([51c75ce](https://github.com/moser-inc/unocss-preset-moser-labs/commit/51c75ce29f9ad6c370185f5eead2a550d1559d00))
+* export moser labs theme and app keys ([e97673c](https://github.com/moser-inc/unocss-preset-moser-labs/commit/e97673cc09114e697b7b9736148f524fe4671ed5))
+
+
+### Bug Fixes
+
+* only apply default scale to prime icons ([328ec66](https://github.com/moser-inc/unocss-preset-moser-labs/commit/328ec6652e8352b92bda2d4152c367c449ec4f2a))
+* remove dynamic loading of iconify prime icons ([958509e](https://github.com/moser-inc/unocss-preset-moser-labs/commit/958509e0eda2278b37f94014e67820f45273ae12))
+* remove import type assertion for prime icons import ([6108515](https://github.com/moser-inc/unocss-preset-moser-labs/commit/6108515b50698bda2353a3eb81bd8ea4dc06d2cc))
+
 ### [1.4.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.4.0...v1.4.1) (2023-06-28)
 
 
