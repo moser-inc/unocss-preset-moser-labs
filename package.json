@@ -64,6 +64,7 @@
     "lint": "eslint . --no-fix --ignore-path .gitignore --max-warnings 0",
     "type-check": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "playground:dev": "vite --config ./playground/vite.config.ts",
     "release": "standard-version",
     "semantic-release": "semantic-release",
     "prepack": "npm run build"
@@ -81,11 +82,18 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/node": "^18.16.18",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@vitejs/plugin-react-swc": "^3.3.2",
     "prettier": "^2.8.8",
+    "primereact": "^9.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "semantic-release": "^21.0.5",
     "standard-version": "^9.5.0",
     "tsup": "^7.0.0",
     "typescript": "~5.0.4",
-    "unocss": "^0.53.1"
+    "unocss": "^0.53.1",
+    "vite": "^4.4.2"
   }
 }
