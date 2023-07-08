@@ -1,3 +1,10 @@
+### [1.5.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.5.0...v1.5.1) (2023-07-08)
+
+
+### Bug Fixes
+
+* rename labs icon prefix and include icons in dist ([7515047](https://github.com/moser-inc/unocss-preset-moser-labs/commit/7515047d4179605eedcc761ed14ecfe9ed831bdb))
+
 ## [1.5.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.4.1...v1.5.0) (2023-07-08)
 
 
