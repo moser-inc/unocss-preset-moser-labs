@@ -61,7 +61,6 @@ export function presetMoserLabs(
         extraProperties: {
           display: 'inline-block',
           'vertical-align': 'middle',
-          scale: '1.75',
           ...extendIconsOptions?.extraProperties,
         },
       }),
