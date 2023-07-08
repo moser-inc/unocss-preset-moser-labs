@@ -56,8 +56,6 @@ export function presetMoserLabs(
         collections: {
           app: FileSystemIconLoader('src/icons/app'),
           logo: FileSystemIconLoader('src/icons/logo'),
-          prime: () =>
-            import('@iconify-json/prime/icons.json').then((i) => i.default),
           ...extendIconsOptions?.collections,
         },
         extraProperties: {
