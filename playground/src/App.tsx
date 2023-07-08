@@ -1,7 +1,18 @@
-import { moserLabsAppThemeKeys } from '../../dist';
+import { Fragment } from 'react';
+import { type MoserLabsAppThemeKey } from '../../dist';
 
 export function App() {
-  const keys = moserLabsAppThemeKeys;
+  const keys = [
+    'eats',
+    'engagements',
+    'idealab',
+    'roomgrabber',
+    'spenio',
+    'tickets',
+    'timetracking',
+    'training',
+    'wellness',
+  ] as MoserLabsAppThemeKey[];
 
   return (
     <main className="min-h-screen max-w-6xl mx-auto p-10 text-xl font-semibold flex flex-col gap-6">
@@ -13,55 +24,43 @@ export function App() {
         <div className="flex flex-col gap-4">
           <div className="flex flex-wrap gap-4">
             {keys.map((key) => (
-              <>
+              <Fragment key={key}>
                 <div
-                  key={`${key}-primary`}
                   className={`bg-${key}-primary text-${key}-primary-text px-4 py-2 rounded-xl`}
                 >
                   bg-{key}-primary
                 </div>
 
                 <div
-                  key={`${key}-secondary`}
                   className={`bg-${key}-secondary text-${key}-secondary-text px-4 py-2 rounded-xl`}
                 >
                   bg-{key}-secondary
                 </div>
 
                 <div
-                  key={`${key}-gradient`}
                   className={`bg-${key}-gradient text-${key}-primary-text px-4 py-2 rounded-xl`}
                 >
                   bg-{key}-gradient
                 </div>
-              </>
+              </Fragment>
             ))}
           </div>
 
           <div className="flex flex-wrap gap-4">
             {keys.map((key) => (
-              <>
-                <div
-                  key={`${key}-primary`}
-                  className={`text-${key}-primary px-4 py-2 rounded-xl`}
-                >
+              <Fragment key={key}>
+                <div className={`text-${key}-primary px-4 py-2 rounded-xl`}>
                   text-{key}-primary
                 </div>
 
-                <div
-                  key={`${key}-secondary`}
-                  className={`text-${key}-secondary px-4 py-2 rounded-xl`}
-                >
+                <div className={`text-${key}-secondary px-4 py-2 rounded-xl`}>
                   text-{key}-secondary
                 </div>
 
-                <div
-                  key={`${key}-gradient`}
-                  className={`text-${key}-gradient px-4 py-2 rounded-xl`}
-                >
+                <div className={`text-${key}-gradient px-4 py-2 rounded-xl`}>
                   text-{key}-gradient
                 </div>
-              </>
+              </Fragment>
             ))}
           </div>
         </div>
@@ -73,8 +72,8 @@ export function App() {
         <div className="flex flex-wrap gap-6">
           {keys.map((key) => (
             <div key={key} className="flex items-center gap-4">
-              <i className={`i-app-${key} text-${key}-primary text-5xl`} />
-              <span>i-app-{key}</span>
+              <i className={`i-labs-${key} text-${key}-primary text-5xl`} />
+              <span>i-labs-{key}</span>
             </div>
           ))}
         </div>
@@ -83,19 +82,19 @@ export function App() {
       <section>
         <h2>Logos</h2>
 
-        <div className="flex flex-wrap gap-10 mb-10">
+        <div className="flex flex-wrap gap-6 mb-10">
           {keys.map((key) => (
-            <>
-              <div key={key} className="flex items-center gap-4">
+            <Fragment key={key}>
+              <div className="flex items-center gap-4">
                 <i className={`i-logo-${key} text-5xl`} />
                 <span>i-logo-{key}</span>
               </div>
 
-              <div key={key} className="flex items-center gap-4">
+              <div className="flex items-center gap-4">
                 <i className={`i-logo-${key}-large text-5xl`} />
                 <span>i-logo-{key}-large</span>
               </div>
-            </>
+            </Fragment>
           ))}
         </div>
       </section>

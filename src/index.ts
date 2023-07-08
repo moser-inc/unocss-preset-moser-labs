@@ -1,3 +1,4 @@
+import { resolve } from 'node:path';
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders';
 import { presetWind, presetIcons, type Preset } from 'unocss';
 import { type IconsOptions as PresetIconsOptions } from 'unocss/preset-icons';
@@ -54,8 +55,8 @@ export function presetMoserLabs(
       presetIcons({
         ...extendIconsOptions,
         collections: {
-          app: FileSystemIconLoader('src/icons/app'),
-          logo: FileSystemIconLoader('src/icons/logo'),
+          labs: FileSystemIconLoader(resolve(__dirname, './icons/labs')),
+          logo: FileSystemIconLoader(resolve(__dirname, './icons/logo')),
           ...extendIconsOptions?.collections,
         },
         extraProperties: {

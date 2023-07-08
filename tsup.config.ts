@@ -8,4 +8,5 @@ export default defineConfig({
   skipNodeModulesBundle: true,
   shims: true,
   format: ['cjs', 'esm'],
+  onSuccess: 'cp -a ./icons ./dist',
 });

@@ -21,7 +21,7 @@ export default defineConfig({
         `text-${appThemeKey}-secondary`,
         `text-${appThemeKey}-secondary-text`,
         `text-${appThemeKey}-gradient`,
-        `i-app-${appThemeKey}`,
+        `i-labs-${appThemeKey}`,
         `i-logo-${appThemeKey}`,
         `i-logo-${appThemeKey}-large`,
       ]),
