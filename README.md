@@ -71,7 +71,7 @@ presetMoserLabs({
 });
 ```
 
-## Extending
+## Semantic Colors
 
 This preset exports helpful types and the generated theme colors directly for extending the theme to support application specific semantic colors.
 
