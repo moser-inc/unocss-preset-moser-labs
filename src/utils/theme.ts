@@ -117,6 +117,10 @@ export type MoserLabsThemeKey = keyof MoserLabsThemes;
 export type MoserLabsThemeValue = MoserLabsThemes[MoserLabsThemeKey];
 export type MoserLabsThemeColor = keyof MoserLabsThemeValue;
 
+export const moserLabsThemeKeys = Object.keys(
+  moserLabsThemes,
+) as MoserLabsThemeKey[];
+
 export const moserLabsAppThemes = {
   eats: moserLabsThemes.lemonade,
   engagements: moserLabsThemes.aero,
@@ -132,5 +136,9 @@ export const moserLabsAppThemes = {
 export type MoserLabsAppThemes = typeof moserLabsAppThemes;
 export type MoserLabsAppThemeKey = keyof MoserLabsAppThemes;
 export type MoserLabsAppThemeValue = MoserLabsAppThemes[MoserLabsAppThemeKey];
+
+export const moserLabsAppThemeKeys = Object.keys(
+  moserLabsAppThemes,
+) as MoserLabsAppThemeKey[];
 
 export const moserLabsTheme = generateTheme();
