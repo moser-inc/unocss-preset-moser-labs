@@ -6,6 +6,8 @@ import { type MoserLabsAppThemeKey } from '@/utils/theme';
 export function moserLabsShortcuts(defaultApp?: MoserLabsAppThemeKey) {
   return [
     [/^pi-(.*?)$/, ([, d]) => `i-prime-${d} scale-175`],
+    [/^labs-(.*?)$/, ([, d]) => `i-labs-${d} scale-175`],
+    [/^mli-(.*?)$/, ([, d]) => `labs-${d}`],
     generateShortcuts(defaultApp),
   ] satisfies UserShortcuts<Theme>;
 }

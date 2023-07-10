@@ -72,8 +72,10 @@ export function App() {
         <div className="flex flex-wrap gap-6">
           {keys.map((key) => (
             <div key={key} className="flex items-center gap-4">
-              <i className={`i-labs-${key} text-${key}-primary text-5xl`} />
-              <span>i-labs-{key}</span>
+              <i
+                className={`i-labs-logo-${key} text-${key}-primary text-5xl`}
+              />
+              <span>i-labs-logo-{key}</span>
             </div>
           ))}
         </div>
@@ -86,13 +88,13 @@ export function App() {
           {keys.map((key) => (
             <Fragment key={key}>
               <div className="flex items-center gap-4">
-                <i className={`i-logo-${key} text-5xl`} />
-                <span>i-logo-{key}</span>
+                <i className={`i-labs-logo-${key}-badge text-5xl`} />
+                <span>i-labs-logo-{key}-badge</span>
               </div>
 
               <div className="flex items-center gap-4">
-                <i className={`i-logo-${key}-large text-5xl`} />
-                <span>i-logo-{key}-large</span>
+                <i className={`i-labs-logo-${key}-badge-lg text-5xl`} />
+                <span>i-labs-logo-{key}-badge-lg</span>
               </div>
             </Fragment>
           ))}
