@@ -2,18 +2,6 @@ import { primeThemeColors } from 'unocss-preset-prime';
 import { generateTheme } from '@/utils/generators';
 
 export const moserLabsThemes = {
-  lemonade: {
-    primary: {
-      dark: primeThemeColors.yellow[300],
-      light: primeThemeColors.yellow[500],
-      text: primeThemeColors.surface.ground,
-    },
-    secondary: {
-      dark: primeThemeColors.pink[300],
-      light: primeThemeColors.pink[500],
-      text: primeThemeColors.surface.ground,
-    },
-  },
   aero: {
     primary: {
       dark: primeThemeColors.blue[200],
@@ -26,6 +14,30 @@ export const moserLabsThemes = {
       text: primeThemeColors.surface.ground,
     },
   },
+  eventide: {
+    primary: {
+      dark: primeThemeColors.purple[300],
+      light: primeThemeColors.purple[600],
+      text: primeThemeColors.surface.ground,
+    },
+    secondary: {
+      dark: primeThemeColors.pink[300],
+      light: primeThemeColors.pink[600],
+      text: primeThemeColors.surface.ground,
+    },
+  },
+  lemonade: {
+    primary: {
+      dark: primeThemeColors.yellow[300],
+      light: primeThemeColors.yellow[500],
+      text: primeThemeColors.surface.ground,
+    },
+    secondary: {
+      dark: primeThemeColors.pink[300],
+      light: primeThemeColors.pink[500],
+      text: primeThemeColors.surface.ground,
+    },
+  },
   peaches: {
     primary: {
       dark: primeThemeColors.orange[300],
@@ -35,6 +47,30 @@ export const moserLabsThemes = {
     secondary: {
       dark: primeThemeColors.yellow[200],
       light: primeThemeColors.yellow[500],
+      text: primeThemeColors.surface.ground,
+    },
+  },
+  razzmatazz: {
+    primary: {
+      dark: '#dc19a4',
+      light: '#a51080',
+      text: primeThemeColors.surface.ground,
+    },
+    secondary: {
+      dark: primeThemeColors.blue[500],
+      light: primeThemeColors.blue[700],
+      text: primeThemeColors.surface.ground,
+    },
+  },
+  sherbet: {
+    primary: {
+      dark: primeThemeColors.pink[200],
+      light: primeThemeColors.pink[500],
+      text: primeThemeColors.surface.ground,
+    },
+    secondary: {
+      dark: primeThemeColors.orange[300],
+      light: primeThemeColors.orange[500],
       text: primeThemeColors.surface.ground,
     },
   },
@@ -62,15 +98,15 @@ export const moserLabsThemes = {
       text: primeThemeColors.surface.ground,
     },
   },
-  sherbet: {
+  vista: {
     primary: {
-      dark: primeThemeColors.pink[200],
-      light: primeThemeColors.pink[500],
+      dark: primeThemeColors.indigo[300],
+      light: primeThemeColors.indigo[500],
       text: primeThemeColors.surface.ground,
     },
     secondary: {
-      dark: primeThemeColors.orange[300],
-      light: primeThemeColors.orange[500],
+      dark: primeThemeColors.blue[500],
+      light: primeThemeColors.blue[500],
       text: primeThemeColors.surface.ground,
     },
   },
@@ -83,30 +119,6 @@ export const moserLabsThemes = {
     secondary: {
       dark: primeThemeColors.blue[400],
       light: primeThemeColors.blue[600],
-      text: primeThemeColors.surface.ground,
-    },
-  },
-  eventide: {
-    primary: {
-      dark: primeThemeColors.purple[300],
-      light: primeThemeColors.purple[600],
-      text: primeThemeColors.surface.ground,
-    },
-    secondary: {
-      dark: primeThemeColors.pink[300],
-      light: primeThemeColors.pink[600],
-      text: primeThemeColors.surface.ground,
-    },
-  },
-  vista: {
-    primary: {
-      dark: primeThemeColors.indigo[300],
-      light: primeThemeColors.indigo[500],
-      text: primeThemeColors.surface.ground,
-    },
-    secondary: {
-      dark: primeThemeColors.blue[500],
-      light: primeThemeColors.blue[500],
       text: primeThemeColors.surface.ground,
     },
   },
@@ -125,6 +137,7 @@ export const moserLabsAppThemes = {
   eats: moserLabsThemes.lemonade,
   engagements: moserLabsThemes.aero,
   idealab: moserLabsThemes.peaches,
+  labs: moserLabsThemes.razzmatazz,
   roomgrabber: moserLabsThemes.sylvian,
   spenio: moserLabsThemes.tortuga,
   tickets: moserLabsThemes.sherbet,

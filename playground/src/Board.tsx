@@ -6,6 +6,7 @@ export function Board(props: { className?: string }) {
     'eats',
     'engagements',
     'idealab',
+    'labs',
     'roomgrabber',
     'spenio',
     'tickets',
