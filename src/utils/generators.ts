@@ -95,8 +95,8 @@ function generateThemeShortcuts<
       : undefined;
 
     const iconShortcuts = {
-      [`i-labs-logo-${themeKey}-badge`]: `i-labs-logo-${themeKey}-badge-dark light:i-labs-logo-${themeKey}-badge-light`,
-      [`i-labs-logo-${themeKey}-badge-lg`]: `i-labs-logo-${themeKey}-badge-lg-dark light:i-labs-logo-${themeKey}-badge-lg-light`,
+      [`i-mli-${themeKey}-badge`]: `i-mli-${themeKey}-badge-dark light:i-mli-${themeKey}-badge-light`,
+      [`i-mli-${themeKey}-badge-lg`]: `i-mli-${themeKey}-badge-lg-dark light:i-mli-${themeKey}-badge-lg-light`,
     } as const;
 
     return {

@@ -20,9 +20,8 @@ export default defineConfig({
     `text-${appThemeKey}-secondary`,
     `text-${appThemeKey}-secondary-text`,
     `text-${appThemeKey}-gradient`,
-    `i-labs-${appThemeKey}`,
-    `i-labs-logo-${appThemeKey}`,
-    `i-labs-logo-${appThemeKey}-badge`,
-    `i-labs-logo-${appThemeKey}-badge-lg`,
+    `i-mli-${appThemeKey}`,
+    `i-mli-${appThemeKey}-badge`,
+    `i-mli-${appThemeKey}-badge-lg`,
   ]),
 });
