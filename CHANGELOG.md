@@ -1,3 +1,15 @@
+## [1.7.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.6.0...v1.7.0) (2023-07-10)
+
+
+### Features
+
+* switch to mli prefix for icons and update preview ([03f59a7](https://github.com/moser-inc/unocss-preset-moser-labs/commit/03f59a738a53a893dfdb5980ab0840a4799e8b11))
+
+
+### Performance Improvements
+
+* remove unused css from test themes ([0aee1c2](https://github.com/moser-inc/unocss-preset-moser-labs/commit/0aee1c2ddf46caca4d6f1bf0135fa95b035f55aa))
+
 ## [1.6.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.5.1...v1.6.0) (2023-07-10)
 
 
