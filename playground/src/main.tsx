@@ -1,4 +1,5 @@
-import 'primereact/resources/themes/lara-dark-indigo/theme.css';
+import './lara-dark-indigo-theme.scss';
+import './lara-light-indigo-theme.scss';
 import 'virtual:uno.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';

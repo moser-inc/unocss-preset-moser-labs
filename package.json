@@ -89,6 +89,7 @@
     "primereact": "^9.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sass": "^1.63.6",
     "semantic-release": "^21.0.7",
     "standard-version": "^9.5.0",
     "tsup": "^7.1.0",
