@@ -1,3 +1,11 @@
+## [1.6.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.5.1...v1.6.0) (2023-07-10)
+
+
+### Features
+
+* add moser labs icon logo and theme ([42bf116](https://github.com/moser-inc/unocss-preset-moser-labs/commit/42bf116948f3bdf83861af2f7450a186f5d161a4))
+* place all labs icons under a single prefix and rename logos ([c226c9e](https://github.com/moser-inc/unocss-preset-moser-labs/commit/c226c9e7bb49c410aefb0fc9d6d9685041022758))
+
 ### [1.5.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.5.0...v1.5.1) (2023-07-08)
 
 
