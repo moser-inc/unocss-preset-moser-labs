@@ -34,4 +34,17 @@ export const moserLabsRules = [
       ],
     },
   ],
+  [
+    /^i-scale-(\d+)$/,
+    ([, b]: string[]) => {
+      const v = h.bracket.cssvar.fraction.percent(b);
+
+      if (v === null || v === undefined) return;
+
+      return { scale: v };
+    },
+    {
+      autocomplete: 'i-scale-<num>',
+    },
+  ],
 ] satisfies Rule<Theme>[];
