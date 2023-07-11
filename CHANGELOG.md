@@ -1,3 +1,10 @@
+### [1.7.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.7.0...v1.7.1) (2023-07-11)
+
+
+### Bug Fixes
+
+* fix safari icon scaling issue using custom scale rule ([f28294c](https://github.com/moser-inc/unocss-preset-moser-labs/commit/f28294cf0712a0f7bfb1e4d901a4865d7bdf5f55))
+
 ## [1.7.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.6.0...v1.7.0) (2023-07-10)
 
 
