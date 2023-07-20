@@ -1,3 +1,15 @@
+## [1.8.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.7.1...v1.8.0) (2023-07-20)
+
+
+### Features
+
+* update eats icons ([a39a490](https://github.com/moser-inc/unocss-preset-moser-labs/commit/a39a4900db13777ac9f4c621ad9efba0774adc05))
+
+
+### Bug Fixes
+
+* refresh moser labs logo ([c638872](https://github.com/moser-inc/unocss-preset-moser-labs/commit/c638872e105e619b044245bea2d50e7e3bdd04be))
+
 ### [1.7.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.7.0...v1.7.1) (2023-07-11)
 
 
