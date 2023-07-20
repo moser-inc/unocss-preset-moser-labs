@@ -1,4 +1,4 @@
-import { type Theme } from '@unocss/preset-mini';
+import { type Theme } from '@unocss/preset-wind';
 import { type UserShortcuts } from 'unocss';
 import {
   moserLabsThemes as themesObj,
@@ -15,7 +15,7 @@ function themeObjectToArray<Themes extends Record<string, MoserLabsThemeValue>>(
   return keys.map((key) => ({ key, ...themes[key] } as const));
 }
 
-function generateThemeColors<
+function generateLabsThemeColors<
   Themes extends Record<string, MoserLabsThemeValue>,
 >(themes: Themes) {
   return themeObjectToArray(themes).reduce(
@@ -24,16 +24,14 @@ function generateThemeColors<
   );
 }
 
-export function generateTheme() {
-  const themeColors = generateThemeColors(themesObj);
-  const appThemeColors = generateThemeColors(appThemesObject);
+export function generateThemeColors() {
+  const themeColors = generateLabsThemeColors(themesObj);
+  const appThemeColors = generateLabsThemeColors(appThemesObject);
 
   return {
-    colors: {
-      ...themeColors,
-      ...appThemeColors,
-    },
-  } as const satisfies Theme;
+    ...themeColors,
+    ...appThemeColors,
+  } as const satisfies Theme['colors'];
 }
 
 function generateThemeShortcuts<

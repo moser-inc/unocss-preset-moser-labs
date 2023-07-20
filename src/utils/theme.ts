@@ -1,5 +1,6 @@
+import { type Theme } from 'unocss/preset-wind';
 import { primeThemeColors } from 'unocss-preset-prime';
-import { generateTheme } from '@/utils/generators';
+import { generateThemeColors } from '@/utils/generators';
 
 export const moserLabsThemes = {
   aero: {
@@ -154,4 +155,6 @@ export const moserLabsAppThemeKeys = Object.keys(
   moserLabsAppThemes,
 ) as MoserLabsAppThemeKey[];
 
-export const moserLabsTheme = generateTheme();
+export const moserLabsTheme = {
+  colors: generateThemeColors(),
+} as const satisfies Theme;
