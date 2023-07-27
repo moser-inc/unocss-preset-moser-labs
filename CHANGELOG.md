@@ -1,3 +1,10 @@
+## [1.9.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.8.0...v1.9.0) (2023-07-27)
+
+
+### Features
+
+* add clipboard check and drag icons ([19eb90b](https://github.com/moser-inc/unocss-preset-moser-labs/commit/19eb90b8204627aff231bcc9e165a393140b94f1))
+
 ## [1.8.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.7.1...v1.8.0) (2023-07-20)
 
 
