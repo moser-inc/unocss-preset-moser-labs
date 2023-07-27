@@ -12,7 +12,7 @@ function themeObjectToArray<Themes extends Record<string, MoserLabsThemeValue>>(
   themes: Themes,
 ) {
   const keys = Object.keys(themes) as (keyof Themes)[];
-  return keys.map((key) => ({ key, ...themes[key] } as const));
+  return keys.map((key) => ({ key, ...themes[key] }) as const);
 }
 
 function generateLabsThemeColors<
@@ -37,74 +37,77 @@ export function generateThemeColors() {
 function generateThemeShortcuts<
   Themes extends Record<string, MoserLabsThemeValue>,
 >(themes: Themes, defaultTheme?: keyof Themes) {
-  return themeObjectToArray(themes).reduce((shortcutsResult, themeItem) => {
-    const { key, ...theme } = themeItem;
+  return themeObjectToArray(themes).reduce(
+    (shortcutsResult, themeItem) => {
+      const { key, ...theme } = themeItem;
 
-    const themeKey = String(key);
+      const themeKey = String(key);
 
-    const isDefaultTheme = defaultTheme === key;
+      const isDefaultTheme = defaultTheme === key;
 
-    const themeColorKeys = Object.keys(theme) as MoserLabsThemeColor[];
+      const themeColorKeys = Object.keys(theme) as MoserLabsThemeColor[];
 
-    const colorShortcuts = themeColorKeys.reduce(
-      (colorShortcutsResult, themeColorKey) => {
-        const bgClass = `bg-${themeKey}-${themeColorKey}` as const;
-        const textClass = `text-${themeKey}-${themeColorKey}` as const;
+      const colorShortcuts = themeColorKeys.reduce(
+        (colorShortcutsResult, themeColorKey) => {
+          const bgClass = `bg-${themeKey}-${themeColorKey}` as const;
+          const textClass = `text-${themeKey}-${themeColorKey}` as const;
 
-        const defaultColorShortcuts = isDefaultTheme
-          ? ({
-              [`bg-${themeColorKey}`]: bgClass,
-              [`text-${themeColorKey}`]: textClass,
-            } as const)
-          : undefined;
+          const defaultColorShortcuts = isDefaultTheme
+            ? ({
+                [`bg-${themeColorKey}`]: bgClass,
+                [`text-${themeColorKey}`]: textClass,
+              } as const)
+            : undefined;
 
-        return {
-          ...colorShortcutsResult,
-          [bgClass]: `bg-${themeKey}-${themeColorKey}-dark light:bg-${themeKey}-${themeColorKey}-light`,
-          [textClass]: `text-${themeKey}-${themeColorKey}-dark light:text-${themeKey}-${themeColorKey}-light`,
-          ...defaultColorShortcuts,
-        } as const;
-      },
-      {} as Record<string, string>,
-    );
+          return {
+            ...colorShortcutsResult,
+            [bgClass]: `bg-${themeKey}-${themeColorKey}-dark light:bg-${themeKey}-${themeColorKey}-light`,
+            [textClass]: `text-${themeKey}-${themeColorKey}-dark light:text-${themeKey}-${themeColorKey}-light`,
+            ...defaultColorShortcuts,
+          } as const;
+        },
+        {} as Record<string, string>,
+      );
 
-    const bgGradientClass = `bg-${themeKey}-gradient` as const;
-    const bgGradientReverseClass = `${bgGradientClass}-reverse` as const;
-    const textGradientClass = `text-${themeKey}-gradient` as const;
-    const textGradientReverseClass = `${textGradientClass}-reverse` as const;
+      const bgGradientClass = `bg-${themeKey}-gradient` as const;
+      const bgGradientReverseClass = `${bgGradientClass}-reverse` as const;
+      const textGradientClass = `text-${themeKey}-gradient` as const;
+      const textGradientReverseClass = `${textGradientClass}-reverse` as const;
 
-    const fromColor = 'primary' satisfies MoserLabsThemeColor;
-    const toColor = 'secondary' satisfies MoserLabsThemeColor;
+      const fromColor = 'primary' satisfies MoserLabsThemeColor;
+      const toColor = 'secondary' satisfies MoserLabsThemeColor;
 
-    const gradientShortcuts = {
-      [bgGradientClass]: `bg-gradient-base from-${themeKey}-${fromColor}-dark light:from-${themeKey}-${fromColor}-light to-${themeKey}-${toColor}-dark light:to-${themeKey}-${toColor}-light`,
-      [bgGradientReverseClass]: `bg-gradient-base from-${themeKey}-${toColor}-dark light:from-${themeKey}-${toColor}-light to-${themeKey}-${fromColor}-dark light:to-${themeKey}-${fromColor}-light`,
-      [textGradientClass]: `text-gradient-base ${bgGradientClass}`,
-      [textGradientReverseClass]: `text-gradient-base ${bgGradientReverseClass}`,
-    } as const;
+      const gradientShortcuts = {
+        [bgGradientClass]: `bg-gradient-base from-${themeKey}-${fromColor}-dark light:from-${themeKey}-${fromColor}-light to-${themeKey}-${toColor}-dark light:to-${themeKey}-${toColor}-light`,
+        [bgGradientReverseClass]: `bg-gradient-base from-${themeKey}-${toColor}-dark light:from-${themeKey}-${toColor}-light to-${themeKey}-${fromColor}-dark light:to-${themeKey}-${fromColor}-light`,
+        [textGradientClass]: `text-gradient-base ${bgGradientClass}`,
+        [textGradientReverseClass]: `text-gradient-base ${bgGradientReverseClass}`,
+      } as const;
 
-    const defaultGradientShortcuts = isDefaultTheme
-      ? ({
-          ['bg-primary-gradient']: bgGradientClass,
-          ['bg-primary-gradient-reverse']: bgGradientReverseClass,
-          ['text-primary-gradient']: textGradientClass,
-          ['text-primary-gradient-reverse']: textGradientReverseClass,
-        } as const)
-      : undefined;
+      const defaultGradientShortcuts = isDefaultTheme
+        ? ({
+            ['bg-primary-gradient']: bgGradientClass,
+            ['bg-primary-gradient-reverse']: bgGradientReverseClass,
+            ['text-primary-gradient']: textGradientClass,
+            ['text-primary-gradient-reverse']: textGradientReverseClass,
+          } as const)
+        : undefined;
 
-    const iconShortcuts = {
-      [`i-mli-${themeKey}-badge`]: `i-mli-${themeKey}-badge-dark light:i-mli-${themeKey}-badge-light`,
-      [`i-mli-${themeKey}-badge-lg`]: `i-mli-${themeKey}-badge-lg-dark light:i-mli-${themeKey}-badge-lg-light`,
-    } as const;
+      const iconShortcuts = {
+        [`i-mli-${themeKey}-badge`]: `i-mli-${themeKey}-badge-dark light:i-mli-${themeKey}-badge-light`,
+        [`i-mli-${themeKey}-badge-lg`]: `i-mli-${themeKey}-badge-lg-dark light:i-mli-${themeKey}-badge-lg-light`,
+      } as const;
 
-    return {
-      ...shortcutsResult,
-      ...colorShortcuts,
-      ...gradientShortcuts,
-      ...defaultGradientShortcuts,
-      ...iconShortcuts,
-    } as const;
-  }, {} as Record<string, string>);
+      return {
+        ...shortcutsResult,
+        ...colorShortcuts,
+        ...gradientShortcuts,
+        ...defaultGradientShortcuts,
+        ...iconShortcuts,
+      } as const;
+    },
+    {} as Record<string, string>,
+  );
 }
 
 export function generateShortcuts(defaultApp?: MoserLabsAppThemeKey) {
