@@ -51,7 +51,7 @@ export function presetMoserLabs(
     name: '@moser-inc/unocss-preset-moser-labs',
     presets: [
       presetWind({ dark: 'media', ...extendWindOptions }),
-      presetPrime(extendPrimeOptions),
+      presetPrime({ icons: true, ...extendPrimeOptions }),
       presetIcons({
         ...extendIconsOptions,
         collections: {
