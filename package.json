@@ -65,6 +65,7 @@
     "type-check": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1",
     "playground:dev": "vite --config ./playground/vite.config.ts",
+    "playground:build": "vite --config ./playground/vite.config.ts build",
     "release": "standard-version",
     "semantic-release": "semantic-release",
     "prepack": "npm run build"
