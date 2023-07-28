@@ -1,3 +1,15 @@
+## [1.11.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.10.0...v1.11.0) (2023-07-28)
+
+
+### Features
+
+* use preset uno instead of preset wind ([7ed03a7](https://github.com/moser-inc/unocss-preset-moser-labs/commit/7ed03a7eb7911f5be08deafe7a79ba80efeec439))
+
+
+### Bug Fixes
+
+* do not enable preset prime icons to avoid duplicate icon preset warning ([165051e](https://github.com/moser-inc/unocss-preset-moser-labs/commit/165051e80cd5cb2f024e2af642528c26a2e61438))
+
 ## [1.10.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.9.0...v1.10.0) (2023-07-28)
 
 
