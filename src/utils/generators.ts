@@ -1,4 +1,4 @@
-import { type Theme } from '@unocss/preset-wind';
+import { type Theme } from '@unocss/preset-uno';
 import { type UserShortcuts } from 'unocss';
 import {
   moserLabsThemes as themesObj,

@@ -51,11 +51,11 @@ presetMoserLabs({
    */
   defaultApp?: MoserLabsAppThemeKey;
   /**
-   * Extend `presetWind` options.
+   * Extend `presetUno` options.
    *
-   * https://unocss.dev/presets/wind
+   * https://unocss.dev/presets/uno
    */
-  extendWindOptions?: PresetWindOptions;
+  extendUnoOptions?: PresetUnoOptions;
   /**
    * Extend `presetPrime` options.
    *

@@ -1,8 +1,8 @@
 import { resolve } from 'node:path';
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders';
-import { presetWind, presetIcons, type Preset } from 'unocss';
+import { presetUno, presetIcons, type Preset } from 'unocss';
 import { type IconsOptions as PresetIconsOptions } from 'unocss/preset-icons';
-import { type PresetWindOptions, type Theme } from 'unocss/preset-wind';
+import { type PresetUnoOptions, type Theme } from 'unocss/preset-uno';
 import {
   presetPrime,
   primeThemeColors,
@@ -18,11 +18,11 @@ export interface PresetMoserLabsOptions {
    */
   defaultApp?: MoserLabsAppThemeKey;
   /**
-   * Extend `presetWind` options.
+   * Extend `presetUno` options.
    *
-   * https://unocss.dev/presets/wind
+   * https://unocss.dev/presets/uno
    */
-  extendWindOptions?: PresetWindOptions;
+  extendUnoOptions?: PresetUnoOptions;
   /**
    * Extend `presetPrime` options.
    *
@@ -42,7 +42,7 @@ export function presetMoserLabs(
 ): Preset<Theme> {
   const {
     defaultApp,
-    extendWindOptions,
+    extendUnoOptions,
     extendPrimeOptions,
     extendIconsOptions,
   } = options ?? {};
@@ -50,7 +50,7 @@ export function presetMoserLabs(
   return {
     name: '@moser-inc/unocss-preset-moser-labs',
     presets: [
-      presetWind({ dark: 'media', ...extendWindOptions }),
+      presetUno({ dark: 'media', ...extendUnoOptions }),
       presetPrime({ icons: true, ...extendPrimeOptions }),
       presetIcons({
         ...extendIconsOptions,

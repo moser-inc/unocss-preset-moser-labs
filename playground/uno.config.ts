@@ -4,7 +4,7 @@ import { moserLabsAppThemeKeys, presetMoserLabs } from '../dist';
 export default defineConfig({
   presets: [
     presetMoserLabs({
-      extendWindOptions: {
+      extendUnoOptions: {
         dark: 'class',
       },
     }),
