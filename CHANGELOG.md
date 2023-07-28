@@ -1,3 +1,10 @@
+## [1.10.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.9.0...v1.10.0) (2023-07-28)
+
+
+### Features
+
+* reduce default icon scale and add shared labs shortcuts ([38b2b9a](https://github.com/moser-inc/unocss-preset-moser-labs/commit/38b2b9a96f444e1d89c3a15f3c8f9679f3b734db))
+
 ## [1.9.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.8.0...v1.9.0) (2023-07-27)
 
 
