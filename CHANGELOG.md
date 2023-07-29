@@ -1,3 +1,10 @@
+### [1.11.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.11.0...v1.11.1) (2023-07-29)
+
+
+### Bug Fixes
+
+* update default icon scaling to match prime icons ([07e21a9](https://github.com/moser-inc/unocss-preset-moser-labs/commit/07e21a990324c93848b1dda3c0eb46c0ee827931))
+
 ## [1.11.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.10.0...v1.11.0) (2023-07-28)
 
 
