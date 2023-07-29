@@ -6,10 +6,8 @@ import { type MoserLabsAppThemeKey } from '@/utils/theme';
 export function moserLabsShortcuts(defaultApp?: MoserLabsAppThemeKey) {
   return [
     generateShortcuts(defaultApp),
-    [/^pi-(.*?)$/, ([, d]) => `i-prime-${d} i-scale-fill`],
-    [/^mli-(.*?)$/, ([, d]) => `i-mli-${d} i-scale-fill`],
+    [/^mli-(.*?)$/, ([, d]) => `i-mli-${d} i-scale-130`],
     {
-      'i-scale-fill': 'i-scale-125',
       'h-viewport': 'min-h-full min-h-screen min-h-100dvh',
       'labs-content': 'labs-content-max labs-content-padding',
       'labs-content-max': 'w-full max-w-6xl mx-auto',
