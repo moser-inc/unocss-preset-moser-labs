@@ -76,7 +76,7 @@
   "dependencies": {
     "@iconify-json/prime": "^1.1.5",
     "@iconify/utils": "^2.1.7",
-    "unocss-preset-prime": "^3.2.0"
+    "unocss-preset-prime": "^3.2.1"
   },
   "devDependencies": {
     "@moser-inc/eslint-config": "^1.9.0",
@@ -95,7 +95,7 @@
     "standard-version": "^9.5.0",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6",
-    "unocss": "^0.54.0",
+    "unocss": "^0.54.1",
     "vite": "^4.4.7"
   }
 }
