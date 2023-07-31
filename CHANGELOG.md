@@ -1,3 +1,10 @@
+### [1.11.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.11.1...v1.11.2) (2023-07-31)
+
+
+### Bug Fixes
+
+* update prime preset and use prime scale shortcut for labs icons ([17ae76f](https://github.com/moser-inc/unocss-preset-moser-labs/commit/17ae76f6d98bb03a69216e04f2040f8aaf76ee3a))
+
 ### [1.11.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.11.0...v1.11.1) (2023-07-29)
 
 
