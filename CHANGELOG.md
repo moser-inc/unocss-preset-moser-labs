@@ -1,3 +1,16 @@
+## [1.12.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.11.2...v1.12.0) (2023-08-09)
+
+
+### Features
+
+* make labs layout header the same size as the nav ([d714a42](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d714a4274b52b47c676d544631c95c57926e7dc4))
+* make labs nav sticky when scrolling ([799e054](https://github.com/moser-inc/unocss-preset-moser-labs/commit/799e054b9f230430f8bad15ef365ffd7409306e0))
+
+
+### Bug Fixes
+
+* force labs mobile nav fixed position ([5f3c72e](https://github.com/moser-inc/unocss-preset-moser-labs/commit/5f3c72ef667c53f81aa70bda39353a34ee124991))
+
 ### [1.11.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.11.1...v1.11.2) (2023-07-31)
 
 
