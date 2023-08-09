@@ -13,7 +13,7 @@ export function moserLabsShortcuts(defaultApp?: MoserLabsAppThemeKey) {
       'labs-content-max': 'w-full max-w-6xl mx-auto',
       'labs-content-padding': 'p-6 sm:p-8',
       'labs-layout': 'h-viewport flex bg-card',
-      'labs-layout-header': 'flex items-center gap-4 p-4',
+      'labs-layout-header': 'h-auto flex items-center gap-4 p-4 sm:h-20',
       'labs-layout-header-title': 'm-0 mr-auto text-8 text-primary-gradient',
       'labs-layout-nav': 'flex shrink flex-col gap-2 p-3',
       'labs-layout-nav-button': 'h-14! w-14!',
