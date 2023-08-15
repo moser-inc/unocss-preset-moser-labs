@@ -1,3 +1,10 @@
+## [1.13.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.12.0...v1.13.0) (2023-08-15)
+
+
+### Features
+
+* Updated shortcuts with support for subtitle ([c0ab738](https://github.com/moser-inc/unocss-preset-moser-labs/commit/c0ab7385a1b1bdedabefa50e22e0ea4aad882cb0))
+
 ## [1.12.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.11.2...v1.12.0) (2023-08-09)
 
 
