@@ -14,7 +14,10 @@ export function moserLabsShortcuts(defaultApp?: MoserLabsAppThemeKey) {
       'labs-content-padding': 'p-6 sm:p-8',
       'labs-layout': 'h-viewport flex bg-card',
       'labs-layout-header': 'h-auto flex items-center gap-4 p-4 sm:h-20',
-      'labs-layout-header-title': 'm-0 mr-auto text-8 text-primary-gradient',
+      'labs-layout-header-actions': '',
+      'labs-layout-header-content': 'mr-auto flex items-end gap-2',
+      'labs-layout-header-title': 'm-0 text-8 text-primary-gradient leading-none',
+      'labs-layout-header-subtitle': 'm-0 text-sm',
       'labs-layout-nav':
         'sticky top-0 h-full h-screen h-100dvh flex shrink flex-col gap-2 overflow-y-auto p-3 transition-all',
       'labs-layout-nav-closed': 'min-w-20! w-20!',
