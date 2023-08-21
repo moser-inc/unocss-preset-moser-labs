@@ -1,3 +1,10 @@
+### [1.13.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.13.0...v1.13.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* fix labs header title line height hiding vertically overflowing characters when using bg clip ([35b716d](https://github.com/moser-inc/unocss-preset-moser-labs/commit/35b716d437ce503e4549968993fda01b3ee0058b))
+
 ## [1.13.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.12.0...v1.13.0) (2023-08-15)
 
 
