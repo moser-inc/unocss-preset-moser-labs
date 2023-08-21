@@ -1,3 +1,10 @@
+### [1.13.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.13.1...v1.13.2) (2023-08-21)
+
+
+### Bug Fixes
+
+* fix labs title shortcut line height rule value ([73d6860](https://github.com/moser-inc/unocss-preset-moser-labs/commit/73d686085a7e100483a7bcffcc1d6bb1c8c210da))
+
 ### [1.13.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.13.0...v1.13.1) (2023-08-21)
 
 
