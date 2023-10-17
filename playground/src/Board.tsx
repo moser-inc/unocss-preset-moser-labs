@@ -92,6 +92,11 @@ export function Board({ className = '' }: { className?: string }) {
             <i className="i-mli-receipt text-primary text-4xl" />
             <span>i-mli-receipt</span>
           </div>
+
+          <div className="flex items-center gap-4">
+            <i className="i-mli-microsoft-365 text-primary text-4xl" />
+            <span>i-mli-microsoft-365</span>
+          </div>
         </div>
       </section>
 
