@@ -1,3 +1,10 @@
+## [1.14.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.13.2...v1.14.0) (2023-10-17)
+
+
+### Features
+
+* add microsoft 365 icon ([14a1313](https://github.com/moser-inc/unocss-preset-moser-labs/commit/14a1313a42274a5c72d2212c603929f62ee91996))
+
 ### [1.13.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.13.1...v1.13.2) (2023-08-21)
 
 
