@@ -63,6 +63,18 @@ export const moserLabsThemes = {
       text: primeThemeColors.surface.ground,
     },
   },
+  sapphire: {
+    primary: {
+      dark: primeThemeColors.blue[300],
+      light: primeThemeColors.blue[700],
+      text: primeThemeColors.surface.ground,
+    },
+    secondary: {
+      dark: primeThemeColors.blue[500],
+      light: primeThemeColors.indigo[900],
+      text: primeThemeColors.surface.ground,
+    },
+  },
   sherbet: {
     primary: {
       dark: primeThemeColors.pink[200],
@@ -135,6 +147,7 @@ export const moserLabsThemeKeys = Object.keys(
 ) as MoserLabsThemeKey[];
 
 export const moserLabsAppThemes = {
+  clearpath: moserLabsThemes.sapphire,
   eats: moserLabsThemes.lemonade,
   engagements: moserLabsThemes.aero,
   idealab: moserLabsThemes.peaches,

@@ -8,6 +8,7 @@ export function Board({ className = '' }: { className?: string }) {
     'lemonade',
     'peaches',
     'razzmatazz',
+    'sapphire',
     'sherbet',
     'sylvian',
     'tortuga',
@@ -16,6 +17,7 @@ export function Board({ className = '' }: { className?: string }) {
   ] as MoserLabsThemeKey[];
 
   const appThemeKeys = [
+    'clearpath',
     'eats',
     'engagements',
     'idealab',
