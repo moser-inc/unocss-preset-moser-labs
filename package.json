@@ -2,7 +2,7 @@
   "name": "@moser-inc/unocss-preset-moser-labs",
   "version": "1.14.0",
   "description": "Shared UnoCSS preset for the Moser Labs suite of applications.",
-  "license": "UNLICENCED",
+  "license": "UNLICENSED",
   "homepage": "https://github.com/moser-inc/unocss-preset-moser-labs#readme",
   "repository": {
     "type": "git",
@@ -74,28 +74,27 @@
     "unocss": ">= 0.45.0 < 1"
   },
   "dependencies": {
-    "@iconify-json/prime": "^1.1.5",
-    "@iconify/utils": "^2.1.7",
-    "unocss-preset-prime": "^3.2.1"
+    "@iconify-json/prime": "^1.1.6",
+    "@iconify/utils": "^2.1.11",
+    "unocss-preset-prime": "^3.2.2"
   },
   "devDependencies": {
-    "@moser-inc/eslint-config": "^1.9.0",
+    "@moser-inc/eslint-config": "^1.10.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "~18.17.14",
-    "@types/react": "^18.2.17",
-    "@types/react-dom": "^18.2.7",
-    "@vitejs/plugin-react-swc": "^3.3.2",
-    "prettier": "^3.0.0",
-    "primereact": "^9.6.0",
+    "@types/node": "~18.17.19",
+    "@types/react": "^18.2.29",
+    "@types/react-dom": "^18.2.13",
+    "@vitejs/plugin-react-swc": "^3.4.0",
+    "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.64.1",
-    "semantic-release": "^21.0.7",
+    "sass": "^1.69.4",
+    "semantic-release": "^22.0.5",
     "standard-version": "^9.5.0",
-    "tsup": "^7.1.0",
-    "typescript": "^5.1.6",
-    "unocss": "^0.54.1",
-    "vite": "^4.4.7"
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "unocss": "^0.56.5",
+    "vite": "^4.5.0"
   }
 }
