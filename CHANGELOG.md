@@ -1,3 +1,10 @@
+## [1.15.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.14.0...v1.15.0) (2023-10-18)
+
+
+### Features
+
+* add clearpath logo and theme colors ([90584dc](https://github.com/moser-inc/unocss-preset-moser-labs/commit/90584dca1f27023eece04a77472b28fc93b5f3d7))
+
 ## [1.14.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.13.2...v1.14.0) (2023-10-17)
 
 
