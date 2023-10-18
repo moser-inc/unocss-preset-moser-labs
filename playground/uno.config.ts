@@ -1,5 +1,30 @@
 import { defineConfig } from 'unocss';
-import { moserLabsAppThemeKeys, presetMoserLabs } from '../dist';
+import {
+  moserLabsThemeKeys,
+  moserLabsAppThemeKeys,
+  presetMoserLabs,
+} from '../dist';
+
+const allThemeKeys = [...moserLabsThemeKeys, ...moserLabsAppThemeKeys];
+
+const safeColors = allThemeKeys.flatMap((appThemeKey) => [
+  `bg-${appThemeKey}-primary`,
+  `bg-${appThemeKey}-primary-text`,
+  `bg-${appThemeKey}-secondary`,
+  `bg-${appThemeKey}-secondary-text`,
+  `bg-${appThemeKey}-gradient`,
+  `text-${appThemeKey}-primary`,
+  `text-${appThemeKey}-primary-text`,
+  `text-${appThemeKey}-secondary`,
+  `text-${appThemeKey}-secondary-text`,
+  `text-${appThemeKey}-gradient`,
+]);
+
+const safeIcons = moserLabsAppThemeKeys.flatMap((appThemeKey) => [
+  `i-mli-${appThemeKey}`,
+  `i-mli-${appThemeKey}-badge`,
+  `i-mli-${appThemeKey}-badge-lg`,
+]);
 
 export default defineConfig({
   presets: [
@@ -9,19 +34,5 @@ export default defineConfig({
       },
     }),
   ],
-  safelist: moserLabsAppThemeKeys.flatMap((appThemeKey) => [
-    `bg-${appThemeKey}-primary`,
-    `bg-${appThemeKey}-primary-text`,
-    `bg-${appThemeKey}-secondary`,
-    `bg-${appThemeKey}-secondary-text`,
-    `bg-${appThemeKey}-gradient`,
-    `text-${appThemeKey}-primary`,
-    `text-${appThemeKey}-primary-text`,
-    `text-${appThemeKey}-secondary`,
-    `text-${appThemeKey}-secondary-text`,
-    `text-${appThemeKey}-gradient`,
-    `i-mli-${appThemeKey}`,
-    `i-mli-${appThemeKey}-badge`,
-    `i-mli-${appThemeKey}-badge-lg`,
-  ]),
+  safelist: [...safeColors, ...safeIcons],
 });

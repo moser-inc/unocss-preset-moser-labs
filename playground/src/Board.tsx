@@ -1,8 +1,21 @@
 import { Fragment } from 'react';
-import { type MoserLabsAppThemeKey } from '../../dist';
+import { type MoserLabsThemeKey, type MoserLabsAppThemeKey } from '../../dist';
 
 export function Board({ className = '' }: { className?: string }) {
-  const keys = [
+  const themeKeys = [
+    'aero',
+    'eventide',
+    'lemonade',
+    'peaches',
+    'razzmatazz',
+    'sherbet',
+    'sylvian',
+    'tortuga',
+    'vista',
+    'zomp',
+  ] as MoserLabsThemeKey[];
+
+  const appThemeKeys = [
     'eats',
     'engagements',
     'idealab',
@@ -15,13 +28,15 @@ export function Board({ className = '' }: { className?: string }) {
     'wellness',
   ] as MoserLabsAppThemeKey[];
 
+  const allThemeKeys = [...themeKeys, ...appThemeKeys];
+
   return (
     <div className={`${className} flex flex-col gap-6`}>
       <section>
         <h3 className="mbs-0">Background Colors</h3>
 
         <div className="flex flex-wrap gap-4">
-          {keys.map((key) => (
+          {allThemeKeys.map((key) => (
             <Fragment key={key}>
               <div
                 className={`bg-${key}-primary text-${key}-primary-text px-4 py-2 rounded-xl`}
@@ -49,7 +64,7 @@ export function Board({ className = '' }: { className?: string }) {
         <h3 className="mbs-0 mbe-3">Text Colors</h3>
 
         <div className="flex flex-wrap gap-y-2">
-          {keys.map((key) => (
+          {allThemeKeys.map((key) => (
             <Fragment key={key}>
               <div className={`text-${key}-primary px-4 py-2 rounded-xl`}>
                 text-{key}-primary
@@ -71,7 +86,7 @@ export function Board({ className = '' }: { className?: string }) {
         <h3 className="mbs-0">Icons</h3>
 
         <div className="flex flex-wrap gap-6">
-          {keys.map((key) => (
+          {appThemeKeys.map((key) => (
             <div key={key} className="flex items-center gap-4">
               <i className={`i-mli-${key} text-${key}-primary text-4xl`} />
               <span>i-mli-{key}</span>
@@ -89,13 +104,13 @@ export function Board({ className = '' }: { className?: string }) {
           </div>
 
           <div className="flex items-center gap-4">
-            <i className="i-mli-receipt text-primary text-4xl" />
-            <span>i-mli-receipt</span>
+            <i className="i-mli-microsoft-365 text-primary text-4xl" />
+            <span>i-mli-microsoft-365</span>
           </div>
 
           <div className="flex items-center gap-4">
-            <i className="i-mli-microsoft-365 text-primary text-4xl" />
-            <span>i-mli-microsoft-365</span>
+            <i className="i-mli-receipt text-primary text-4xl" />
+            <span>i-mli-receipt</span>
           </div>
         </div>
       </section>
@@ -104,7 +119,7 @@ export function Board({ className = '' }: { className?: string }) {
         <h3 className="mbs-0">Badges</h3>
 
         <div className="flex flex-wrap gap-6">
-          {keys.map((key) => (
+          {appThemeKeys.map((key) => (
             <Fragment key={key}>
               <div className="flex items-center gap-4">
                 <i className={`i-mli-${key}-badge text-4xl`} />
