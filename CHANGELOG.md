@@ -1,3 +1,10 @@
+## [1.16.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.15.0...v1.16.0) (2023-11-10)
+
+
+### Features
+
+* add `apps` icon ([0496cbd](https://github.com/moser-inc/unocss-preset-moser-labs/commit/0496cbd347ffcac1e89c0ece77fbd334bb85cc3b))
+
 ## [1.15.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.14.0...v1.15.0) (2023-10-18)
 
 
