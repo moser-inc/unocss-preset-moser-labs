@@ -96,6 +96,11 @@ export function Board({ className = '' }: { className?: string }) {
           ))}
 
           <div className="flex items-center gap-4">
+            <i className="i-mli-apps text-primary text-4xl" />
+            <span>i-mli-apps</span>
+          </div>
+
+          <div className="flex items-center gap-4">
             <i className="i-mli-clipboard-check text-primary text-4xl" />
             <span>i-mli-clipboard-check</span>
           </div>
