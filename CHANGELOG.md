@@ -1,3 +1,11 @@
+### [1.16.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.16.0...v1.16.1) (2023-12-02)
+
+
+### Miscellaneous Chores
+
+* **deps:** update deps ([c7029f3](https://github.com/moser-inc/unocss-preset-moser-labs/commit/c7029f31e599fd0ad57b7ff063371201d85aeefa))
+* update node to `v20.10.0` and use dedicated release config ([33a5e30](https://github.com/moser-inc/unocss-preset-moser-labs/commit/33a5e302ffae3e2c917340cb832b20fed638fcb7))
+
 ## [1.16.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.15.0...v1.16.0) (2023-11-10)
 
 
