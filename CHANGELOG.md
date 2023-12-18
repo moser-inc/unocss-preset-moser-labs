@@ -1,3 +1,25 @@
+### [1.16.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.16.1...v1.16.2) (2023-12-18)
+
+
+### Bug Fixes
+
+* update `h-viewport` shortcut to `min-h-viewport` ([6742c8e](https://github.com/moser-inc/unocss-preset-moser-labs/commit/6742c8ef21afb4e2df84f4ff925d4f14bbfa53ca))
+
+
+### Continuous Integration
+
+* add publint and type correctness checking to ci ([30c6ad3](https://github.com/moser-inc/unocss-preset-moser-labs/commit/30c6ad3841bc8ac4dc5e76812a596f532d4004cd))
+
+
+### Code Refactoring
+
+* update important `!` order to match tailwind syntax style ([938ad70](https://github.com/moser-inc/unocss-preset-moser-labs/commit/938ad70b803386730fe934984ca4270e9c9fac39))
+
+
+### Miscellaneous Chores
+
+* **deps:** update deps ([b1586d5](https://github.com/moser-inc/unocss-preset-moser-labs/commit/b1586d5dafb74a4ee4eb8b5ec68523be26cb7443))
+
 ### [1.16.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.16.0...v1.16.1) (2023-12-02)
 
 
