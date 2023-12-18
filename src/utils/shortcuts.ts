@@ -8,11 +8,11 @@ export function moserLabsShortcuts(defaultApp?: MoserLabsAppThemeKey) {
     generateShortcuts(defaultApp),
     [/^mli-(.*?)$/, ([, d]) => `i-mli-${d} i-scale-prime`],
     {
-      'h-viewport': 'min-h-full min-h-screen min-h-100dvh',
+      'min-h-viewport': 'min-h-full min-h-screen min-h-100dvh',
       'labs-content': 'labs-content-max labs-content-padding',
       'labs-content-max': 'w-full max-w-6xl mx-auto',
       'labs-content-padding': 'p-6 sm:p-8',
-      'labs-layout': 'h-viewport flex bg-card',
+      'labs-layout': 'min-h-viewport flex bg-card',
       'labs-layout-header': 'h-auto flex items-center gap-4 p-4 sm:h-20',
       'labs-layout-header-actions': '',
       'labs-layout-header-content': 'mr-auto flex items-end gap-2',
