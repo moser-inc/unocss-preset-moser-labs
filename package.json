@@ -16,15 +16,15 @@
     "url": "https://github.com/moser-inc/unocss-preset-moser-labs/issues"
   },
   "type": "module",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     }
   },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -45,30 +45,30 @@
   },
   "dependencies": {
     "@iconify-json/prime": "^1.1.10",
-    "@iconify/utils": "^2.1.13",
-    "unocss-preset-prime": "^3.2.4"
+    "@iconify/utils": "^2.1.14",
+    "unocss-preset-prime": "^3.2.5"
   },
   "devDependencies": {
     "@moser-inc/eslint-config": "^1.10.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^11.1.0",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^9.2.5",
+    "@semantic-release/github": "^9.2.6",
     "@semantic-release/npm": "^11.0.2",
     "@semantic-release/release-notes-generator": "^12.1.0",
-    "@types/node": "~20.10.5",
-    "@types/react": "^18.2.45",
+    "@types/node": "~20.10.8",
+    "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "prettier": "^3.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.69.5",
+    "sass": "^1.69.7",
     "semantic-release": "^22.0.12",
     "standard-version": "^9.5.0",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
-    "unocss": "^0.58.0",
-    "vite": "^5.0.10"
+    "unocss": "^0.58.3",
+    "vite": "^5.0.11"
   }
 }
