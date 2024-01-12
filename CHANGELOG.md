@@ -1,3 +1,15 @@
+### [1.16.3](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.16.2...v1.16.3) (2024-01-12)
+
+
+### Bug Fixes
+
+* fix tickets light large icon missing border radius ([d896723](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d896723a74996a77af9900f4a091fcfe99bb7d7f))
+
+
+### Miscellaneous Chores
+
+* **deps:** update deps ([aeb9b0f](https://github.com/moser-inc/unocss-preset-moser-labs/commit/aeb9b0f6e918d9fe833b5821bb5df608b1809e50))
+
 ### [1.16.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.16.1...v1.16.2) (2023-12-18)
 
 
