@@ -44,31 +44,31 @@
     "unocss": ">= 0.45.0 < 1"
   },
   "dependencies": {
-    "@iconify-json/prime": "^1.1.10",
-    "@iconify/utils": "^2.1.14",
-    "unocss-preset-prime": "^3.2.5"
+    "@iconify-json/prime": "^1.1.12",
+    "@iconify/utils": "^2.1.24",
+    "unocss-preset-prime": "^3.2.6"
   },
   "devDependencies": {
-    "@moser-inc/eslint-config": "^1.10.1",
+    "@moser-inc/eslint-config": "^1.13.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^11.1.0",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^9.2.6",
-    "@semantic-release/npm": "^11.0.2",
+    "@semantic-release/npm": "^11.0.3",
     "@semantic-release/release-notes-generator": "^12.1.0",
-    "@types/node": "~20.12.4",
-    "@types/react": "^18.2.47",
-    "@types/react-dom": "^18.2.18",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "prettier": "^3.1.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sass": "^1.69.7",
+    "@types/node": "~20.12.14",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "prettier": "^3.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.77.4",
     "semantic-release": "^22.0.12",
     "standard-version": "^9.5.0",
-    "tsup": "^8.0.1",
-    "typescript": "^5.3.3",
-    "unocss": "^0.58.3",
-    "vite": "^5.0.11"
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5",
+    "unocss": "^0.60.3",
+    "vite": "^5.2.12"
   }
 }
