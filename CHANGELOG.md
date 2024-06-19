@@ -1,3 +1,10 @@
+### [1.16.5](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.16.4...v1.16.5) (2024-06-19)
+
+
+### Bug Fixes
+
+* add missing styles to labs layout header actions shortcut ([2cd012d](https://github.com/moser-inc/unocss-preset-moser-labs/commit/2cd012d5e23ff94f2799173466e0c40e4ff6d760))
+
 ### [1.16.4](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.16.3...v1.16.4) (2024-06-01)
 
 
