@@ -1,3 +1,15 @@
+### [1.16.6](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.16.5...v1.16.6) (2024-06-20)
+
+
+### Bug Fixes
+
+* force icon scale for layout nav icon ([e7feef8](https://github.com/moser-inc/unocss-preset-moser-labs/commit/e7feef8c3d3da840cafe00f38611e1c73aacf171))
+
+
+### Miscellaneous Chores
+
+* **deps:** update deps ([eeb0871](https://github.com/moser-inc/unocss-preset-moser-labs/commit/eeb0871e1e05b0a907f084814b186a8f09ad42eb))
+
 ### [1.16.5](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.16.4...v1.16.5) (2024-06-19)
 
 
