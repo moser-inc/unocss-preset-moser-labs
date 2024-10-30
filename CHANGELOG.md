@@ -1,3 +1,19 @@
+## [1.17.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.16.6...v1.17.0) (2024-10-30)
+
+### Features
+
+* support latest version of unocss ([d1823f2](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d1823f26cbe6ed228aec8a00c82fd54f86c0673b))
+
+### Miscellaneous Chores
+
+* update eslint and auto fix ([02708b9](https://github.com/moser-inc/unocss-preset-moser-labs/commit/02708b9ea894b55a6c316466f71b02c22b8e759a))
+* update node to `v22.11.0` lts ([72bf414](https://github.com/moser-inc/unocss-preset-moser-labs/commit/72bf41497c543a64eb0b1ae3caf160e3a7664a15))
+
+### Continuous Integration
+
+* update github action versions ([c8e8ca5](https://github.com/moser-inc/unocss-preset-moser-labs/commit/c8e8ca55b25505cf9e4eabed0651fe0815f4e86a))
+* update semantic release ([0543090](https://github.com/moser-inc/unocss-preset-moser-labs/commit/0543090cd167b3b90c1469d8da604c514289eec4))
+
 ### [1.16.6](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.16.5...v1.16.6) (2024-06-20)
 
 
