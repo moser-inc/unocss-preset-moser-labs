@@ -1,16 +1,16 @@
 import { resolve } from 'node:path';
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders';
-import { presetUno, presetIcons, type Preset } from 'unocss';
-import { type IconsOptions as PresetIconsOptions } from 'unocss/preset-icons';
-import { type PresetUnoOptions, type Theme } from 'unocss/preset-uno';
+import { type Preset, presetIcons, presetUno } from 'unocss';
+import type { IconsOptions as PresetIconsOptions } from 'unocss/preset-icons';
+import type { PresetUnoOptions, Theme } from 'unocss/preset-uno';
 import {
+  type PresetPrimeOptions,
   presetPrime,
   primeThemeColors,
-  type PresetPrimeOptions,
 } from 'unocss-preset-prime';
 import { moserLabsRules } from '@/utils/rules';
 import { moserLabsShortcuts } from '@/utils/shortcuts';
-import { moserLabsTheme, type MoserLabsAppThemeKey } from '@/utils/theme';
+import { type MoserLabsAppThemeKey, moserLabsTheme } from '@/utils/theme';
 
 export interface PresetMoserLabsOptions {
   /**

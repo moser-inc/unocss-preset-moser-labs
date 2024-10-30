@@ -1,6 +1,6 @@
 import { h } from '@unocss/preset-mini/utils';
-import { type RuleContext, type Rule } from 'unocss';
-import { type Theme } from 'unocss/preset-uno';
+import type { Rule, RuleContext } from 'unocss';
+import type { Theme } from 'unocss/preset-uno';
 
 export const moserLabsRules = [
   [

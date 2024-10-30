@@ -1,11 +1,11 @@
-import { type Theme } from '@unocss/preset-uno';
-import { type UserShortcuts } from 'unocss';
+import type { Theme } from '@unocss/preset-uno';
+import type { UserShortcuts } from 'unocss';
 import {
-  moserLabsThemes as themesObj,
-  type MoserLabsThemeValue,
-  type MoserLabsThemeColor,
-  moserLabsAppThemes as appThemesObject,
   type MoserLabsAppThemeKey,
+  type MoserLabsThemeColor,
+  type MoserLabsThemeValue,
+  moserLabsAppThemes as appThemesObject,
+  moserLabsThemes as themesObj,
 } from '@/utils/theme';
 
 function themeObjectToArray<Themes extends Record<string, MoserLabsThemeValue>>(

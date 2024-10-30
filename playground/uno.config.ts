@@ -1,7 +1,7 @@
 import { defineConfig } from 'unocss';
 import {
-  moserLabsThemeKeys,
   moserLabsAppThemeKeys,
+  moserLabsThemeKeys,
   presetMoserLabs,
 } from '../dist';
 

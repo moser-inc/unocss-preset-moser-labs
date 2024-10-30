@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { type MoserLabsThemeKey, type MoserLabsAppThemeKey } from '../../dist';
+import type { MoserLabsAppThemeKey, MoserLabsThemeKey } from '../../dist';
 
 export function Board({ className = '' }: { className?: string }) {
   const themeKeys = [
