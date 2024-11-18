@@ -2,6 +2,7 @@ import type { Theme } from '@unocss/preset-uno';
 import type { UserShortcuts } from 'unocss';
 import {
   type MoserLabsAppThemeKey,
+  type MoserLabsAppThemes,
   type MoserLabsThemeColor,
   type MoserLabsThemeValue,
   moserLabsAppThemes as appThemesObject,
@@ -93,22 +94,39 @@ function generateThemeShortcuts<
           } as const)
         : undefined;
 
-      const iconShortcuts = {
-        [`i-mli-${themeKey}-badge`]: `i-mli-${themeKey}-badge-dark light:i-mli-${themeKey}-badge-light`,
-        [`i-mli-${themeKey}-badge-lg`]: `i-mli-${themeKey}-badge-lg-dark light:i-mli-${themeKey}-badge-lg-light`,
-      } as const;
-
       return {
         ...shortcutsResult,
         ...colorShortcuts,
         ...gradientShortcuts,
         ...defaultGradientShortcuts,
-        ...iconShortcuts,
       } as const;
     },
     {} as Record<string, string>,
   );
 }
+
+const generateIconShortcuts = (
+  themes: MoserLabsAppThemes,
+  defaultApp?: MoserLabsAppThemeKey,
+) => {
+  const iconShortcuts = themeObjectToArray(themes).reduce(
+    (result, { key }) => ({
+      ...result,
+      [`i-mli-${key}-badge`]: `i-mli-${key}-badge-dark light:i-mli-${key}-badge-light`,
+      [`i-mli-${key}-badge-lg`]: `i-mli-${key}-badge-lg-dark light:i-mli-${key}-badge-lg-light`,
+    }),
+    {} as Record<string, string>,
+  );
+
+  const defaultIconShortcuts = defaultApp
+    ? ({
+        ['i-mli-app-badge']: `i-mli-${defaultApp}-badge`,
+        ['i-mli-app-badge-lg']: `i-mli-${defaultApp}-badge-lg`,
+      } as const)
+    : undefined;
+
+  return { ...iconShortcuts, ...defaultIconShortcuts } as const;
+};
 
 export function generateShortcuts(defaultApp?: MoserLabsAppThemeKey) {
   const baseShortcuts = {
@@ -118,10 +136,12 @@ export function generateShortcuts(defaultApp?: MoserLabsAppThemeKey) {
 
   const themeShortcuts = generateThemeShortcuts(themesObj);
   const appThemeShortcuts = generateThemeShortcuts(appThemesObject, defaultApp);
+  const iconShortcuts = generateIconShortcuts(appThemesObject, defaultApp);
 
   return {
     ...baseShortcuts,
     ...themeShortcuts,
     ...appThemeShortcuts,
+    ...iconShortcuts,
   } as const satisfies UserShortcuts;
 }
