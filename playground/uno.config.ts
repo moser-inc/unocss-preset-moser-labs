@@ -29,6 +29,7 @@ const safeIcons = moserLabsAppThemeKeys.flatMap((appThemeKey) => [
 export default defineConfig({
   presets: [
     presetMoserLabs({
+      defaultApp: 'labs',
       extendUnoOptions: {
         dark: 'class',
       },

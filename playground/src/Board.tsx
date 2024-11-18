@@ -38,6 +38,22 @@ export function Board({ className = '' }: { className?: string }) {
         <h3 className="mbs-0">Background Colors</h3>
 
         <div className="flex flex-wrap gap-4">
+          <div className={`bg-primary text-primary-text px-4 py-2 rounded-xl`}>
+            bg-primary
+          </div>
+
+          <div
+            className={`bg-secondary text-secondary-text px-4 py-2 rounded-xl`}
+          >
+            bg-secondary
+          </div>
+
+          <div
+            className={`bg-primary-gradient text-primary-text px-4 py-2 rounded-xl`}
+          >
+            bg-primary-gradient
+          </div>
+
           {allThemeKeys.map((key) => (
             <Fragment key={key}>
               <div
@@ -66,6 +82,18 @@ export function Board({ className = '' }: { className?: string }) {
         <h3 className="mbs-0 mbe-3">Text Colors</h3>
 
         <div className="flex flex-wrap gap-y-2">
+          <div className={`text-primary px-4 py-2 rounded-xl`}>
+            text-primary
+          </div>
+
+          <div className={`text-secondary px-4 py-2 rounded-xl`}>
+            text-secondary
+          </div>
+
+          <div className={`text-primary-gradient px-4 py-2 rounded-xl`}>
+            text-primary-gradient
+          </div>
+
           {allThemeKeys.map((key) => (
             <Fragment key={key}>
               <div className={`text-${key}-primary px-4 py-2 rounded-xl`}>
@@ -126,6 +154,16 @@ export function Board({ className = '' }: { className?: string }) {
         <h3 className="mbs-0">Badges</h3>
 
         <div className="flex flex-wrap gap-6">
+          <div className="flex items-center gap-4">
+            <i className={`i-mli-app-badge text-4xl`} />
+            <span>i-mli-app-badge</span>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <i className={`i-mli-app-badge-lg text-4xl`} />
+            <span>i-mli-app-badge-lg</span>
+          </div>
+
           {appThemeKeys.map((key) => (
             <Fragment key={key}>
               <div className="flex items-center gap-4">
