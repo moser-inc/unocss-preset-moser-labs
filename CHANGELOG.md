@@ -1,3 +1,14 @@
+## [1.18.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.17.0...v1.18.0) (2024-11-18)
+
+### Features
+
+* add default icon shortcut and only generate icon shortcuts with app theme values ([2c75c0e](https://github.com/moser-inc/unocss-preset-moser-labs/commit/2c75c0ea01ec1273f0542e8aa937251f661fb3e9))
+* add default shortcut for theme background text color ([991deeb](https://github.com/moser-inc/unocss-preset-moser-labs/commit/991deeb0e997a064533f8e94ad97792e4b1f3712))
+
+### Miscellaneous Chores
+
+* update playground to text app defaults ([0354a41](https://github.com/moser-inc/unocss-preset-moser-labs/commit/0354a41104ec0bcea3dd86d2680ed440230df47b))
+
 ## [1.17.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.16.6...v1.17.0) (2024-10-30)
 
 ### Features
