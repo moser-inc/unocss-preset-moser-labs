@@ -57,6 +57,7 @@ function generateThemeShortcuts<
             ? ({
                 [`bg-${themeColorKey}`]: bgClass,
                 [`text-${themeColorKey}`]: textClass,
+                [`text-${themeColorKey}-text`]: `text-${themeKey}-${themeColorKey}-text`,
               } as const)
             : undefined;
 
