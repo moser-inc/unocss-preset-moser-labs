@@ -6,7 +6,7 @@
   "homepage": "https://github.com/moser-inc/unocss-preset-moser-labs#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moser-inc/unocss-preset-moser-labs.git"
+    "url": "git+https://github.com/moser-inc/unocss-preset-moser-labs.git"
   },
   "keywords": [
     "unocss",
