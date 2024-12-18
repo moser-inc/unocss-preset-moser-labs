@@ -1,3 +1,13 @@
+## [1.18.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.18.0...v1.18.1) (2024-12-18)
+
+### Miscellaneous Chores
+
+* **deps:** update deps ([b931787](https://github.com/moser-inc/unocss-preset-moser-labs/commit/b931787f04a5db7f97f9990a5a0c437071b0a9d6))
+* migrate to the new flat eslint config ([d3592df](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d3592df39f07efb643f7ada64b553b7183b513d7))
+* update dev deps ([6ca30e7](https://github.com/moser-inc/unocss-preset-moser-labs/commit/6ca30e7d930b272290c23cdefec57d65a7fa4cb2))
+* use `.node-version` file ([b4f6dbe](https://github.com/moser-inc/unocss-preset-moser-labs/commit/b4f6dbe2ec1bc94f6e2cc44eb6bb16ff52431d3a))
+* use full url for git repo ([e69704a](https://github.com/moser-inc/unocss-preset-moser-labs/commit/e69704a88355f024f6a2603e2c63f089c01227fd))
+
 ## [1.18.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.17.0...v1.18.0) (2024-11-18)
 
 ### Features
