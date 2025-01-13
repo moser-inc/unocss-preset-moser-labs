@@ -1,3 +1,14 @@
+## [1.18.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.18.1...v1.18.2) (2025-01-13)
+
+### Bug Fixes
+
+* support unocss epoch versioning ([57229b9](https://github.com/moser-inc/unocss-preset-moser-labs/commit/57229b9b7975d27aef5b8cf6ebc34d2c559329a4))
+
+### Miscellaneous Chores
+
+* update dev deps ([e43074b](https://github.com/moser-inc/unocss-preset-moser-labs/commit/e43074be41578494782dd77a7580cf3f6c42d373))
+* use typescript for eslint config file ([cc5d863](https://github.com/moser-inc/unocss-preset-moser-labs/commit/cc5d863da15bc0465b1b68dfffb464f738b65e2e))
+
 ## [1.18.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.18.0...v1.18.1) (2024-12-18)
 
 ### Miscellaneous Chores
