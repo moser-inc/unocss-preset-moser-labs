@@ -18,19 +18,19 @@
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
+      "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
     }
   },
   "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "dev": "tsup --watch",
-    "build": "tsup",
+    "build": "unbuild",
+    "stub": "unbuild --stub",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --max-warnings 0",
     "publint": "npx -y publint@latest && npx -y @arethetypeswrong/cli@latest --pack",
     "type-check": "tsc --noEmit",
@@ -47,6 +47,7 @@
   "dependencies": {
     "@iconify-json/prime": "^1.2.2",
     "@iconify/utils": "^2.2.1",
+    "@unocss/preset-mini": "^65.4.2",
     "unocss-preset-prime": "^3.3.2"
   },
   "devDependencies": {
@@ -69,8 +70,8 @@
     "sass": "^1.83.4",
     "semantic-release": "^24.2.1",
     "standard-version": "^9.5.0",
-    "tsup": "^8.3.5",
     "typescript": "^5.7.3",
+    "unbuild": "^3.3.1",
     "unocss": "^65.4.2",
     "vite": "^6.0.11"
   },

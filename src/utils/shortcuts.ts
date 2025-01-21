@@ -1,7 +1,7 @@
 import type { UserShortcuts } from 'unocss';
 import type { Theme } from 'unocss/preset-uno';
-import { generateShortcuts } from '@/utils/generators';
-import type { MoserLabsAppThemeKey } from '@/utils/theme';
+import { generateShortcuts } from '../utils/generators';
+import type { MoserLabsAppThemeKey } from '../utils/theme';
 
 export function moserLabsShortcuts(defaultApp?: MoserLabsAppThemeKey) {
   return [

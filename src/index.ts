@@ -8,9 +8,9 @@ import {
   presetPrime,
   primeThemeColors,
 } from 'unocss-preset-prime';
-import { moserLabsRules } from '@/utils/rules';
-import { moserLabsShortcuts } from '@/utils/shortcuts';
-import { type MoserLabsAppThemeKey, moserLabsTheme } from '@/utils/theme';
+import { moserLabsRules } from './utils/rules';
+import { moserLabsShortcuts } from './utils/shortcuts';
+import { type MoserLabsAppThemeKey, moserLabsTheme } from './utils/theme';
 
 export interface PresetMoserLabsOptions {
   /**
@@ -72,4 +72,4 @@ export function presetMoserLabs(
 }
 
 export { primeThemeColors };
-export * from '@/utils/theme';
+export * from './utils/theme';

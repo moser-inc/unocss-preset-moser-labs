@@ -1,6 +1,6 @@
 import type { Theme } from 'unocss/preset-uno';
 import { primeThemeColors } from 'unocss-preset-prime';
-import { generateThemeColors } from '@/utils/generators';
+import { generateThemeColors } from '../utils/generators';
 
 export const moserLabsThemes = {
   aero: {
