@@ -1,3 +1,9 @@
+## [1.18.4](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.18.3...v1.18.4) (2025-01-21)
+
+### Bug Fixes
+
+* update dirname shim ([10b0f09](https://github.com/moser-inc/unocss-preset-moser-labs/commit/10b0f099b8eeba945017178ebe34c6bd4c79e298))
+
 ## [1.18.3](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.18.2...v1.18.3) (2025-01-21)
 
 ### Bug Fixes
