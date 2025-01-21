@@ -1,4 +1,5 @@
-import { resolve } from 'node:path';
+import { dirname } from 'node:path';
+import { fileURLToPath, resolve } from 'node:url';
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders';
 import { type Preset, presetIcons, presetUno } from 'unocss';
 import type { IconsOptions as PresetIconsOptions } from 'unocss/preset-icons';
@@ -36,6 +37,8 @@ export interface PresetMoserLabsOptions {
    */
   extendIconsOptions?: PresetIconsOptions;
 }
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export function presetMoserLabs(
   options?: PresetMoserLabsOptions,
