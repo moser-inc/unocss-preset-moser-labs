@@ -61,7 +61,7 @@ export function presetMoserLabs(
       presetIcons({
         ...extendIconsOptions,
         collections: {
-          mli: FileSystemIconLoader(resolve(_dirname, './icons')),
+          mli: FileSystemIconLoader(resolve(_dirname, 'dist/icons')),
           ...extendIconsOptions?.collections,
         },
         extraProperties: {
