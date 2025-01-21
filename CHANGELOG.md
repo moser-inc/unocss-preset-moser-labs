@@ -1,3 +1,15 @@
+## [1.18.3](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.18.2...v1.18.3) (2025-01-21)
+
+### Bug Fixes
+
+* shim dirname for esm ([42674df](https://github.com/moser-inc/unocss-preset-moser-labs/commit/42674df5b58de1bf4bf69feb8b68dac8b1fe853f))
+
+### Miscellaneous Chores
+
+* add test script ([cbf68c6](https://github.com/moser-inc/unocss-preset-moser-labs/commit/cbf68c6ee00fe6169c256c364ba6cfe980f63170))
+* migrate from `tsup` to `unbuild` ([3f80203](https://github.com/moser-inc/unocss-preset-moser-labs/commit/3f80203a61914e709ab9c47c3b939d0b022e4c0c))
+* update dev deps ([9b2f8ce](https://github.com/moser-inc/unocss-preset-moser-labs/commit/9b2f8ce375a8d658f375f86b0faa8b32d5da4ebe))
+
 ## [1.18.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.18.1...v1.18.2) (2025-01-13)
 
 ### Bug Fixes
