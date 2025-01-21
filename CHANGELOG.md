@@ -1,3 +1,9 @@
+## [1.18.5](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.18.4...v1.18.5) (2025-01-21)
+
+### Bug Fixes
+
+* include dist in path to icons ([763068d](https://github.com/moser-inc/unocss-preset-moser-labs/commit/763068ddbddac0910b2cc4db21bced28d345ba49))
+
 ## [1.18.4](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.18.3...v1.18.4) (2025-01-21)
 
 ### Bug Fixes
