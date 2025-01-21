@@ -38,7 +38,10 @@ export interface PresetMoserLabsOptions {
   extendIconsOptions?: PresetIconsOptions;
 }
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const _dirname =
+  typeof __dirname !== 'undefined'
+    ? __dirname
+    : dirname(fileURLToPath(import.meta.url));
 
 export function presetMoserLabs(
   options?: PresetMoserLabsOptions,
@@ -58,7 +61,7 @@ export function presetMoserLabs(
       presetIcons({
         ...extendIconsOptions,
         collections: {
-          mli: FileSystemIconLoader(resolve(__dirname, './icons')),
+          mli: FileSystemIconLoader(resolve(_dirname, './icons')),
           ...extendIconsOptions?.collections,
         },
         extraProperties: {
