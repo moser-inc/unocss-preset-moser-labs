@@ -1,3 +1,19 @@
+## [2.0.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.18.5...v2.0.0) (2025-02-20)
+
+### ⚠ BREAKING CHANGES
+
+* support unocss `v66.0.0` and migrate away from `presetUno`
+* publish as esm only
+
+### Features
+
+* publish as esm only ([9f5eefb](https://github.com/moser-inc/unocss-preset-moser-labs/commit/9f5eefb04ce436db2c7b92b7ba658b9f4e976ae5))
+* support unocss `v66.0.0` and migrate away from `presetUno` ([d6be892](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d6be892817f2ee42ca2401291489ddba3bc78cb5))
+
+### Miscellaneous Chores
+
+* update deps ([430a8c7](https://github.com/moser-inc/unocss-preset-moser-labs/commit/430a8c7c41480e3a0838a818812609dfafa5c358))
+
 ## [1.18.5](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.18.4...v1.18.5) (2025-01-21)
 
 ### Bug Fixes
