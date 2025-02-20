@@ -2,6 +2,7 @@
   "name": "@moser-inc/unocss-preset-moser-labs",
   "version": "1.18.5",
   "description": "Shared UnoCSS preset for the Moser Labs suite of applications.",
+  "type": "module",
   "license": "UNLICENSED",
   "homepage": "https://github.com/moser-inc/unocss-preset-moser-labs#readme",
   "repository": {
@@ -15,24 +16,23 @@
   "bugs": {
     "url": "https://github.com/moser-inc/unocss-preset-moser-labs/issues"
   },
-  "type": "module",
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
-  },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.cts",
   "files": [
     "dist"
   ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
   "scripts": {
     "build": "unbuild",
     "stub": "unbuild --stub",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --max-warnings 0",
-    "publint": "npx -y publint@latest && npx -y @arethetypeswrong/cli@latest --pack",
+    "publint": "npx -y publint@latest && npx -y @arethetypeswrong/cli@latest --pack --profile esm-only",
     "type-check": "tsc --noEmit",
     "test": "run-s lint type-check build publint",
     "playground:dev": "vite --config ./playground/vite.config.ts",
