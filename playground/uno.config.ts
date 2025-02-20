@@ -30,7 +30,7 @@ export default defineConfig({
   presets: [
     presetMoserLabs({
       defaultApp: 'labs',
-      extendUnoOptions: {
+      extendWind3Options: {
         dark: 'class',
       },
     }),
