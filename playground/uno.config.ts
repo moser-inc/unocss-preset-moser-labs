@@ -1,9 +1,6 @@
 import { defineConfig } from 'unocss';
-import {
-  moserLabsAppThemeKeys,
-  moserLabsThemeKeys,
-  presetMoserLabs,
-} from '../dist';
+import { presetMoserLabs } from '../dist';
+import { moserLabsAppThemeKeys, moserLabsThemeKeys } from '../dist/theme';
 
 const allThemeKeys = [...moserLabsThemeKeys, ...moserLabsAppThemeKeys];
 
