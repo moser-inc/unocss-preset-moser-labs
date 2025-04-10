@@ -1,3 +1,19 @@
+## [2.1.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v2.0.0...v2.1.0) (2025-04-10)
+
+### Features
+
+* add dedicated export for labs theme colors ([50c8f89](https://github.com/moser-inc/unocss-preset-moser-labs/commit/50c8f89e14656910a2f23b08c76d5ea124a1abd5))
+
+### Documentation
+
+* add snippet about theme color export ([95cd65a](https://github.com/moser-inc/unocss-preset-moser-labs/commit/95cd65adc5526ac78845d4207f4d52e87dae2c0e))
+
+### Miscellaneous Chores
+
+* update deps ([6342c88](https://github.com/moser-inc/unocss-preset-moser-labs/commit/6342c88dafa501859ae00bdb432f846d78ce07ef))
+* update playground imports ([bb15891](https://github.com/moser-inc/unocss-preset-moser-labs/commit/bb1589197c564aa9fd4353bd3ecb6fc18143309b))
+* use copy builder for moving icon assets ([e93d645](https://github.com/moser-inc/unocss-preset-moser-labs/commit/e93d645420d6b6254da5d81e2620e7b04121e2df))
+
 ## [2.0.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v1.18.5...v2.0.0) (2025-02-20)
 
 ### ⚠ BREAKING CHANGES
