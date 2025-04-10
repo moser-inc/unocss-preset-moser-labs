@@ -75,6 +75,8 @@ presetMoserLabs({
 
 This preset exports helpful types and the generated theme colors directly for extending the theme to support application specific semantic colors.
 
+> :warning: For usage at runtime, use the dedicated export to prevent loading core UnoCSS logic: `import { primeThemeColors } from '@moser-inc/unocss-preset-moser-labs/theme'`.
+
 ```ts
 // uno.config.ts
 
