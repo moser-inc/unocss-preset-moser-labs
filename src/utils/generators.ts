@@ -7,7 +7,7 @@ import {
   type MoserLabsThemeValue,
   moserLabsAppThemes as appThemesObject,
   moserLabsThemes as themesObj,
-} from '../utils/theme';
+} from '../theme';
 
 function themeObjectToArray<Themes extends Record<string, MoserLabsThemeValue>>(
   themes: Themes,

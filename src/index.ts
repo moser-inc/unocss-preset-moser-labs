@@ -4,14 +4,10 @@ import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders';
 import { type Preset, presetIcons, presetWind3 } from 'unocss';
 import type { IconsOptions as PresetIconsOptions } from 'unocss/preset-icons';
 import type { PresetWind3Options, Theme } from 'unocss/preset-wind3';
-import {
-  type PresetPrimeOptions,
-  presetPrime,
-  primeThemeColors,
-} from 'unocss-preset-prime';
+import { type PresetPrimeOptions, presetPrime } from 'unocss-preset-prime';
+import { type MoserLabsAppThemeKey, moserLabsTheme } from './theme';
 import { moserLabsRules } from './utils/rules';
 import { moserLabsShortcuts } from './utils/shortcuts';
-import { type MoserLabsAppThemeKey, moserLabsTheme } from './utils/theme';
 
 export interface PresetMoserLabsOptions {
   /**
@@ -77,5 +73,4 @@ export function presetMoserLabs(
   };
 }
 
-export { primeThemeColors };
-export * from './utils/theme';
+export * from './theme';
