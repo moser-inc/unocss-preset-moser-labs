@@ -2,10 +2,8 @@ import type { Theme } from '@unocss/preset-wind3';
 import type { UserShortcuts } from 'unocss';
 import {
   type MoserLabsAppThemeKey,
-  type MoserLabsAppThemes,
   type MoserLabsThemeColor,
   type MoserLabsThemeValue,
-  type MoserLabsThemes,
   moserLabsAppThemes as appThemesObject,
   moserLabsThemes as themesObj,
 } from '../theme';
@@ -107,11 +105,8 @@ function generateThemeShortcuts<
   );
 }
 
-const generateIconShortcuts = (
-  themes: MoserLabsAppThemes,
-  defaultApp?: MoserLabsAppThemeKey,
-) => {
-  const iconShortcuts = themeObjectToArray(themes).reduce(
+function generateIconShortcuts(defaultApp?: MoserLabsAppThemeKey) {
+  const iconShortcuts = themeObjectToArray(appThemesObject).reduce(
     (result, { key }) => ({
       ...result,
       [`i-mli-${key}-badge`]: `i-mli-${key}-badge-dark light:i-mli-${key}-badge-light`,
@@ -128,13 +123,15 @@ const generateIconShortcuts = (
     : undefined;
 
   return { ...iconShortcuts, ...defaultIconShortcuts } as const;
-};
+}
 
-const generateTileShortcuts = (
-  themes: MoserLabsThemes,
-  defaultApp?: MoserLabsAppThemeKey,
-) => {
-  const tileShortcuts = themeObjectToArray(themes).reduce(
+function generateTileShortcuts(defaultApp?: MoserLabsAppThemeKey) {
+  const allThemes = {
+    ...themesObj,
+    ...appThemesObject,
+  };
+
+  const tileShortcuts = themeObjectToArray(allThemes).reduce(
     (result, { key }) => ({
       ...result,
       [`labs-${key}-tile`]: `flex justify-center items-center bg-${key}-gradient text-${key}-primary-text size-1em rounded-md *:text-0.6em`,
@@ -151,7 +148,7 @@ const generateTileShortcuts = (
     : undefined;
 
   return { ...tileShortcuts, ...defaultTileShortcuts } as const;
-};
+}
 
 export function generateShortcuts(defaultApp?: MoserLabsAppThemeKey) {
   const baseShortcuts = {
@@ -161,11 +158,8 @@ export function generateShortcuts(defaultApp?: MoserLabsAppThemeKey) {
 
   const themeShortcuts = generateThemeShortcuts(themesObj);
   const appThemeShortcuts = generateThemeShortcuts(appThemesObject, defaultApp);
-  const iconShortcuts = generateIconShortcuts(appThemesObject, defaultApp);
-  const tileShortcuts = generateTileShortcuts(
-    { ...themesObj, ...appThemesObject },
-    defaultApp,
-  );
+  const iconShortcuts = generateIconShortcuts(defaultApp);
+  const tileShortcuts = generateTileShortcuts(defaultApp);
 
   return {
     ...baseShortcuts,
