@@ -5,6 +5,7 @@ import {
   type MoserLabsAppThemes,
   type MoserLabsThemeColor,
   type MoserLabsThemeValue,
+  type MoserLabsThemes,
   moserLabsAppThemes as appThemesObject,
   moserLabsThemes as themesObj,
 } from '../theme';
@@ -129,6 +130,29 @@ const generateIconShortcuts = (
   return { ...iconShortcuts, ...defaultIconShortcuts } as const;
 };
 
+const generateTileShortcuts = (
+  themes: MoserLabsThemes,
+  defaultApp?: MoserLabsAppThemeKey,
+) => {
+  const tileShortcuts = themeObjectToArray(themes).reduce(
+    (result, { key }) => ({
+      ...result,
+      [`labs-${key}-tile`]: `flex justify-center items-center bg-${key}-gradient text-${key}-primary-text size-1em rounded-md *:text-0.6em`,
+      [`labs-${key}-tile-lg`]: `labs-${key}-tile *:text-1em`,
+    }),
+    {} as Record<string, string>,
+  );
+
+  const defaultTileShortcuts = defaultApp
+    ? ({
+        'labs-app-tile': `labs-${defaultApp}-tile`,
+        'labs-app-tile-lg': `labs-${defaultApp}-tile-lg`,
+      } as const)
+    : undefined;
+
+  return { ...tileShortcuts, ...defaultTileShortcuts } as const;
+};
+
 export function generateShortcuts(defaultApp?: MoserLabsAppThemeKey) {
   const baseShortcuts = {
     'bg-gradient-base': 'bg-gradient-linear bg-gradient-shape-[111deg]',
@@ -138,11 +162,16 @@ export function generateShortcuts(defaultApp?: MoserLabsAppThemeKey) {
   const themeShortcuts = generateThemeShortcuts(themesObj);
   const appThemeShortcuts = generateThemeShortcuts(appThemesObject, defaultApp);
   const iconShortcuts = generateIconShortcuts(appThemesObject, defaultApp);
+  const tileShortcuts = generateTileShortcuts(
+    { ...themesObj, ...appThemesObject },
+    defaultApp,
+  );
 
   return {
     ...baseShortcuts,
     ...themeShortcuts,
     ...appThemeShortcuts,
     ...iconShortcuts,
+    ...tileShortcuts,
   } as const satisfies UserShortcuts;
 }

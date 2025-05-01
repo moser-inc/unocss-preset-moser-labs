@@ -179,6 +179,62 @@ export function Board({ className = '' }: { className?: string }) {
           ))}
         </div>
       </section>
+
+      <section>
+        <h3 className="mbs-0">Tiles</h3>
+
+        <div className="flex flex-wrap gap-6">
+          <div className="flex items-center gap-4">
+            <div className={`labs-app-tile text-4xl`}>
+              <i className={`i-mli-labs`} />
+            </div>
+            <span>labs-app-tile</span>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <div className={`labs-app-tile-lg text-4xl`}>
+              <i className={`i-mli-labs`} />
+            </div>
+            <span>labs-app-tile-lg</span>
+          </div>
+
+          {appThemeKeys.map((key) => (
+            <Fragment key={key}>
+              <div className="flex items-center gap-4">
+                <div className={`labs-${key}-tile text-4xl`}>
+                  <i className={`i-mli-${key}`} />
+                </div>
+                <span>labs-{key}-tile</span>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className={`labs-${key}-tile-lg text-4xl`}>
+                  <i className={`i-mli-${key}`} />
+                </div>
+                <span>labs-{key}-tile-lg</span>
+              </div>
+            </Fragment>
+          ))}
+
+          {themeKeys.map((key) => (
+            <Fragment key={key}>
+              <div className="flex items-center gap-4">
+                <div className={`labs-${key}-tile text-4xl`}>
+                  <i className={`i-mli-apps`} />
+                </div>
+                <span>labs-{key}-tile</span>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className={`labs-${key}-tile-lg text-4xl`}>
+                  <i className={`i-mli-apps`} />
+                </div>
+                <span>labs-{key}-tile-lg</span>
+              </div>
+            </Fragment>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
