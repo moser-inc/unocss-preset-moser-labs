@@ -1,3 +1,17 @@
+## [2.2.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v2.1.0...v2.2.0) (2025-05-01)
+
+### Features
+
+* add support for icon tiles ([ca803ed](https://github.com/moser-inc/unocss-preset-moser-labs/commit/ca803ed79ccbfde9bebd615585d89b55f31a44f3))
+
+### Miscellaneous Chores
+
+* remove wrapping block chars for object key strings ([4dec186](https://github.com/moser-inc/unocss-preset-moser-labs/commit/4dec186b9c7d0df36839098d2116b6bc56017bd4))
+
+### Code Refactoring
+
+* simplify icon and tile shortcut generation functions ([23f6530](https://github.com/moser-inc/unocss-preset-moser-labs/commit/23f65301ab01370a600f44563e0a906c04337d9d))
+
 ## [2.1.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v2.0.0...v2.1.0) (2025-04-10)
 
 ### Features
