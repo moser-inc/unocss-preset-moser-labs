@@ -88,10 +88,10 @@ function generateThemeShortcuts<
 
       const defaultGradientShortcuts = isDefaultTheme
         ? ({
-            ['bg-primary-gradient']: bgGradientClass,
-            ['bg-primary-gradient-reverse']: bgGradientReverseClass,
-            ['text-primary-gradient']: textGradientClass,
-            ['text-primary-gradient-reverse']: textGradientReverseClass,
+            'bg-primary-gradient': bgGradientClass,
+            'bg-primary-gradient-reverse': bgGradientReverseClass,
+            'text-primary-gradient': textGradientClass,
+            'text-primary-gradient-reverse': textGradientReverseClass,
           } as const)
         : undefined;
 
@@ -121,8 +121,8 @@ const generateIconShortcuts = (
 
   const defaultIconShortcuts = defaultApp
     ? ({
-        ['i-mli-app-badge']: `i-mli-${defaultApp}-badge`,
-        ['i-mli-app-badge-lg']: `i-mli-${defaultApp}-badge-lg`,
+        'i-mli-app-badge': `i-mli-${defaultApp}-badge`,
+        'i-mli-app-badge-lg': `i-mli-${defaultApp}-badge-lg`,
       } as const)
     : undefined;
 
@@ -131,8 +131,8 @@ const generateIconShortcuts = (
 
 export function generateShortcuts(defaultApp?: MoserLabsAppThemeKey) {
   const baseShortcuts = {
-    ['bg-gradient-base']: 'bg-gradient-linear bg-gradient-shape-[111deg]',
-    ['text-gradient-base']: 'bg-clip-text text-transparent',
+    'bg-gradient-base': 'bg-gradient-linear bg-gradient-shape-[111deg]',
+    'text-gradient-base': 'bg-clip-text text-transparent',
   } as const;
 
   const themeShortcuts = generateThemeShortcuts(themesObj);
