@@ -1,3 +1,13 @@
+## [2.2.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v2.2.0...v2.2.1) (2025-05-07)
+
+### Bug Fixes
+
+* scale tile border radius using percentage ([0a2ca2e](https://github.com/moser-inc/unocss-preset-moser-labs/commit/0a2ca2e0fe5748d544927a762952ff1c3ba851b7))
+
+### Miscellaneous Chores
+
+* update deps ([5a13137](https://github.com/moser-inc/unocss-preset-moser-labs/commit/5a131372f907d6e7feb856713f6e9d2459621f68))
+
 ## [2.2.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v2.1.0...v2.2.0) (2025-05-01)
 
 ### Features
