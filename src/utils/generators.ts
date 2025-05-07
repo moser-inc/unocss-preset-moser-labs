@@ -134,7 +134,7 @@ function generateTileShortcuts(defaultApp?: MoserLabsAppThemeKey) {
   const tileShortcuts = themeObjectToArray(allThemes).reduce(
     (result, { key }) => ({
       ...result,
-      [`labs-${key}-tile`]: `flex justify-center items-center bg-${key}-gradient text-${key}-primary-text size-1em rounded-md *:text-0.6em`,
+      [`labs-${key}-tile`]: `flex justify-center items-center bg-${key}-gradient size-1em rounded-[16%] *:text-0.6em text-black light:text-white`,
       [`labs-${key}-tile-lg`]: `labs-${key}-tile *:text-1em`,
     }),
     {} as Record<string, string>,
