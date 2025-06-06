@@ -87,10 +87,24 @@ export default defineConfig({
   presets: [presetMoserLabs()],
   theme: {
     colors: {
-      success: primeThemeColors.green[500],
-      warning: primeThemeColors.orange[500],
-      error: primeThemeColors.red[500],
+      success: {
+        dark: primeThemeColors.green[900],
+        light: primeThemeColors.green[100],
+      },
+      warning: {
+        dark: primeThemeColors.orange[900],
+        light: primeThemeColors.orange[100],
+      },
+      error: {
+        dark: primeThemeColors.red[900],
+        light: primeThemeColors.red[100],
+      },
     },
+  },
+  shortcuts: {
+    'bg-success': 'bg-success-dark light:bg-success-light',
+    'bg-warning': 'bg-warning-dark light:bg-warning-light',
+    'bg-error': 'bg-error-dark light:bg-error-light',
   },
 });
 ```
