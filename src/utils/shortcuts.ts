@@ -28,7 +28,9 @@ export function moserLabsShortcuts(defaultApp?: MoserLabsAppThemeKey) {
       'labs-layout-nav-menu': 'shrink w-auto! border-0! bg-transparent! py-0!',
       'labs-layout-nav-menu-list': 'flex flex-col gap-2',
       'labs-layout-nav-menu-list-item':
-        'h-14 gap-6 b-0! rounded-full! text-left!',
+        'h-14 gap-6 whitespace-nowrap text-color b-0! rounded-full! text-left!',
+      'labs-layout-nav-menu-list-item-active':
+        'bg-primary! text-primary-text! hover:bg-primary-600!',
       'labs-layout-nav-mobile': 'fixed! bottom-4 right-4 z-2',
       'labs-layout-main': 'min-w-0 flex grow flex-col',
       'labs-layout-main-content':
