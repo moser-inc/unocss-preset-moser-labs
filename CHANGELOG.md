@@ -1,3 +1,22 @@
+## [2.3.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v2.2.1...v2.3.0) (2025-06-11)
+
+### Features
+
+* add menu list item active shortcut and refine base list item styles ([bf98efb](https://github.com/moser-inc/unocss-preset-moser-labs/commit/bf98efb914958a1810f8c83a19b80756245b64a4))
+
+### Documentation
+
+* update semantic color example to demonstrate light dark support ([4c3dff4](https://github.com/moser-inc/unocss-preset-moser-labs/commit/4c3dff4b954a9d68fafa530a4ec6d3f6c8c20f41))
+
+### Miscellaneous Chores
+
+* refresh editorconfig ([d49644a](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d49644abf784467873fa8498510e3ec737fb4d51))
+* update deps ([ae0efa8](https://github.com/moser-inc/unocss-preset-moser-labs/commit/ae0efa89927c8b9d6ccd9936adb97289339b9559))
+
+### Code Refactoring
+
+* update important order to match tailwind 4 syntax ([718a332](https://github.com/moser-inc/unocss-preset-moser-labs/commit/718a33266293765b12618ddd125c843e1dd46feb))
+
 ## [2.2.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v2.2.0...v2.2.1) (2025-05-07)
 
 ### Bug Fixes
