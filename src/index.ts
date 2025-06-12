@@ -39,6 +39,23 @@ const _dirname =
     ? __dirname
     : dirname(fileURLToPath(import.meta.url));
 
+/**
+ * Shared UnoCSS preset for the Moser Labs suite of applications.
+ *
+ * Readme: https://github.com/moser-inc/unocss-preset-moser-labs/blob/main/README.md
+ *
+ * Shortcuts: https://github.com/moser-inc/unocss-preset-moser-labs/blob/main/src/utils/shortcuts.ts
+ *
+ * ```ts
+ * // uno.config.ts
+ * import { defineConfig } from 'unocss';
+ * import { presetMoserLabs } from '@moser-inc/unocss-preset-moser-labs';
+ *
+ * export default defineConfig({
+ *   presets: [presetMoserLabs({ defaultApp: 'labs' })],
+ * });
+ * ```
+ */
 export function presetMoserLabs(
   options?: PresetMoserLabsOptions,
 ): Preset<Theme> {
