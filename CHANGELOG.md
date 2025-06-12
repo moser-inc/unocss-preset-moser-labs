@@ -1,3 +1,19 @@
+## [2.4.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v2.3.0...v2.4.0) (2025-06-12)
+
+### Features
+
+* add layout header title link shortcut ([cc33770](https://github.com/moser-inc/unocss-preset-moser-labs/commit/cc337708fa6bb3327e4a335b00290b80b7b15343))
+
+### Bug Fixes
+
+* add text color inheritance for layout nav icons ([c34c352](https://github.com/moser-inc/unocss-preset-moser-labs/commit/c34c35206f4d13cb21da5f81d20721c842a1529d))
+* drop white space nowrap on nav menu list items ([8e67387](https://github.com/moser-inc/unocss-preset-moser-labs/commit/8e67387bb3d2d76ac7541c9baa5f17b1bb47eff0))
+
+### Miscellaneous Chores
+
+* add jsdoc ([8acdd8f](https://github.com/moser-inc/unocss-preset-moser-labs/commit/8acdd8f7fc7781cd6175539be98ea7a31fb11753))
+* update deps ([1e91c83](https://github.com/moser-inc/unocss-preset-moser-labs/commit/1e91c839939e6f7026cfca452ad5c09e1694794d))
+
 ## [2.3.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v2.2.1...v2.3.0) (2025-06-11)
 
 ### Features
