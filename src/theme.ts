@@ -1,4 +1,4 @@
-import type { Theme } from '@unocss/preset-mini';
+import type { Theme } from '@unocss/preset-wind4';
 import { primeThemeColors } from 'unocss-preset-prime/theme';
 import { generateThemeColors } from './utils/generators';
 

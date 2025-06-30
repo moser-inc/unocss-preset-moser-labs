@@ -51,11 +51,11 @@ presetMoserLabs({
    */
   defaultApp?: MoserLabsAppThemeKey;
   /**
-   * Extend `presetWind3` options.
+   * Extend `presetWind4` options.
    *
-   * https://unocss.dev/presets/wind
+   * https://unocss.dev/presets/wind4
    */
-  extendWind3Options?: PresetWind3Options;
+  extendWind4Options?: PresetWind4Options;
   /**
    * Extend `presetPrime` options.
    *

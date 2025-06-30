@@ -32,7 +32,7 @@ export default defineConfig({
   presets: [
     presetMoserLabs({
       defaultApp: 'labs',
-      extendWind3Options: {
+      extendWind4Options: {
         dark: 'class',
       },
     }),

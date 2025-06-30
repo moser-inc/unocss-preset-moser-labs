@@ -1,6 +1,6 @@
 import { h } from '@unocss/preset-mini/utils';
 import type { Rule, RuleContext } from 'unocss';
-import type { Theme } from 'unocss/preset-wind3';
+import type { Theme } from 'unocss/preset-wind4';
 
 export const moserLabsRules = [
   [
@@ -16,10 +16,10 @@ export const moserLabsRules = [
         fill: 'auto-fill',
       };
 
-      const wv = theme.width?.[s];
+      const cv = theme.container?.[s];
       const sv = theme.spacing?.[s];
       const fbv = h.bracket.cssvar.global.rem(s);
-      const v = wv ?? sv ?? fbv;
+      const v = cv ?? sv ?? fbv;
 
       if (v === null || v === undefined) return;
 
@@ -29,7 +29,7 @@ export const moserLabsRules = [
     },
     {
       autocomplete: [
-        'grid-(cols|rows)-(fit|fill)-$width',
+        'grid-(cols|rows)-(fit|fill)-$container',
         'grid-(cols|rows)-(fit|fill)-<num>',
       ],
     },

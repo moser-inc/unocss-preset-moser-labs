@@ -1,5 +1,5 @@
 import type { UserShortcuts } from 'unocss';
-import type { Theme } from 'unocss/preset-wind3';
+import type { Theme } from 'unocss/preset-wind4';
 import type { MoserLabsAppThemeKey } from '../theme';
 import { generateShortcuts } from '../utils/generators';
 

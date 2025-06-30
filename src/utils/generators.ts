@@ -1,4 +1,4 @@
-import type { Theme } from '@unocss/preset-wind3';
+import type { Theme } from '@unocss/preset-wind4';
 import type { UserShortcuts } from 'unocss';
 import {
   type MoserLabsAppThemeKey,
@@ -152,7 +152,7 @@ function generateTileShortcuts(defaultApp?: MoserLabsAppThemeKey) {
 
 export function generateShortcuts(defaultApp?: MoserLabsAppThemeKey) {
   const baseShortcuts = {
-    'bg-gradient-base': 'bg-gradient-linear bg-gradient-shape-[111deg]',
+    'bg-gradient-base': 'bg-linear-111',
     'text-gradient-base': 'bg-clip-text text-transparent',
   } as const;
 
