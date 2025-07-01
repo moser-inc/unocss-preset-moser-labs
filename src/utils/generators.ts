@@ -152,7 +152,7 @@ function generateTileShortcuts(defaultApp?: MoserLabsAppThemeKey) {
 
 export function generateShortcuts(defaultApp?: MoserLabsAppThemeKey) {
   const baseShortcuts = {
-    'bg-gradient-base': 'bg-linear-111',
+    'bg-gradient-base': 'bg-linear-[111deg_in_oklab]',
     'text-gradient-base': 'bg-clip-text text-transparent',
   } as const;
 
