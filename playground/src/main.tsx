@@ -1,6 +1,4 @@
-import './lara-dark-indigo-theme.scss';
-import './lara-light-indigo-theme.scss';
-import 'virtual:uno.css';
+import 'uno.css';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { App } from './App.tsx';

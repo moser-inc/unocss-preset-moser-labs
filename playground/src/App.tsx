@@ -5,10 +5,7 @@ export function App() {
     <main className="font-700">
       <h1 className="sr-only">UnoCSS Preset Moser Labs Playground</h1>
 
-      <div className="grid grid-cols-2">
-        <Board className="dark min-h-screen bg-ground text-color p-6" />
-        <Board className="light min-h-screen bg-ground text-color p-6" />
-      </div>
+      <Board className="min-h-screen bg-ground text-color p-6" />
     </main>
   );
 }
