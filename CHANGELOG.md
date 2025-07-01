@@ -1,3 +1,26 @@
+## [3.0.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v2.4.0...v3.0.0) (2025-07-01)
+
+### ⚠ BREAKING CHANGES
+
+* use tailwind 4 preset
+
+### Features
+
+* use tailwind 4 preset ([23e97a3](https://github.com/moser-inc/unocss-preset-moser-labs/commit/23e97a304664b1692ed27a870f5485a7221c6a98))
+
+### Bug Fixes
+
+* disable style reset by default ([11ed6d7](https://github.com/moser-inc/unocss-preset-moser-labs/commit/11ed6d7343139e9a55c06df12f894aa77ef744fc))
+* update base gradient style ([d013c38](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d013c385048d75ad7ef1dfd7ef8b159041841afc))
+
+### Miscellaneous Chores
+
+* lock node types version ([76bab76](https://github.com/moser-inc/unocss-preset-moser-labs/commit/76bab763f4311aa285930303b8eceaf3f64a50b0))
+* update deps ([16c5f4c](https://github.com/moser-inc/unocss-preset-moser-labs/commit/16c5f4c9f8981cbc51b464a70900e88ea6085fd1))
+* update dev deps ([6013819](https://github.com/moser-inc/unocss-preset-moser-labs/commit/601381938ccc33b67bef4a1eb5b2c33f27d57b81))
+* update node to `v22.17.0` ([eb51674](https://github.com/moser-inc/unocss-preset-moser-labs/commit/eb51674e42ae72814d55d36d97e9e3fb9b16a37b))
+* update playground to use media for light dark testing ([19611fb](https://github.com/moser-inc/unocss-preset-moser-labs/commit/19611fb71e778d8708dcb630e450cbbd112205be))
+
 ## [2.4.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v2.3.0...v2.4.0) (2025-06-12)
 
 ### Features
