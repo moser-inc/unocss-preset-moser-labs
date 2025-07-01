@@ -3,7 +3,7 @@ import { fileURLToPath, resolve } from 'node:url';
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders';
 import { type Preset, presetIcons, presetWind4 } from 'unocss';
 import type { IconsOptions as PresetIconsOptions } from 'unocss/preset-icons';
-import type { PresetWind4Options, Theme } from 'unocss/preset-wind4';
+import type { PresetWind4Options } from 'unocss/preset-wind4';
 import { type PresetPrimeOptions, presetPrime } from 'unocss-preset-prime';
 import { type MoserLabsAppThemeKey, moserLabsTheme } from './theme';
 import { moserLabsRules } from './utils/rules';
@@ -56,9 +56,7 @@ const _dirname =
  * });
  * ```
  */
-export function presetMoserLabs(
-  options?: PresetMoserLabsOptions,
-): Preset<Theme> {
+export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
   const {
     defaultApp,
     extendWind4Options,
@@ -69,8 +67,14 @@ export function presetMoserLabs(
   return {
     name: '@moser-inc/unocss-preset-moser-labs',
     presets: [
-      presetWind4({ dark: 'media', ...extendWind4Options }),
-      // @ts-expect-error type mismatch
+      presetWind4({
+        dark: 'media',
+        preflights: {
+          reset: false,
+          ...extendWind4Options?.preflights,
+        },
+        ...extendWind4Options,
+      }),
       presetPrime({ icons: true, ...extendPrimeOptions }),
       presetIcons({
         ...extendIconsOptions,
