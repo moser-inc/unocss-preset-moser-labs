@@ -1,3 +1,13 @@
+## [3.0.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v3.0.0...v3.0.1) (2025-07-08)
+
+### Bug Fixes
+
+* export the theme type used by the preset ([79424c5](https://github.com/moser-inc/unocss-preset-moser-labs/commit/79424c55c13bfb5a65d1d0c3bb53c651d40e0cef))
+
+### Documentation
+
+* update theme type usage in readme ([864209f](https://github.com/moser-inc/unocss-preset-moser-labs/commit/864209f7215b175b8cd54e235e9b6d125811fab4))
+
 ## [3.0.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v2.4.0...v3.0.0) (2025-07-01)
 
 ### ⚠ BREAKING CHANGES
