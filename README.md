@@ -81,7 +81,7 @@ This preset exports helpful types and the generated theme colors directly for ex
 // uno.config.ts
 
 import { defineConfig } from 'unocss';
-import { presetMoserLabs, primeThemeColors } from '@moser-inc/unocss-preset-moser-labs';
+import { presetMoserLabs, primeThemeColors, type Theme } from '@moser-inc/unocss-preset-moser-labs';
 
 export default defineConfig({
   presets: [presetMoserLabs()],
@@ -100,7 +100,7 @@ export default defineConfig({
         light: primeThemeColors.red[100],
       },
     },
-  },
+  } satisfies Theme,
   shortcuts: {
     'bg-success': 'bg-success-dark light:bg-success-light',
     'bg-warning': 'bg-warning-dark light:bg-warning-light',
