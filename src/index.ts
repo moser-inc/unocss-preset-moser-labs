@@ -3,7 +3,7 @@ import { fileURLToPath, resolve } from 'node:url';
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders';
 import { type Preset, presetIcons, presetWind4 } from 'unocss';
 import type { IconsOptions as PresetIconsOptions } from 'unocss/preset-icons';
-import type { PresetWind4Options } from 'unocss/preset-wind4';
+import type { PresetWind4Options, Theme } from 'unocss/preset-wind4';
 import { type PresetPrimeOptions, presetPrime } from 'unocss-preset-prime';
 import { type MoserLabsAppThemeKey, moserLabsTheme } from './theme';
 import { moserLabsRules } from './utils/rules';
@@ -33,6 +33,8 @@ export interface PresetMoserLabsOptions {
    */
   extendIconsOptions?: PresetIconsOptions;
 }
+
+export { Theme };
 
 const _dirname =
   typeof __dirname !== 'undefined'
