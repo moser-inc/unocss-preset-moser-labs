@@ -1,3 +1,13 @@
+## [3.1.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v3.0.1...v3.1.0) (2025-07-25)
+
+### Features
+
+* add typography preset with shared labs prose util ([7fd235a](https://github.com/moser-inc/unocss-preset-moser-labs/commit/7fd235aa0d64e4b7c9f0b746f3ff2f2521f7c7f0))
+
+### Miscellaneous Chores
+
+* update deps ([ec82d55](https://github.com/moser-inc/unocss-preset-moser-labs/commit/ec82d55f00badda65c635fddc1ca25dd253374e2))
+
 ## [3.0.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v3.0.0...v3.0.1) (2025-07-08)
 
 ### Bug Fixes
