@@ -9,6 +9,8 @@ export function moserLabsShortcuts(defaultApp?: MoserLabsAppThemeKey) {
     [/^mli-(.*?)$/, ([, d]) => `i-mli-${d} i-scale-prime`],
     {
       'min-h-viewport': 'min-h-full min-h-screen min-h-100dvh',
+      'labs-code':
+        'inline-block ws-nowrap rounded-lg bg-card p-inline-1 font-mono before:hidden after:hidden',
       'labs-content': 'labs-content-max labs-content-padding',
       'labs-content-max': 'w-full max-w-6xl mx-auto',
       'labs-content-padding': 'p-6 sm:p-8',
@@ -40,6 +42,8 @@ export function moserLabsShortcuts(defaultApp?: MoserLabsAppThemeKey) {
       'labs-main': 'flex grow flex-col',
       'labs-main-center': 'labs-main items-center justify-center',
       'labs-mask': 'backdrop-blur-5',
+      'labs-prose':
+        'text-color-secondary prose prose-a:text-primary prose-blockquote:border-solid prose-blockquote:border-current prose-blockquote:border-is-3 prose-code:labs-code [&_h1>a,&_h2>a,&_h3>a,&_h4>a,&_h5>a,&_h6>a]:text-unset prose-pre:font-mono text-pretty',
     },
   ] satisfies UserShortcuts<Theme>;
 }

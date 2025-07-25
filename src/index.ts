@@ -1,8 +1,14 @@
 import { dirname } from 'node:path';
 import { fileURLToPath, resolve } from 'node:url';
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders';
-import { type Preset, presetIcons, presetWind4 } from 'unocss';
+import {
+  type Preset,
+  presetIcons,
+  presetTypography,
+  presetWind4,
+} from 'unocss';
 import type { IconsOptions as PresetIconsOptions } from 'unocss/preset-icons';
+import type { TypographyOptions as PresetTypographyOptions } from 'unocss/preset-typography';
 import type { PresetWind4Options, Theme } from 'unocss/preset-wind4';
 import { type PresetPrimeOptions, presetPrime } from 'unocss-preset-prime';
 import { type MoserLabsAppThemeKey, moserLabsTheme } from './theme';
@@ -17,7 +23,7 @@ export interface PresetMoserLabsOptions {
   /**
    * Extend `presetWind4` options.
    *
-   * https://unocss.dev/presets/wind
+   * https://unocss.dev/presets/wind4
    */
   extendWind4Options?: PresetWind4Options;
   /**
@@ -32,6 +38,12 @@ export interface PresetMoserLabsOptions {
    * https://unocss.dev/presets/icons
    */
   extendIconsOptions?: PresetIconsOptions;
+  /**
+   * Extend `presetTypography` options.
+   *
+   * https://unocss.dev/presets/typography
+   */
+  extendTypographyOptions?: PresetTypographyOptions;
 }
 
 export { Theme };
@@ -64,6 +76,7 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
     extendWind4Options,
     extendPrimeOptions,
     extendIconsOptions,
+    extendTypographyOptions,
   } = options ?? {};
 
   return {
@@ -89,6 +102,27 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
           'vertical-align': 'middle',
           ...extendIconsOptions?.extraProperties,
         },
+      }),
+      presetTypography({
+        cssExtend: (theme) => ({
+          ['* > *:only-child']: {
+            'margin-block-start': 0,
+            'margin-block-end': 0,
+          },
+          ['* > *:first-child']: {
+            'margin-block-start': 0,
+          },
+          ['* > *:last-child']: {
+            'margin-block-end': 0,
+          },
+          'ul, ol': {
+            'padding-inline-start': theme.spacing?.['2xl'],
+          },
+          li: {
+            'padding-block': '0.25rem',
+          },
+        }),
+        ...extendTypographyOptions,
       }),
     ],
     theme: moserLabsTheme,

@@ -235,6 +235,37 @@ export function Board({ className = '' }: { className?: string }) {
           ))}
         </div>
       </section>
+
+      <section>
+        <h3 className="mbe-3">Prose</h3>
+
+        <div className="labs-prose">
+          <h1>Heading 1</h1>
+
+          <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+          </ul>
+
+          <h2>
+            <a href="#">Heading 2 with link</a>
+          </h2>
+
+          <p>
+            This is a paragraph with a <a href="#">link</a> and inline{' '}
+            <code>code</code>.
+          </p>
+
+          <h3>Heading 3</h3>
+
+          <blockquote>
+            This is a blockquote with a <a href="#">link</a>.
+          </blockquote>
+
+          <pre>Code block example</pre>
+        </div>
+      </section>
     </div>
   );
 }
