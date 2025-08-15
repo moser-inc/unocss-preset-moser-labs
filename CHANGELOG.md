@@ -1,3 +1,14 @@
+## [3.1.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v3.1.0...v3.1.1) (2025-08-15)
+
+### Bug Fixes
+
+* add min width auto to labs layout nav menu shortcut ([c1666ed](https://github.com/moser-inc/unocss-preset-moser-labs/commit/c1666ed4c9731b8d175c79d1f064a1f7dc5c8667))
+
+### Miscellaneous Chores
+
+* update deps ([677a3df](https://github.com/moser-inc/unocss-preset-moser-labs/commit/677a3dfdd7075fe12abbdb54d6b50baff48dbdd7))
+* update deps ([d915a1f](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d915a1f362b224c0638514ab0c741aab99dbc6db))
+
 ## [3.1.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v3.0.1...v3.1.0) (2025-07-25)
 
 ### Features
