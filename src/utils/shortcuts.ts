@@ -33,18 +33,18 @@ export function moserLabsShortcuts(defaultApp?: MoserLabsAppThemeKey) {
         'shrink w-auto! min-w-auto! border-0! bg-transparent! py-0!',
       'labs-layout-nav-menu-list': 'flex flex-col gap-2',
       'labs-layout-nav-menu-list-item':
-        'h-14 gap-6 text-color b-0! rounded-full! text-left!',
+        'h-14 gap-6 text-surface-text b-0! rounded-full! text-left!',
       'labs-layout-nav-menu-list-item-active':
         'bg-primary! text-primary-text! hover:bg-primary-600!',
       'labs-layout-nav-mobile': 'fixed! bottom-4 right-4 z-2',
       'labs-layout-main': 'min-w-0 flex grow flex-col',
       'labs-layout-main-content':
-        'relative flex grow flex-col overflow-hidden bg-ground pb-20 text-color sm:rounded-tl-3xl sm:pb-0',
+        'relative flex grow flex-col overflow-hidden bg-ground pb-20 text-surface-text sm:rounded-tl-3xl sm:pb-0',
       'labs-main': 'flex grow flex-col',
       'labs-main-center': 'labs-main items-center justify-center',
       'labs-mask': 'backdrop-blur-5',
       'labs-prose':
-        'text-color-secondary prose prose-a:text-primary prose-blockquote:border-solid prose-blockquote:border-current prose-blockquote:border-is-3 prose-code:labs-code [&_h1>a,&_h2>a,&_h3>a,&_h4>a,&_h5>a,&_h6>a]:text-unset prose-pre:font-mono text-pretty',
+        'text-surface-text-secondary prose prose-a:text-primary prose-blockquote:border-solid prose-blockquote:border-current prose-blockquote:border-is-3 prose-code:labs-code [&_h1>a,&_h2>a,&_h3>a,&_h4>a,&_h5>a,&_h6>a]:text-unset prose-pre:font-mono text-pretty',
     },
   ] satisfies UserShortcuts<Theme>;
 }
