@@ -1,3 +1,9 @@
+## [4.0.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v4.0.0...v4.0.1) (2025-08-19)
+
+### Bug Fixes
+
+* update prime preset ([af15761](https://github.com/moser-inc/unocss-preset-moser-labs/commit/af15761c1c82bc4930023cc3379112713bb26dfb))
+
 ## [4.0.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v3.1.1...v4.0.0) (2025-08-19)
 
 ### ⚠ BREAKING CHANGES
