@@ -1,3 +1,9 @@
+## [4.0.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v4.0.1...v4.0.2) (2025-08-19)
+
+### Bug Fixes
+
+* update surface colors in shortcuts ([430590a](https://github.com/moser-inc/unocss-preset-moser-labs/commit/430590a5b2ab7a2e412cdc824a2f68ca390e2a49))
+
 ## [4.0.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v4.0.0...v4.0.1) (2025-08-19)
 
 ### Bug Fixes
