@@ -57,7 +57,7 @@
     "@iconify-json/prime": "^1.2.4",
     "@iconify/utils": "^3.0.1",
     "@unocss/preset-mini": "^66.4.2",
-    "unocss-preset-prime": "^5.0.0"
+    "unocss-preset-prime": "^6.0.0"
   },
   "devDependencies": {
     "@moser-inc/eslint-config": "^2.3.1",
