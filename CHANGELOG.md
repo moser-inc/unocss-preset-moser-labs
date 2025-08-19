@@ -1,3 +1,22 @@
+## [4.0.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v3.1.1...v4.0.0) (2025-08-19)
+
+### ⚠ BREAKING CHANGES
+
+* use latest version of prime preset that avoids using color shortcuts
+
+### Features
+
+* add labs field shortcuts ([8996dbc](https://github.com/moser-inc/unocss-preset-moser-labs/commit/8996dbcee4f78f14a7d6b35b28e2e39c0d5896a6))
+
+### Bug Fixes
+
+* use latest version of prime preset that avoids using color shortcuts ([542a391](https://github.com/moser-inc/unocss-preset-moser-labs/commit/542a391d94a8aeeb9c0708eec14389287eb53503))
+
+### Miscellaneous Chores
+
+* prepare for trusted publishing ([9826671](https://github.com/moser-inc/unocss-preset-moser-labs/commit/9826671def7ad2b3f8bce42590bff82ee799f6b0))
+* use base vite plugin react ([2875334](https://github.com/moser-inc/unocss-preset-moser-labs/commit/2875334743baf6737ffd06e05e6ea8d2b0fa4e42))
+
 ## [3.1.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v3.1.0...v3.1.1) (2025-08-15)
 
 ### Bug Fixes
