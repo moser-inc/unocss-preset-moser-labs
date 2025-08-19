@@ -32,6 +32,11 @@
       "default": "./dist/theme.mjs"
     }
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true,
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "build": "unbuild",
     "stub": "unbuild --stub",
