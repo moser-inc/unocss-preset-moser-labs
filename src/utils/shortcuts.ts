@@ -10,14 +10,14 @@ export function moserLabsShortcuts(defaultApp?: MoserLabsAppThemeKey) {
     {
       'min-h-viewport': 'min-h-full min-h-screen min-h-100dvh',
       'labs-code':
-        'inline-block ws-nowrap rounded-lg bg-card p-inline-1 font-mono before:hidden after:hidden',
+        'inline-block ws-nowrap rounded-lg bg-surface-card p-inline-1 font-mono before:hidden after:hidden',
       'labs-content': 'labs-content-max labs-content-padding',
       'labs-content-max': 'w-full max-w-6xl mx-auto',
       'labs-content-padding': 'p-6 sm:p-8',
       'labs-field-hint': 'text-surface-text-secondary',
       'labs-field-label': 'text-surface-text-secondary',
       'labs-field-message': 'text-red-600',
-      'labs-layout': 'min-h-viewport flex bg-card',
+      'labs-layout': 'min-h-viewport flex bg-surface-card',
       'labs-layout-header': 'h-auto flex items-center gap-4 p-4 sm:h-20',
       'labs-layout-header-actions': 'flex items-center gap-4',
       'labs-layout-header-content': 'mr-auto flex items-end gap-2',
@@ -42,7 +42,7 @@ export function moserLabsShortcuts(defaultApp?: MoserLabsAppThemeKey) {
       'labs-layout-nav-mobile': 'fixed! bottom-4 right-4 z-2',
       'labs-layout-main': 'min-w-0 flex grow flex-col',
       'labs-layout-main-content':
-        'relative flex grow flex-col overflow-hidden bg-ground pb-20 text-surface-text sm:rounded-tl-3xl sm:pb-0',
+        'relative flex grow flex-col overflow-hidden bg-surface-ground pb-20 text-surface-text sm:rounded-tl-3xl sm:pb-0',
       'labs-main': 'flex grow flex-col',
       'labs-main-center': 'labs-main items-center justify-center',
       'labs-mask': 'backdrop-blur-5',
