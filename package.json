@@ -1,6 +1,6 @@
 {
   "name": "@moser-inc/unocss-preset-moser-labs",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "Shared UnoCSS preset for the Moser Labs suite of applications.",
   "type": "module",
   "license": "UNLICENSED",

@@ -1,3 +1,9 @@
+## [4.0.4](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v4.0.3...v4.0.4) (2025-11-10)
+
+### Bug Fixes
+
+* fix prose text color inheritance ([66c5d3e](https://github.com/moser-inc/unocss-preset-moser-labs/commit/66c5d3eea177ddde1fd8885942ecfec47e951f7a))
+
 ## [4.0.3](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v4.0.2...v4.0.3) (2025-11-10)
 
 ### Bug Fixes
