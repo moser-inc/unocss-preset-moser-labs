@@ -1,3 +1,14 @@
+## [4.0.3](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v4.0.2...v4.0.3) (2025-11-10)
+
+### Bug Fixes
+
+* update unocss and bump deps ([d0bc30c](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d0bc30cad7939b38c77f19c4b9c60f653d2b8fd0))
+
+### Miscellaneous Chores
+
+* ignore theme access error ([568ce69](https://github.com/moser-inc/unocss-preset-moser-labs/commit/568ce698caa1e9dd3b4f1b8a3db2f055fd0eeb60))
+* update vscode settings ([60d340c](https://github.com/moser-inc/unocss-preset-moser-labs/commit/60d340ccfde4009a6061f486736d1abf85bd2fbd))
+
 ## [4.0.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v4.0.1...v4.0.2) (2025-08-19)
 
 ### Bug Fixes
