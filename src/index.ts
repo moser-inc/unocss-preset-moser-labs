@@ -116,6 +116,7 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
             'margin-block-end': 0,
           },
           'ul, ol': {
+            // @ts-expect-error theme typing issue
             'padding-inline-start': theme.spacing?.['2xl'],
           },
           li: {
