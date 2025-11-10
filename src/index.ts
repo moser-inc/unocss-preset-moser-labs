@@ -104,25 +104,27 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
         },
       }),
       presetTypography({
-        cssExtend: (theme) => ({
-          ['* > *:only-child']: {
-            'margin-block-start': 0,
-            'margin-block-end': 0,
-          },
-          ['* > *:first-child']: {
-            'margin-block-start': 0,
-          },
-          ['* > *:last-child']: {
-            'margin-block-end': 0,
-          },
-          'ul, ol': {
-            // @ts-expect-error theme typing issue
-            'padding-inline-start': theme.spacing?.['2xl'],
-          },
-          li: {
-            'padding-block': '0.25rem',
-          },
-        }),
+        colorScheme: {
+          body: ['inherit', 'inherit'],
+          headings: ['inherit', 'inherit'],
+          lead: ['inherit', 'inherit'],
+          links: ['inherit', 'inherit'],
+          bold: ['inherit', 'inherit'],
+          counters: ['inherit', 'inherit'],
+          bullets: ['inherit', 'inherit'],
+          hr: ['inherit', 'inherit'],
+          quotes: ['inherit', 'inherit'],
+          'quote-borders': ['inherit', 'inherit'],
+          captions: ['inherit', 'inherit'],
+          kbd: ['inherit', 'inherit'],
+          'kbd-shadows': ['inherit', 'inherit'],
+          code: ['inherit', 'inherit'],
+          'pre-code': ['inherit', 'inherit'],
+          'pre-bg': ['inherit', 'inherit'],
+          'th-borders': ['inherit', 'inherit'],
+          'td-borders': ['inherit', 'inherit'],
+          ...extendTypographyOptions?.colorScheme,
+        },
         ...extendTypographyOptions,
       }),
     ],
