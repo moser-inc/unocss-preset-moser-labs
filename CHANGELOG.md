@@ -1,3 +1,17 @@
+## [5.0.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v4.0.4...v5.0.0) (2025-12-18)
+
+### ⚠ BREAKING CHANGES
+
+* bake in prime themes as a preflight
+
+### Features
+
+* bake in prime themes as a preflight ([81097cd](https://github.com/moser-inc/unocss-preset-moser-labs/commit/81097cd67434413143355f487e1a54e1f0430418))
+
+### Miscellaneous Chores
+
+* update deps ([d27f1d4](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d27f1d4e5b4673451f9fda0441c4188a5334ec5d))
+
 ## [4.0.4](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v4.0.3...v4.0.4) (2025-11-10)
 
 ### Bug Fixes
