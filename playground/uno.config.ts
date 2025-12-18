@@ -32,6 +32,7 @@ export default defineConfig({
   presets: [
     presetMoserLabs({
       defaultApp: 'labs',
+      preflight: true,
       extendWind4Options: {
         preflights: {
           reset: true,

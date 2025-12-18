@@ -1,0 +1,44 @@
+// Extends from PrimeReact Lara Light Teal v10.8.5
+// https://github.com/primefaces/primereact-sass-theme/tree/10.8.5/themes/lara/lara-light
+
+$primaryColor: #119c8d;
+
+// Work around highlight color issue specific to the lara light teal theme
+// https://github.com/primefaces/primereact-sass-theme/issues/75
+// Color sourced from https://github.com/primefaces/primeuix/blob/4cd80750aa2850690b7942d72d180ec8c4efaa49/packages/themes/src/presets/lara/base/index.ts#L19
+$highlightBg: #f0fdfa;
+
+$fontFamily:
+  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+// Override shade variables
+$shade100: #f3f4f6 !default; // header background
+$shade200: #e5e7eb !default; // hover background
+$shade300: #d1d5db !default; // border, divider
+$shade400: #9ca3af !default; // input border
+$shade500: #6b7280 !default; // input icon
+$shade600: #4b5563 !default; // text secondary color
+$shade700: #374151 !default; // text color
+$shade800: #1f2937 !default; // unused
+$shade900: #111827 !default; // unused
+
+@import './themes/lara/lara-light/teal/theme.scss';
+
+:root {
+  font-family: $fontFamily;
+  font-feature-settings: normal;
+  --font-family: inherit;
+  --font-feature-settings: normal;
+  --surface-ground: #f3f4f6;
+
+  --surface-50: #f3f4f6;
+  --surface-100: #e5e7eb;
+  --surface-200: #d1d5db;
+  --surface-300: #9ca3af;
+  --surface-400: #6b7280;
+  --surface-500: #4b5563;
+  --surface-600: #374151;
+  --surface-700: #1f2937;
+  --surface-800: #111827;
+}

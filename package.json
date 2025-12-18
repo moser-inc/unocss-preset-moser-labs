@@ -39,6 +39,7 @@
   },
   "scripts": {
     "build": "unbuild",
+    "build:theme-css": "node --experimental-strip-types scripts/build-themes.ts",
     "stub": "unbuild --stub",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --max-warnings 0",
     "publint": "npx -y publint@latest && npx -y @arethetypeswrong/cli@latest --pack --profile esm-only",
@@ -76,7 +77,7 @@
     "prettier": "^3.6.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "sass": "^1.93.3",
+    "sass": "^1.97.0",
     "semantic-release": "^25.0.2",
     "standard-version": "^9.5.0",
     "typescript": "~5.9.3",

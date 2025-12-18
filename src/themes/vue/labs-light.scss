@@ -1,0 +1,31 @@
+// Extends from PrimeVue Lara Light Purple v3.52.0
+// https://github.com/primefaces/primevue-sass-theme/tree/3.52.0/themes/lara/lara-light
+
+$primaryColor: #a51080;
+$primaryLightColor: scale-color($primaryColor, $lightness: 5%);
+$primaryDarkColor: scale-color($primaryColor, $lightness: -5%);
+$primaryDarkerColor: scale-color($primaryColor, $lightness: -10%);
+
+$fontFamily:
+  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+// Override shade variables
+$shade100: #f3f4f6 !default; // header background
+$shade200: #e5e7eb !default; // hover background
+$shade300: #d1d5db !default; // border, divider
+$shade400: #9ca3af !default; // input border
+$shade500: #6b7280 !default; // input icon
+$shade600: #4b5563 !default; // text secondary color
+$shade700: #374151 !default; // text color
+$shade800: #1f2937 !default; // unused
+$shade900: #111827 !default; // unused
+
+@import './themes/lara/lara-light/purple/theme.scss';
+
+:root {
+  font-family: $fontFamily;
+  font-feature-settings: normal;
+  --font-family: inherit;
+  --font-feature-settings: normal;
+}

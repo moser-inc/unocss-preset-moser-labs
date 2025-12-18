@@ -8,4 +8,9 @@ export default defineBuildConfig({
   ],
   declaration: true,
   externals: ['@unocss/preset-mini'],
+  hooks: {
+    'build:done': async () => {
+      await import('./scripts/build-themes');
+    },
+  },
 });

@@ -12,6 +12,7 @@ import type { TypographyOptions as PresetTypographyOptions } from 'unocss/preset
 import type { PresetWind4Options, Theme } from 'unocss/preset-wind4';
 import { type PresetPrimeOptions, presetPrime } from 'unocss-preset-prime';
 import { type MoserLabsAppThemeKey, moserLabsTheme } from './theme';
+import { moserLabsPreflights } from './utils/preflights';
 import { moserLabsRules } from './utils/rules';
 import { moserLabsShortcuts } from './utils/shortcuts';
 
@@ -20,6 +21,12 @@ export interface PresetMoserLabsOptions {
    * Set the default theme when the application name is not included in the class (e.g. `bg-primary-gradient`).
    */
   defaultApp?: MoserLabsAppThemeKey;
+  /**
+   * Whether to include Prime themes as a preflight. Requires `defaultApp` to be set.
+   *
+   * @default false
+   */
+  preflight?: boolean;
   /**
    * Extend `presetWind4` options.
    *
@@ -73,6 +80,7 @@ const _dirname =
 export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
   const {
     defaultApp,
+    preflight,
     extendWind4Options,
     extendPrimeOptions,
     extendIconsOptions,
@@ -131,6 +139,8 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
     theme: moserLabsTheme,
     rules: moserLabsRules,
     shortcuts: moserLabsShortcuts(defaultApp),
+    preflights:
+      preflight && defaultApp ? moserLabsPreflights(defaultApp) : undefined,
   };
 }
 

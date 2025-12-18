@@ -1,0 +1,18 @@
+// Extends from PrimeVue Lara Dark Purple v3.52.0
+// https://github.com/primefaces/primevue-sass-theme/tree/3.52.0/themes/lara/lara-dark
+
+$primaryColor: #dc19a4;
+$primaryLightColor: scale-color($primaryColor, $lightness: 5%);
+
+$fontFamily:
+  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+@import './themes/lara/lara-dark/purple/theme.scss';
+
+:root {
+  font-family: $fontFamily;
+  font-feature-settings: normal;
+  --font-family: inherit;
+  --font-feature-settings: normal;
+}

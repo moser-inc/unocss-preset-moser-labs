@@ -1,0 +1,21 @@
+// Extends from PrimeReact Lara Dark Indigo v10.8.5
+// https://github.com/primefaces/primereact-sass-theme/tree/10.8.5/themes/lara/lara-dark
+
+$primaryColor: #9ea0f6;
+
+$fontFamily:
+  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+@import './themes/lara/lara-dark/indigo/theme.scss';
+
+:root {
+  font-family: $fontFamily;
+  font-feature-settings: normal;
+  --font-family: inherit;
+  --font-feature-settings: normal;
+}
+
+.labs-content article strong {
+  color: $panelHeaderTextColor;
+}
