@@ -1,3 +1,9 @@
+## [5.1.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v5.1.0...v5.1.1) (2025-12-19)
+
+### Bug Fixes
+
+* remove primetheme layer ([b0743cf](https://github.com/moser-inc/unocss-preset-moser-labs/commit/b0743cf9d940a206ec9865c4d6ccac72797258d2))
+
 ## [5.1.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v5.0.0...v5.1.0) (2025-12-19)
 
 ### Features
