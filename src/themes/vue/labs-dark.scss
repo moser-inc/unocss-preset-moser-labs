@@ -3,6 +3,7 @@
 
 $primaryColor: #dc19a4;
 $primaryLightColor: scale-color($primaryColor, $lightness: 5%);
+$errorColor: #fca5a5;
 
 $fontFamily:
   -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
@@ -15,4 +16,5 @@ $fontFamily:
   font-feature-settings: normal;
   --font-family: inherit;
   --font-feature-settings: normal;
+  --error-color: #fca5a5;
 }

@@ -2,6 +2,7 @@
 // https://github.com/primefaces/primereact-sass-theme/tree/10.8.5/themes/lara/lara-light
 
 $primaryColor: #119c8d;
+$errorColor: #e24c4c;
 
 // Work around highlight color issue specific to the lara light teal theme
 // https://github.com/primefaces/primereact-sass-theme/issues/75
@@ -30,8 +31,8 @@ $shade900: #111827 !default; // unused
   font-feature-settings: normal;
   --font-family: inherit;
   --font-feature-settings: normal;
+  --error-color: #e24c4c;
   --surface-ground: #f3f4f6;
-
   --surface-50: #f3f4f6;
   --surface-100: #e5e7eb;
   --surface-200: #d1d5db;

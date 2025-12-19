@@ -2,6 +2,7 @@
 // https://github.com/primefaces/primevue-sass-theme/tree/3.52.0/themes/lara/lara-dark
 
 $primaryColor: #c996fa;
+$errorColor: #fca5a5;
 
 $fontFamily:
   -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
@@ -14,4 +15,5 @@ $fontFamily:
   font-feature-settings: normal;
   --font-family: inherit;
   --font-feature-settings: normal;
+  --error-color: #fca5a5;
 }

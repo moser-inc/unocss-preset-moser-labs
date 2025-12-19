@@ -54,6 +54,10 @@ export function Board({ className = '' }: { className?: string }) {
             bg-primary-gradient
           </div>
 
+          <div className={`bg-error text-surface-ground px-4 py-2 rounded-xl`}>
+            bg-error
+          </div>
+
           {allThemeKeys.map((key) => (
             <Fragment key={key}>
               <div
@@ -93,6 +97,8 @@ export function Board({ className = '' }: { className?: string }) {
           <div className={`text-primary-gradient px-4 py-2 rounded-xl`}>
             text-primary-gradient
           </div>
+
+          <div className={`text-error px-4 py-2 rounded-xl`}>text-error</div>
 
           {allThemeKeys.map((key) => (
             <Fragment key={key}>

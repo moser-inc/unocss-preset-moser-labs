@@ -16,7 +16,7 @@ export function moserLabsShortcuts(defaultApp?: MoserLabsAppThemeKey) {
       'labs-content-padding': 'p-6 sm:p-8',
       'labs-field-hint': 'text-surface-text-secondary',
       'labs-field-label': 'text-surface-text-secondary',
-      'labs-field-message': 'text-red-600',
+      'labs-field-message': 'text-error',
       'labs-layout': 'min-h-viewport flex bg-surface-card',
       'labs-layout-header': 'h-auto flex items-center gap-4 p-4 sm:h-20',
       'labs-layout-header-actions': 'flex items-center gap-4',

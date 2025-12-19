@@ -171,5 +171,8 @@ export const moserLabsAppThemeKeys = Object.keys(
 ) as MoserLabsAppThemeKey[];
 
 export const moserLabsTheme = {
-  colors: generateThemeColors(),
+  colors: {
+    ...generateThemeColors(),
+    error: 'var(--error-color)',
+  },
 } as const satisfies Theme;
