@@ -24,13 +24,11 @@ export function moserLabsPreflights(defaultApp: MoserLabsAppThemeKey) {
         );
 
         return `
-          @layer primetheme {
-            @media (prefers-color-scheme: dark) {
-              ${darkThemeCss}
-            }
-            @media (prefers-color-scheme: light) {
-              ${lightThemeCss}
-            }
+          @media (prefers-color-scheme: dark) {
+            ${darkThemeCss}
+          }
+          @media (prefers-color-scheme: light) {
+            ${lightThemeCss}
           }
         `.trim();
       },
