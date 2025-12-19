@@ -1,3 +1,9 @@
+## [5.1.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v5.0.0...v5.1.0) (2025-12-19)
+
+### Features
+
+* support error theme color ([14fa8de](https://github.com/moser-inc/unocss-preset-moser-labs/commit/14fa8de4e30189bf9799ef2f903fcfd86d0dd3c9))
+
 ## [5.0.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v4.0.4...v5.0.0) (2025-12-18)
 
 ### ⚠ BREAKING CHANGES
