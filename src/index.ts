@@ -87,6 +87,12 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
     extendTypographyOptions,
   } = options ?? {};
 
+  if (preflight && !defaultApp) {
+    throw new Error(
+      '[presetMoserLabs]: `preflight` option requires `defaultApp` to be set.',
+    );
+  }
+
   return {
     name: '@moser-inc/unocss-preset-moser-labs',
     presets: [
