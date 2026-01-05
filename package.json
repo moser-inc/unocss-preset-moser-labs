@@ -52,12 +52,17 @@
     "prepack": "npm run build"
   },
   "peerDependencies": {
+    "@unocss/preset-mini": ">= 66.0.0 < 100",
     "unocss": ">= 66.0.0 < 100"
+  },
+  "peerDependenciesMeta": {
+    "@unocss/preset-mini": {
+      "optional": true
+    }
   },
   "dependencies": {
     "@iconify-json/prime": "^1.2.4",
     "@iconify/utils": "^3.1.0",
-    "@unocss/preset-mini": "^66.5.12",
     "unocss-preset-prime": "^6.0.0"
   },
   "devDependencies": {
