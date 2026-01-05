@@ -98,11 +98,11 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
     presets: [
       presetWind4({
         dark: 'media',
+        ...extendWind4Options,
         preflights: {
           reset: false,
           ...extendWind4Options?.preflights,
         },
-        ...extendWind4Options,
       }),
       presetPrime({ icons: true, ...extendPrimeOptions }),
       presetIcons({
@@ -118,6 +118,7 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
         },
       }),
       presetTypography({
+        ...extendTypographyOptions,
         colorScheme: {
           body: ['inherit', 'inherit'],
           headings: ['inherit', 'inherit'],
@@ -153,7 +154,6 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
             ? extendTypographyOptions?.cssExtend(theme)
             : extendTypographyOptions?.cssExtend),
         }),
-        ...extendTypographyOptions,
       }),
     ],
     theme: moserLabsTheme,
