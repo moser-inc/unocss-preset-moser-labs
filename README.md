@@ -27,7 +27,7 @@ import { presetMoserLabs } from '@moser-inc/unocss-preset-moser-labs';
 
 export default defineConfig({
   presets: [presetMoserLabs()], // No default
-  presets: [presetMoserLabs({ defaultApp: 'wellness' })], // With default
+  presets: [presetMoserLabs({ defaultApp: 'wellness', preflight: true })], // With default and preflight
 
   // Optionally include processing internal Prime components for utility
   // classes and icons
@@ -51,6 +51,12 @@ presetMoserLabs({
    */
   defaultApp?: MoserLabsAppThemeKey;
   /**
+   * Whether to include Prime themes as a preflight. Requires `defaultApp` to be set.
+   *
+   * @default false
+   */
+  preflight?: boolean;
+  /**
    * Extend `presetWind4` options.
    *
    * https://unocss.dev/presets/wind4
@@ -68,6 +74,12 @@ presetMoserLabs({
    * https://unocss.dev/presets/icons
    */
   extendIconsOptions?: PresetIconsOptions;
+  /**
+   * Extend `presetTypography` options.
+   *
+   * https://unocss.dev/presets/typography
+   */
+  extendTypographyOptions?: PresetTypographyOptions;
 });
 ```
 
@@ -81,7 +93,11 @@ This preset exports helpful types and the generated theme colors directly for ex
 // uno.config.ts
 
 import { defineConfig } from 'unocss';
-import { presetMoserLabs, primeThemeColors, type Theme } from '@moser-inc/unocss-preset-moser-labs';
+import {
+  presetMoserLabs,
+  primeThemeColors,
+  type Theme,
+} from '@moser-inc/unocss-preset-moser-labs';
 
 export default defineConfig({
   presets: [presetMoserLabs()],
