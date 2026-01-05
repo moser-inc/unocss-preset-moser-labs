@@ -1,3 +1,13 @@
+## [5.1.3](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v5.1.2...v5.1.3) (2026-01-05)
+
+### Bug Fixes
+
+* make mini preset an optional peer ([b1d7525](https://github.com/moser-inc/unocss-preset-moser-labs/commit/b1d7525ed22bd113db1b409d47e15fcf8caa928b))
+
+### Documentation
+
+* update readme ([8a441ea](https://github.com/moser-inc/unocss-preset-moser-labs/commit/8a441eae9967621768bdc753a9c453594ac27f15))
+
 ## [5.1.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v5.1.1...v5.1.2) (2026-01-05)
 
 ### Bug Fixes
