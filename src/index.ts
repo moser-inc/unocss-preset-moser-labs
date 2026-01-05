@@ -133,6 +133,20 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
           'td-borders': ['inherit', 'inherit'],
           ...extendTypographyOptions?.colorScheme,
         },
+        cssExtend: (theme) => ({
+          '*:only-child': {
+            'margin-block': '0',
+          },
+          '*:first-child': {
+            'margin-block-start': '0',
+          },
+          '*:last-child': {
+            'margin-block-end': '0',
+          },
+          ...(typeof extendTypographyOptions?.cssExtend === 'function'
+            ? extendTypographyOptions?.cssExtend(theme)
+            : extendTypographyOptions?.cssExtend),
+        }),
         ...extendTypographyOptions,
       }),
     ],
