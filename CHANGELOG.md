@@ -1,3 +1,15 @@
+## [5.1.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v5.1.1...v5.1.2) (2026-01-05)
+
+### Bug Fixes
+
+* support extending existing configuration without overwriting ([d0e6607](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d0e660711beea731f512cea7fe8cfc905c4910f5))
+* throw descriptive error if preflight is enabled without setting a default app ([e8ab8c8](https://github.com/moser-inc/unocss-preset-moser-labs/commit/e8ab8c8ab033addf7e13c016cd4f0943d6624003))
+* update prose to remove top and bottom margin on first last and only elements ([8079f27](https://github.com/moser-inc/unocss-preset-moser-labs/commit/8079f2713cfe39e0cac5da4df1fda6eea1a0a249))
+
+### Miscellaneous Chores
+
+* update deps ([8f55afe](https://github.com/moser-inc/unocss-preset-moser-labs/commit/8f55afeac7084b462707806765ef9504f4c705da))
+
 ## [5.1.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v5.1.0...v5.1.1) (2025-12-19)
 
 ### Bug Fixes
