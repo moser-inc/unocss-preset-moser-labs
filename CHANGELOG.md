@@ -1,3 +1,13 @@
+## [5.2.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v5.1.3...v5.2.0) (2026-01-08)
+
+### Features
+
+* load and use inter font ([26f67bf](https://github.com/moser-inc/unocss-preset-moser-labs/commit/26f67bfff9f4b00f16d586d89ee37ace2cd35011))
+
+### Performance Improvements
+
+* only load web fonts if preflight is enabled ([3de32fc](https://github.com/moser-inc/unocss-preset-moser-labs/commit/3de32fcacffc3e71ce2777de2bb546c6840e627b))
+
 ## [5.1.3](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v5.1.2...v5.1.3) (2026-01-05)
 
 ### Bug Fixes
