@@ -173,7 +173,7 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
     }),
   );
 
-  if (preflight) {
+  if (preflight || extendWebFontsOptions) {
     moserLabsPresets.push(
       presetWebFonts({
         ...extendWebFontsOptions,
