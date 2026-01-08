@@ -29,16 +29,6 @@ const safeTiles = allThemeKeys.flatMap((themeKey) => [
 ]);
 
 export default defineConfig({
-  presets: [
-    presetMoserLabs({
-      defaultApp: 'labs',
-      preflight: true,
-      extendWind4Options: {
-        preflights: {
-          reset: true,
-        },
-      },
-    }),
-  ],
+  presets: [presetMoserLabs({ defaultApp: 'labs', preflight: true })],
   safelist: [...safeColors, ...safeIcons, ...safeTiles],
 });

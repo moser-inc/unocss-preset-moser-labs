@@ -5,10 +5,12 @@ import {
   type Preset,
   presetIcons,
   presetTypography,
+  presetWebFonts,
   presetWind4,
 } from 'unocss';
 import type { IconsOptions as PresetIconsOptions } from 'unocss/preset-icons';
 import type { TypographyOptions as PresetTypographyOptions } from 'unocss/preset-typography';
+import type { WebFontsOptions as PresetWebFontsOptions } from 'unocss/preset-web-fonts';
 import type { PresetWind4Options, Theme } from 'unocss/preset-wind4';
 import { type PresetPrimeOptions, presetPrime } from 'unocss-preset-prime';
 import { type MoserLabsAppThemeKey, moserLabsTheme } from './theme';
@@ -51,6 +53,12 @@ export interface PresetMoserLabsOptions {
    * https://unocss.dev/presets/typography
    */
   extendTypographyOptions?: PresetTypographyOptions;
+  /**
+   * Extend `presetWebFonts` options.
+   *
+   * https://unocss.dev/presets/web-fonts
+   */
+  extendWebFontsOptions?: PresetWebFontsOptions;
 }
 
 export { Theme };
@@ -85,6 +93,7 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
     extendPrimeOptions,
     extendIconsOptions,
     extendTypographyOptions,
+    extendWebFontsOptions,
   } = options ?? {};
 
   if (preflight && !defaultApp) {
@@ -154,6 +163,13 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
             ? extendTypographyOptions?.cssExtend(theme)
             : extendTypographyOptions?.cssExtend),
         }),
+      }),
+      presetWebFonts({
+        ...extendWebFontsOptions,
+        fonts: {
+          sans: 'Inter:300,400,500,600,700',
+          ...extendWebFontsOptions?.fonts,
+        },
       }),
     ],
     theme: moserLabsTheme,

@@ -5,8 +5,17 @@ $primaryColor: #9ea0f6;
 $errorColor: #fca5a5;
 
 $fontFamily:
-  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
-  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  'Inter',
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  Helvetica,
+  Arial,
+  sans-serif,
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol';
 
 @import './themes/lara/lara-dark/indigo/theme.scss';
 

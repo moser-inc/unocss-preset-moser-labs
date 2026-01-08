@@ -34,8 +34,8 @@ export function Board({ className = '' }: { className?: string }) {
 
   return (
     <div className={`${className} flex flex-col gap-6`}>
-      <section>
-        <h3 className="mbe-3">Background Colors</h3>
+      <section className="font-bold">
+        <h3 className="mbs-0 mbe-3">Background Colors</h3>
 
         <div className="flex flex-wrap gap-4">
           <div className={`bg-primary text-primary-text px-4 py-2 rounded-xl`}>
@@ -82,8 +82,8 @@ export function Board({ className = '' }: { className?: string }) {
         </div>
       </section>
 
-      <section>
-        <h3 className="mbe-3">Text Colors</h3>
+      <section className="font-bold">
+        <h3 className="mbs-0 mbe-3">Text Colors</h3>
 
         <div className="flex flex-wrap gap-y-2">
           <div className={`text-primary px-4 py-2 rounded-xl`}>
@@ -118,8 +118,8 @@ export function Board({ className = '' }: { className?: string }) {
         </div>
       </section>
 
-      <section>
-        <h3 className="mbe-3">Icons</h3>
+      <section className="font-bold">
+        <h3 className="mbs-0 mbe-3">Icons</h3>
 
         <div className="flex flex-wrap gap-6">
           {appThemeKeys.map((key) => (
@@ -156,8 +156,8 @@ export function Board({ className = '' }: { className?: string }) {
         </div>
       </section>
 
-      <section>
-        <h3 className="mbe-3">Badges</h3>
+      <section className="font-bold">
+        <h3 className="mbs-0 mbe-3">Badges</h3>
 
         <div className="flex flex-wrap gap-6">
           <div className="flex items-center gap-4">
@@ -186,8 +186,8 @@ export function Board({ className = '' }: { className?: string }) {
         </div>
       </section>
 
-      <section>
-        <h3 className="mbe-3">Tiles</h3>
+      <section className="font-bold">
+        <h3 className="mbs-0 mbe-3">Tiles</h3>
 
         <div className="flex flex-wrap gap-6">
           <div className="flex items-center gap-4">
@@ -243,10 +243,14 @@ export function Board({ className = '' }: { className?: string }) {
       </section>
 
       <section>
-        <h3 className="mbe-3">Prose</h3>
+        <h3 className="mbs-0 mbe-3">Prose</h3>
 
         <div className="labs-prose">
           <h1>Heading 1</h1>
+
+          <p>
+            A paragraph with <strong>bold</strong> and <em>italic</em> text.
+          </p>
 
           <ul>
             <li>List item 1</li>

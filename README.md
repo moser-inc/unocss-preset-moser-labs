@@ -80,6 +80,12 @@ presetMoserLabs({
    * https://unocss.dev/presets/typography
    */
   extendTypographyOptions?: PresetTypographyOptions;
+  /**
+   * Extend `presetWebFonts` options.
+   *
+   * https://unocss.dev/presets/web-fonts
+   */
+  extendWebFontsOptions?: PresetWebFontsOptions;
 });
 ```
 

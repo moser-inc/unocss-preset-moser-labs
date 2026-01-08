@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Preflight } from 'unocss';
+import type { Theme } from 'unocss/preset-wind4';
 import type { MoserLabsAppThemeKey } from '../theme';
 
 const _dirname =
@@ -33,5 +34,5 @@ export function moserLabsPreflights(defaultApp: MoserLabsAppThemeKey) {
         `.trim();
       },
     },
-  ] satisfies Preflight[];
+  ] satisfies Preflight<Theme>[];
 }

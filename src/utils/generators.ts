@@ -167,5 +167,5 @@ export function generateShortcuts(defaultApp?: MoserLabsAppThemeKey) {
     ...appThemeShortcuts,
     ...iconShortcuts,
     ...tileShortcuts,
-  } as const satisfies UserShortcuts;
+  } as const satisfies UserShortcuts<Theme>;
 }
