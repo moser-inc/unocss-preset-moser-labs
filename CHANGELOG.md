@@ -1,3 +1,13 @@
+## [5.2.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v5.2.0...v5.2.1) (2026-01-08)
+
+### Bug Fixes
+
+* also enable web fonts preset if options are extended ([3cce297](https://github.com/moser-inc/unocss-preset-moser-labs/commit/3cce29755d4a104f16431f894bb1dfe613f71cf5))
+
+### Miscellaneous Chores
+
+* update deps ([296249c](https://github.com/moser-inc/unocss-preset-moser-labs/commit/296249cf4c91fb9e681bf66540612d965b32100f))
+
 ## [5.2.0](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v5.1.3...v5.2.0) (2026-01-08)
 
 ### Features
