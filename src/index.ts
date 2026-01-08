@@ -102,68 +102,79 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
     );
   }
 
-  return {
-    name: '@moser-inc/unocss-preset-moser-labs',
-    presets: [
-      presetWind4({
-        dark: 'media',
-        ...extendWind4Options,
-        preflights: {
-          reset: false,
-          ...extendWind4Options?.preflights,
+  const moserLabsPresets: Preset[] = [];
+
+  moserLabsPresets.push(
+    presetWind4({
+      dark: 'media',
+      ...extendWind4Options,
+      preflights: {
+        reset: false,
+        ...extendWind4Options?.preflights,
+      },
+    }),
+  );
+
+  moserLabsPresets.push(presetPrime({ icons: true, ...extendPrimeOptions }));
+
+  moserLabsPresets.push(
+    presetIcons({
+      ...extendIconsOptions,
+      collections: {
+        mli: FileSystemIconLoader(resolve(_dirname, 'dist/icons')),
+        ...extendIconsOptions?.collections,
+      },
+      extraProperties: {
+        display: 'inline-block',
+        'vertical-align': 'middle',
+        ...extendIconsOptions?.extraProperties,
+      },
+    }),
+  );
+
+  moserLabsPresets.push(
+    presetTypography({
+      ...extendTypographyOptions,
+      colorScheme: {
+        body: ['inherit', 'inherit'],
+        headings: ['inherit', 'inherit'],
+        lead: ['inherit', 'inherit'],
+        links: ['inherit', 'inherit'],
+        bold: ['inherit', 'inherit'],
+        counters: ['inherit', 'inherit'],
+        bullets: ['inherit', 'inherit'],
+        hr: ['inherit', 'inherit'],
+        quotes: ['inherit', 'inherit'],
+        'quote-borders': ['inherit', 'inherit'],
+        captions: ['inherit', 'inherit'],
+        kbd: ['inherit', 'inherit'],
+        'kbd-shadows': ['inherit', 'inherit'],
+        code: ['inherit', 'inherit'],
+        'pre-code': ['inherit', 'inherit'],
+        'pre-bg': ['inherit', 'inherit'],
+        'th-borders': ['inherit', 'inherit'],
+        'td-borders': ['inherit', 'inherit'],
+        ...extendTypographyOptions?.colorScheme,
+      },
+      cssExtend: (theme) => ({
+        '*:only-child': {
+          'margin-block': '0',
         },
+        '*:first-child': {
+          'margin-block-start': '0',
+        },
+        '*:last-child': {
+          'margin-block-end': '0',
+        },
+        ...(typeof extendTypographyOptions?.cssExtend === 'function'
+          ? extendTypographyOptions?.cssExtend(theme)
+          : extendTypographyOptions?.cssExtend),
       }),
-      presetPrime({ icons: true, ...extendPrimeOptions }),
-      presetIcons({
-        ...extendIconsOptions,
-        collections: {
-          mli: FileSystemIconLoader(resolve(_dirname, 'dist/icons')),
-          ...extendIconsOptions?.collections,
-        },
-        extraProperties: {
-          display: 'inline-block',
-          'vertical-align': 'middle',
-          ...extendIconsOptions?.extraProperties,
-        },
-      }),
-      presetTypography({
-        ...extendTypographyOptions,
-        colorScheme: {
-          body: ['inherit', 'inherit'],
-          headings: ['inherit', 'inherit'],
-          lead: ['inherit', 'inherit'],
-          links: ['inherit', 'inherit'],
-          bold: ['inherit', 'inherit'],
-          counters: ['inherit', 'inherit'],
-          bullets: ['inherit', 'inherit'],
-          hr: ['inherit', 'inherit'],
-          quotes: ['inherit', 'inherit'],
-          'quote-borders': ['inherit', 'inherit'],
-          captions: ['inherit', 'inherit'],
-          kbd: ['inherit', 'inherit'],
-          'kbd-shadows': ['inherit', 'inherit'],
-          code: ['inherit', 'inherit'],
-          'pre-code': ['inherit', 'inherit'],
-          'pre-bg': ['inherit', 'inherit'],
-          'th-borders': ['inherit', 'inherit'],
-          'td-borders': ['inherit', 'inherit'],
-          ...extendTypographyOptions?.colorScheme,
-        },
-        cssExtend: (theme) => ({
-          '*:only-child': {
-            'margin-block': '0',
-          },
-          '*:first-child': {
-            'margin-block-start': '0',
-          },
-          '*:last-child': {
-            'margin-block-end': '0',
-          },
-          ...(typeof extendTypographyOptions?.cssExtend === 'function'
-            ? extendTypographyOptions?.cssExtend(theme)
-            : extendTypographyOptions?.cssExtend),
-        }),
-      }),
+    }),
+  );
+
+  if (preflight) {
+    moserLabsPresets.push(
       presetWebFonts({
         ...extendWebFontsOptions,
         fonts: {
@@ -171,7 +182,12 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
           ...extendWebFontsOptions?.fonts,
         },
       }),
-    ],
+    );
+  }
+
+  return {
+    name: '@moser-inc/unocss-preset-moser-labs',
+    presets: moserLabsPresets,
     theme: moserLabsTheme,
     rules: moserLabsRules,
     shortcuts: moserLabsShortcuts(defaultApp),
