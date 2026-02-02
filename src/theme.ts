@@ -1,8 +1,8 @@
 import type { Theme } from '@unocss/preset-wind4';
-import { primeThemeColors } from 'unocss-preset-prime/theme';
+import { primeSassColors } from 'unocss-preset-prime/theme';
 import { generateThemeColors } from './utils/generators';
 
-export { primeThemeColors };
+export const primeThemeColors = primeSassColors;
 
 export const moserLabsThemes = {
   aero: {

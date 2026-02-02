@@ -115,7 +115,9 @@ export function presetMoserLabs(options?: PresetMoserLabsOptions): Preset {
     }),
   );
 
-  moserLabsPresets.push(presetPrime({ icons: true, ...extendPrimeOptions }));
+  moserLabsPresets.push(
+    presetPrime({ mode: 'sass', icons: true, ...extendPrimeOptions }),
+  );
 
   moserLabsPresets.push(
     presetIcons({
