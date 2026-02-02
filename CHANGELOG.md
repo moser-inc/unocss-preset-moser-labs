@@ -1,3 +1,15 @@
+## [5.2.2](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v5.2.1...v5.2.2) (2026-02-02)
+
+### Bug Fixes
+
+* update deps using latest prime preset ([46e35f9](https://github.com/moser-inc/unocss-preset-moser-labs/commit/46e35f9726af744e4559fcbc6547d139e1b16e39))
+
+### Miscellaneous Chores
+
+* update dev deps ([d7bee14](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d7bee14b8f4626e0815a3787cb87018ce6d89ec6))
+* update eslint config ([252bba7](https://github.com/moser-inc/unocss-preset-moser-labs/commit/252bba7825476326b8877e4ca5578c39d91cc454))
+* update node to `v24.13.0` ([d148363](https://github.com/moser-inc/unocss-preset-moser-labs/commit/d1483634ac49106cfe6acb9f6fc3240f6fb4ef95))
+
 ## [5.2.1](https://github.com/moser-inc/unocss-preset-moser-labs/compare/v5.2.0...v5.2.1) (2026-01-08)
 
 ### Bug Fixes
